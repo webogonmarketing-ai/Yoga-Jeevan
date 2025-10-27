@@ -117,7 +117,7 @@
           "logo_display_width": 195,
           "main_linklist": "main-menu",
           "main_linklist2": "",
-          "vertical_menu": false,
+          "vertical_menu": true,
           "dropdown_click": false,
           "search_enabled": true,
           "fixed_header": true,
