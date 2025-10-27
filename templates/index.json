@@ -102,6 +102,24 @@
         "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px\n}\n\n.title{\ntext-align : left\n}"
       }
     },
+    "blog_posts_WAzzmz": {
+      "type": "blog-posts",
+      "name": "Blog posts",
+      "settings": {
+        "title": "Latest News",
+        "blog_widget_select": "",
+        "home_page_articles": 3,
+        "blog_tags": false,
+        "blog_author": false,
+        "read_time": true,
+        "blog_date": true,
+        "blog_comment_count": true,
+        "read_more_link": true,
+        "excerpt_display": "full_excerpt",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
     "newsletter-1": {
       "type": "newsletter",
       "settings": {
@@ -178,6 +196,7 @@
     "image-with-text-overlay-1",
     "feature_collection_content_wLEMKL",
     "18c28595-a71b-43e2-81a1-47dabf36e7de",
+    "blog_posts_WAzzmz",
     "newsletter-1",
     "16596785272b3d0c49"
   ]
