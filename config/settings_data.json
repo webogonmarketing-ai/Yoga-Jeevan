@@ -142,7 +142,7 @@
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "menu": "",
+              "menu": "footer-collection-menu",
               "social_icons_footer": false
             }
           },
