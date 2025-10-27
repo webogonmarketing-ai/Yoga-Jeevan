@@ -100,16 +100,16 @@
               <div class="collection-card">
               {% if collection.image %}
           <img
-            src="{{ collection.image | image_url: width: 800 }}"
+            src="{{ collection.image | image_url: width: 400 }}"
             alt="{{ collection.title | escape }}"
-            width="800"
+            width="400"
             height="auto">
 
         {% elsif block.settings.image_picker != blank %}
           <img
             src="{{ block.settings.image_picker | image_url: width: 800 }}"
             alt="{{ block.settings.custom_title | escape }}"
-            width="800"
+            width="400"
             height="auto">
 
         {% else %}
