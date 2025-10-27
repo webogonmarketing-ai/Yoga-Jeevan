@@ -37,14 +37,14 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "",
         "collection_description": true,
         "collection": "",
         "collection_style": "grid",
         "products_per": 2,
         "products_limit": 4,
         "css_class": "collection-area",
-        "custom_css": ".collection-area section {\nmax-width: 100%;\n}"
+        "custom_css": ".collection-area{\n margin-block : 50px\n}\n\n.collection-area section {\nmax-width: 80%;\n}"
       }
     },
     "18c28595-a71b-43e2-81a1-47dabf36e7de": {
