@@ -101,9 +101,7 @@
     "sections": {
       "header": {
         "type": "header",
-        "custom_css": [
-          ".position-left.caption.js-caption {margin-left: 150px;}"
-        ],
+        "custom_css": [],
         "settings": {
           "promo_text": "<p>EXPLORE THE WORLD'S PREMIUM EARTH FRIENDLY YOGA PRODUCTS MADE IN INDIA</p>",
           "social_icons_header": true,
