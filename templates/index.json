@@ -170,6 +170,20 @@
         "custom_css": ""
       }
     },
+    "featured_collection_RWLAa8": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection_description": true,
+        "collection": "yoga-mats",
+        "collection_style": "slider",
+        "products_per": 3,
+        "products_limit": 9,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
     "faq_xewWRP": {
       "type": "faq",
       "blocks": {
@@ -223,7 +237,7 @@
         "content_hHfVVT"
       ],
       "custom_css": [
-        ".one-whole.column.page .title:first-of-type {text-align: center !important; font-weight: bold; font-size: 30px}"
+        ".one-whole.column.page .title:first-of-type {text-align: center !important; font-weight: bold; font-size: 30px;}"
       ],
       "name": "FAQ",
       "settings": {
@@ -325,6 +339,7 @@
     "featured_promotions_WGYzH3",
     "18c28595-a71b-43e2-81a1-47dabf36e7de",
     "slideshow_z4yLrJ",
+    "featured_collection_RWLAa8",
     "faq_xewWRP",
     "blog_posts_WAzzmz",
     "newsletter-1",
