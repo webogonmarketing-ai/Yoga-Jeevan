@@ -112,11 +112,7 @@
             height="{{ new_height }}">
         {% else %}
           {% comment %} Use a common Shopify placeholder image and add dimensions {% endcomment %}
-          <img
-            src="{{  'collection-4' | placeholder_svg_tag }}"
-            alt="Placeholder"
-            width="800"
-            height="800">
+           {{ 'collection-4' | placeholder_svg_tag }}
         {% endif %}
 
         <div class="collection-card__overlay">
