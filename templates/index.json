@@ -33,18 +33,43 @@
         "custom_css": ".position-left.caption.js-caption {\n  margin-left: 100px;\n}"
       }
     },
-    "featured_collection_ijfYzk": {
-      "type": "featured-collection",
-      "name": "Featured collection",
+    "gallery_9VLekh": {
+      "type": "gallery",
+      "blocks": {
+        "image_LAYDxK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/il_fullxfull.6884877415_gr80.jpg"
+          }
+        },
+        "image_RPWzgz": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_dcpN4X": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_gVenh7": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_LAYDxK",
+        "image_RPWzgz",
+        "image_dcpN4X",
+        "image_gVenh7"
+      ],
+      "name": "Gallery",
       "settings": {
+        "wide_display": true,
         "title": "",
-        "collection_description": true,
-        "collection": "",
-        "collection_style": "grid",
-        "products_per": 2,
-        "products_limit": 4,
-        "css_class": "collection-area",
-        "custom_css": ".collection-area{\n margin-block : 50px\n}\n\n.collection-area section {\nmax-width: 80%;\n}"
+        "gallery_type": "classic",
+        "grid-size": 2,
+        "enable_lightbox": true,
+        "css_class": "",
+        "custom_css": ""
       }
     },
     "18c28595-a71b-43e2-81a1-47dabf36e7de": {
@@ -134,7 +159,7 @@
   },
   "order": [
     "image-with-text-overlay-1",
-    "featured_collection_ijfYzk",
+    "gallery_9VLekh",
     "18c28595-a71b-43e2-81a1-47dabf36e7de",
     "newsletter-1",
     "16596785272b3d0c49"
