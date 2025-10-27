@@ -59,8 +59,9 @@
         "collection_block_kTBkBc": {
           "type": "collection_block",
           "settings": {
-            "collection": "",
-            "custom_title": "Collection Title",
+            "collection": "frontpage",
+            "image_picker": "shopify://shop_images/yogaprops.webp",
+            "custom_title": "Iyenger Yoga Props",
             "description": "Write a short description about this collection.",
             "button_label": "Shop Now"
           }
