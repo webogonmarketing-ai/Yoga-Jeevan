@@ -33,41 +33,18 @@
         "custom_css": ".position-left.caption.js-caption {\n  margin-left: 100px;\n}"
       }
     },
-    "collection_list_QxVfg6": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_WhiR6U": {
-          "type": "collection",
-          "settings": {
-            "feature_collection": ""
-          }
-        },
-        "collection_ngB3FY": {
-          "type": "collection",
-          "settings": {
-            "feature_collection": ""
-          }
-        },
-        "collection_BwMDEt": {
-          "type": "collection",
-          "settings": {
-            "feature_collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection_WhiR6U",
-        "collection_ngB3FY",
-        "collection_BwMDEt"
-      ],
-      "name": "Collection list",
+    "featured_collection_ijfYzk": {
+      "type": "featured-collection",
+      "name": "Featured collection",
       "settings": {
-        "title": "Yoga's Restorative Effects on the Mind and Body",
-        "align_height": true,
-        "collection_height": 230,
-        "frontpage_collections_per_row": 4,
-        "css_class": "collection-margin",
-        "custom_css": ".collection-margin{\n margin-top : 40px;\nmargin-bottom : 40px;\n}"
+        "title": "Featured collection",
+        "collection_description": true,
+        "collection": "",
+        "collection_style": "grid",
+        "products_per": 2,
+        "products_limit": 4,
+        "css_class": "collection-area",
+        "custom_css": ""
       }
     },
     "18c28595-a71b-43e2-81a1-47dabf36e7de": {
@@ -157,7 +134,7 @@
   },
   "order": [
     "image-with-text-overlay-1",
-    "collection_list_QxVfg6",
+    "featured_collection_ijfYzk",
     "18c28595-a71b-43e2-81a1-47dabf36e7de",
     "newsletter-1",
     "16596785272b3d0c49"

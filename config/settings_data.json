@@ -76,6 +76,7 @@
     "quick_shop_enabled": true,
     "quick_shop_style": "popup",
     "display_special_instructions": true,
+    "display_savings": true,
     "currency_format": "money_with_currency_format",
     "show_multiple_currencies": true,
     "supported_currencies": "USD CAD INR GBP AUD EUR JPY",
