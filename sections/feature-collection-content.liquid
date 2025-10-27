@@ -84,35 +84,31 @@
   }
 {% endstyle %}
 
-<div class="collection-section page-width">
-  {% if section.settings.title != blank %}
-    <h2 class="section-title">{{ section.settings.title }}</h2>
-  {% endif %}
+    <div class="collection-section page-width">
+          {% if section.settings.title != blank %}
+            <h2 class="section-title">{{ section.settings.title }}</h2>
+          {% endif %}
 
-  <div class="collection-grid columns-{{ section.settings.columns }}">
-    {% for block in section.blocks %}
-      {% assign collection = collections[block.settings.collection] %}
-      <div class="collection-card">
-        {% if collection.image %}
+          <div class="collection-grid columns-{{ section.settings.columns }}">
+            {% for block in section.blocks %}
+              {% assign collection = collections[block.settings.collection] %}
+              <div class="collection-card">
+              {% if collection.image %}
           <img
-            src="{{ collection.image | image_url: width: 800, height: 800 }}"
-            alt="{{ collection.title }}"
+            src="{{ collection.image | image_url: width: 800 }}"
+            alt="{{ collection.title | escape }}"
             width="800"
-            height="800">
+            height="auto">
+
         {% elsif block.settings.image_picker != blank %}
-        {% assign img_picker = block.settings.image_picker %}
-          {% comment %} Calculate proportional height for the image picker image {% endcomment %}
-          {% assign original_width = img_picker.width | default: 1 %}
-          {% assign original_height = img_picker.height | default: 1 %}
-          {% assign new_height = 800 | times: original_height | divided_by: original_width %}
           <img
-            src="{{ img_picker | image_url: width: 800 }}"
+            src="{{ block.settings.image_picker | image_url: width: 800 }}"
             alt="{{ block.settings.custom_title | escape }}"
             width="800"
-            height="{{ new_height }}">
+            height="auto">
+
         {% else %}
-          {% comment %} Use a common Shopify placeholder image and add dimensions {% endcomment %}
-           {{ 'collection-4' | placeholder_svg_tag }}
+          {{ 'collection-4' | placeholder_svg_tag }}
         {% endif %}
 
         <div class="collection-card__overlay">
