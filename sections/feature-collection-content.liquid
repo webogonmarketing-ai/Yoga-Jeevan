@@ -116,6 +116,14 @@
             {% endif %}
           </div>
         </div>
+      {% else %}
+        <div class="collection-card">
+          <img src="{{ 'placeholder-image.png' | asset_url }}" alt="Placeholder">
+          <div class="collection-card__overlay">
+            <h3>Choose a Collection</h3>
+            <p>You can select a collection from the editor settings.</p>
+          </div>
+        </div>
       {% endif %}
     {% endfor %}
   </div>
@@ -124,6 +132,7 @@
 {% schema %}
   {
     "name": "Collection With Image",
+    "tag": "section",
     "class": "shopify-section--collection-image",
     "settings": [
       {
@@ -182,7 +191,16 @@
     "presets": [
       {
         "name": "Collection With Image",
-        "category": "Collection"
+        "category": "Collection",
+        "blocks": [
+          {
+            "type": "collection_block"
+          }, {
+            "type": "collection_block"
+          }, {
+            "type": "collection_block"
+          }
+        ]
       }
     ]
   }
