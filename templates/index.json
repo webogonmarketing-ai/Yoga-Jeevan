@@ -33,60 +33,65 @@
         "custom_css": ".position-left.caption.js-caption {\n  margin-left: 100px;\n}"
       }
     },
-    "feature_collection_content_wLEMKL": {
-      "type": "feature-collection-content",
+    "featured_promotions_WGYzH3": {
+      "type": "featured-promotions",
       "blocks": {
-        "collection_block_tCtbbN": {
-          "type": "collection_block",
+        "image_nqM9in": {
+          "type": "image",
           "settings": {
-            "collection": "yoga-mats",
-            "image_picker": "shopify://shop_images/il_fullxfull.6884877415_gr80.jpg",
-            "custom_title": "{{ block.settings.collection.title }}",
-            "description": "Write a short description about this collection.",
+            "image": "shopify://shop_images/il_fullxfull.6884877415_gr80.jpg",
+            "link": "",
+            "title": "Yoga Mats",
+            "text": "<p>Promotion description details.</p>",
             "button_label": "Shop Now"
           }
         },
-        "collection_block_VKnTNp": {
-          "type": "collection_block",
+        "image_mwwT3F": {
+          "type": "image",
           "settings": {
-            "collection": "yoga-mats",
-            "image_picker": "shopify://shop_images/Meditation_Aids_1d705636-0491-4f5f-9f06-1a2e414d7190.webp",
-            "custom_title": "Meditation Aids",
-            "description": "Write a short description about this collection.",
-            "button_label": "Shop Now"
+            "image": "shopify://shop_images/Meditation_Aids_1d705636-0491-4f5f-9f06-1a2e414d7190.webp",
+            "link": "",
+            "title": "Meditation Aids",
+            "text": "<p>Promotion description details.</p>",
+            "button_label": ""
           }
         },
-        "collection_block_kTBkBc": {
-          "type": "collection_block",
+        "image_rJP3tH": {
+          "type": "image",
           "settings": {
-            "collection": "frontpage",
-            "image_picker": "shopify://shop_images/yogaprops.webp",
-            "custom_title": "Iyenger Yoga Props",
-            "description": "Write a short description about this collection.",
-            "button_label": "Shop Now"
+            "image": "shopify://shop_images/yogaprops.webp",
+            "link": "",
+            "title": "Iyenger Yoga Props",
+            "text": "<p>Promotion description details.</p>",
+            "button_label": ""
           }
         },
-        "collection_block_G9TAVU": {
-          "type": "collection_block",
+        "image_tCCgfC": {
+          "type": "image",
           "settings": {
-            "collection": "frontpage",
-            "image_picker": "shopify://shop_images/Acupressure_Props.webp",
-            "custom_title": "Acupressure Props",
-            "description": "Write a short description about this collection.",
-            "button_label": "Shop Now"
+            "image": "shopify://shop_images/Acupressure_Props.webp",
+            "link": "",
+            "title": "Acupressure Props",
+            "text": "<p>Promotion description details.</p>",
+            "button_label": ""
           }
         }
       },
       "block_order": [
-        "collection_block_tCtbbN",
-        "collection_block_VKnTNp",
-        "collection_block_kTBkBc",
-        "collection_block_G9TAVU"
+        "image_nqM9in",
+        "image_mwwT3F",
+        "image_rJP3tH",
+        "image_tCCgfC"
       ],
-      "name": "Collection With Image",
+      "name": "Featured promotions",
       "settings": {
-        "title": "",
-        "columns": "2"
+        "wide_display": true,
+        "promo_text_on_image_enabled": true,
+        "featured_promos_per_row": 2,
+        "featured_links_animation": "fadeInDown",
+        "feature_style": "square",
+        "css_class": "",
+        "custom_css": ""
       }
     },
     "18c28595-a71b-43e2-81a1-47dabf36e7de": {
@@ -278,7 +283,7 @@
   },
   "order": [
     "image-with-text-overlay-1",
-    "feature_collection_content_wLEMKL",
+    "featured_promotions_WGYzH3",
     "18c28595-a71b-43e2-81a1-47dabf36e7de",
     "faq_xewWRP",
     "blog_posts_WAzzmz",
