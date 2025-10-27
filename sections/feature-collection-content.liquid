@@ -102,6 +102,8 @@
         <div class="collection-card">
           {% if collection.image %}
             <img src="{{ collection.image | img_url: '800x' }}" alt="{{ collection.title }}">
+          {% elsif block.settings.image_picker %}
+            <img src="{{ block.settings.image_picker | image_url: width: 800 }}" alt="{{ block.settings.custom_title | escape }}">
           {% else %}
             <img src="{{ 'placeholder-image.png' | asset_url }}" alt="Placeholder">
           {% endif %}
@@ -118,7 +120,11 @@
         </div>
       {% else %}
         <div class="collection-card">
-          <img src="{{ 'placeholder-image.png' | asset_url }}" alt="Placeholder">
+          {% if block.settings.image_picker %}
+            <img src="{{ block.settings.image_picker | image_url: width: 800 }}" alt="Placeholder">
+          {% else %}
+            <img src="{{ 'placeholder-image.png' | asset_url }}" alt="Placeholder">
+          {% endif %}
           <div class="collection-card__overlay">
             <h3>Choose a Collection</h3>
             <p>You can select a collection from the editor settings.</p>
@@ -128,6 +134,7 @@
     {% endfor %}
   </div>
 </div>
+
 
 {% schema %}
   {
@@ -168,21 +175,28 @@
             "type": "collection",
             "id": "collection",
             "label": "Select Collection"
-          }, {
+          },
+          {
             "type": "text",
             "id": "custom_title",
             "label": "Custom Title",
             "default": "Collection Title"
-          }, {
+          },
+          {
             "type": "textarea",
             "id": "description",
             "label": "Description",
             "default": "Write a short description about this collection."
-          }, {
+          },
+          {
             "type": "text",
             "id": "button_label",
             "label": "Button Label",
             "default": "Shop Now"
+          }, {
+            "type": "image_picker",
+            "id": "image_picker",
+            "label": "Select Image"
           }
         ]
       }
