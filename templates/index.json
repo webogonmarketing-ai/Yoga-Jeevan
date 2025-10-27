@@ -172,6 +172,10 @@
     },
     "featured_collection_RWLAa8": {
       "type": "featured-collection",
+      "custom_css": [
+        "@media (max-width: 767px) {.thumbnail .was_price span.money, .thumbnail .compare-at-price span.money {color: #fa1717; }}",
+        ".one-whole a .title {text-align: center !important;}"
+      ],
       "name": "Featured collection",
       "settings": {
         "title": "Featured collection",
@@ -181,11 +185,15 @@
         "products_per": 3,
         "products_limit": 9,
         "css_class": "",
-        "custom_css": ""
+        "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px; \n}\n\n.title{\ntext-align : left\n}"
       }
     },
     "featured_collection_gwVzGK": {
       "type": "featured-collection",
+      "custom_css": [
+        "@media (max-width: 767px) {.thumbnail .was_price span.money, .thumbnail .compare-at-price span.money {color: #fa1717; }}",
+        ".one-whole a .title {text-align: center !important;}"
+      ],
       "name": "Featured collection",
       "settings": {
         "title": "Featured collection",
@@ -195,7 +203,7 @@
         "products_per": 3,
         "products_limit": 9,
         "css_class": "",
-        "custom_css": ""
+        "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px; \n}\n\n.title{\ntext-align : left\n}"
       }
     },
     "faq_xewWRP": {
