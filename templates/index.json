@@ -49,8 +49,9 @@
         "collection_block_VKnTNp": {
           "type": "collection_block",
           "settings": {
-            "collection": "",
-            "custom_title": "Collection Title",
+            "collection": "yoga-mats",
+            "image_picker": "shopify://shop_images/Meditation_Aids_1d705636-0491-4f5f-9f06-1a2e414d7190.webp",
+            "custom_title": "Meditation Aids",
             "description": "Write a short description about this collection.",
             "button_label": "Shop Now"
           }
