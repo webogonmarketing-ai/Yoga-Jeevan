@@ -1,93 +1,93 @@
 {% style %}
+.collection-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.collection-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.collection-card:hover {
+  transform: scale(1.02);
+}
+
+.collection-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
+.collection-card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  padding: 20px;
+  text-align: center;
+  transition: opacity 0.4s ease;
+}
+
+.collection-card:hover .collection-card__overlay {
+  opacity: 1;
+}
+
+.collection-card__overlay h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.collection-card__overlay p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  max-width: 300px;
+}
+
+.collection-card__overlay a {
+  background: #ffffff;
+  color: #000000;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.collection-card__overlay a:hover {
+  background: #f3f3f3;
+}
+
+/* Responsive grid columns */
+@media (min-width: 768px) {
+  .collection-grid.columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .collection-grid.columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .collection-grid.columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
   .collection-grid {
-    display: grid;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
   }
-
-  .collection-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-
-  .collection-card:hover {
-    transform: scale(1.02);
-  }
-
-  .collection-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.4s ease;
-  }
-
-  .collection-card__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    padding: 20px;
-    text-align: center;
-    transition: opacity 0.4s ease;
-  }
-
-  .collection-card:hover .collection-card__overlay {
-    opacity: 1;
-  }
-
-  .collection-card__overlay h3 {
-    margin-bottom: 10px;
-    font-size: 1.4rem;
-  }
-
-  .collection-card__overlay p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    max-width: 300px;
-  }
-
-  .collection-card__overlay a {
-    background: #ffffff;
-    color: #000000;
-    padding: 8px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s ease;
-  }
-
-  .collection-card__overlay a:hover {
-    background: #f3f3f3;
-  }
-
-  /* Responsive grid columns */
-  @media (min-width: 768px) {
-    .collection-grid.columns-2 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .collection-grid.columns-3 {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .collection-grid.columns-4 {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
-  @media (max-width: 767px) {
-    .collection-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
+}
 {% endstyle %}
 
 <div class="collection-section page-width">
@@ -98,124 +98,102 @@
   <div class="collection-grid columns-{{ section.settings.columns }}">
     {% for block in section.blocks %}
       {% assign collection = collections[block.settings.collection] %}
-      {% if collection %}
-        <div class="collection-card">
-          {% if collection.image %}
-            <img src="{{ collection.image | img_url: '800x' }}" alt="{{ collection.title }}">
-          {% elsif block.settings.image_picker %}
-            <img src="{{ block.settings.image_picker | image_url: width: 800 }}" alt="{{ block.settings.custom_title | escape }}">
-          {% else %}
-            <img src="{{ 'placeholder-image.png' | asset_url }}" alt="Placeholder">
-          {% endif %}
+      <div class="collection-card">
+        {% if collection.image %}
+          <img src="{{ collection.image | image_url: width: 800 }}" alt="{{ collection.title }}">
+        {% elsif block.settings.image_picker != blank %}
+          <img src="{{ block.settings.image_picker | image_url: width: 800 }}" alt="{{ block.settings.custom_title | escape }}">
+        {% else %}
+          <img src="{{ 'placeholder-image.png' | asset_url }}" alt="Placeholder">
+        {% endif %}
 
-          <div class="collection-card__overlay">
-            <h3>{{ block.settings.custom_title | default: collection.title }}</h3>
-            {% if block.settings.description != blank %}
-              <p>{{ block.settings.description }}</p>
-            {% endif %}
-            {% if block.settings.button_label != blank %}
-              <a href="{{ collection.url }}">{{ block.settings.button_label }}</a>
-            {% endif %}
-          </div>
-        </div>
-      {% else %}
-        <div class="collection-card">
-          {% if block.settings.image_picker %}
-            <img src="{{ block.settings.image_picker | image_url: width: 800 }}" alt="{{ collection.title }}">
-          {% else %}
-            <img src="{{ collection.featured_image | asset_url }}" alt="{{ collection.title }}">
+        <div class="collection-card__overlay">
+          <h3>
+            {{ block.settings.custom_title | default: collection.title }}
+          </h3>
+          {% if block.settings.description != blank %}
+            <p>{{ block.settings.description }}</p>
           {% endif %}
-          <div class="collection-card__overlay">
-            <h3>Choose a Collection</h3>
-            <p>You can select a collection from the editor settings.</p>
-          </div>
+          {% if block.settings.button_label != blank %}
+            <a href="{{ collection.url }}">{{ block.settings.button_label }}</a>
+          {% endif %}
         </div>
-      {% endif %}
+      </div>
     {% endfor %}
   </div>
 </div>
 
-
 {% schema %}
-  {
-    "name": "Collection With Image",
-    "tag": "section",
-    "class": "shopify-section--collection-image",
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Section Title",
-        "default": "Our Collections"
-      }, {
-        "type": "select",
-        "id": "columns",
-        "label": "Collections per row",
-        "options": [
-          {
-            "value": "2",
-            "label": "2"
-          }, {
-            "value": "3",
-            "label": "3"
-          }, {
-            "value": "4",
-            "label": "4"
-          }
-        ],
-        "default": "3"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "collection_block",
-        "name": "Collection",
-        "settings": [
-          {
-            "type": "collection",
-            "id": "collection",
-            "label": "Select Collection"
-          },
-          {
-            "type": "text",
-            "id": "custom_title",
-            "label": "Custom Title",
-            "default": "Collection Title"
-          },
-          {
-            "type": "textarea",
-            "id": "description",
-            "label": "Description",
-            "default": "Write a short description about this collection."
-          },
-          {
-            "type": "text",
-            "id": "button_label",
-            "label": "Button Label",
-            "default": "Shop Now"
-          }, {
-            "type": "image_picker",
-            "id": "image_picker",
-            "label": "Select Image"
-          }
-        ]
-      }
-    ],
-    "max_blocks": 12,
-    "presets": [
-      {
-        "name": "Collection With Image",
-        "category": "Collection",
-        "blocks": [
-          {
-            "type": "collection_block"
-          }, {
-            "type": "collection_block"
-          }, {
-            "type": "collection_block"
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "Collection With Image",
+  "tag": "section",
+  "class": "shopify-section--collection-image",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Our Collections"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Collections per row",
+      "options": [
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" }
+      ],
+      "default": "3"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_block",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_picker",
+          "label": "Custom Image (optional)"
+        },
+        {
+          "type": "text",
+          "id": "custom_title",
+          "label": "Custom Title",
+          "default": "Collection Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Write a short description about this collection."
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label",
+          "default": "Shop Now"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Collection With Image",
+      "category": "Collection",
+      "blocks": [
+        { "type": "collection_block" },
+        { "type": "collection_block" },
+        { "type": "collection_block" }
+      ]
+    }
+  ]
+}
 {% endschema %}
