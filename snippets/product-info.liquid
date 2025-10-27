@@ -1,7 +1,7 @@
 {% assign variant = product.selected_or_first_available_variant %}
 
 <div class="product-details">
-  <span class="title" itemprop="name">{{ product.title | truncate: 20 }}</span>
+  <span class="title" itemprop="name">{{ product.title | truncate: 30 }}</span>
   {% if settings.display_vendor %}
     <span class="brand">
       {{ product.vendor }}
