@@ -44,7 +44,7 @@
         "products_per": 2,
         "products_limit": 4,
         "css_class": "collection-area",
-        "custom_css": ""
+        "custom_css": ".collection-area section {\nmax-width: 100%;\n}"
       }
     },
     "18c28595-a71b-43e2-81a1-47dabf36e7de": {
