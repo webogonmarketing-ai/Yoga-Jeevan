@@ -99,7 +99,7 @@
         "products_per": 3,
         "products_limit": 49,
         "css_class": "collection-margin",
-        "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px\n}"
+        "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px\n}\n\n.title{\ntext-align : left\n}"
       }
     },
     "newsletter-1": {
