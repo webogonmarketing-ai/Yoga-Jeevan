@@ -102,6 +102,86 @@
         "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px\n}\n\n.title{\ntext-align : left\n}"
       }
     },
+    "faq_xewWRP": {
+      "type": "faq",
+      "blocks": {
+        "heading_NqD9cw": {
+          "type": "heading",
+          "settings": {
+            "faq_title": "Section heading"
+          }
+        },
+        "content_gN9bHc": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.</p>"
+          }
+        },
+        "content_tqkJnh": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.</p>"
+          }
+        },
+        "content_KaVXMG": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.</p>"
+          }
+        },
+        "heading_PH9Vhq": {
+          "type": "heading",
+          "settings": {
+            "faq_title": "Section heading"
+          }
+        },
+        "content_qeVqNx": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.</p>"
+          }
+        },
+        "content_MXkVW4": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.</p>"
+          }
+        },
+        "content_hHfVVT": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.</p>"
+          }
+        },
+        "image_E6rYaX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/il_fullxfull.6866634619_l2xo_668d76bb-6f18-490d-aba8-29cedb0ffd2e.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NqD9cw",
+        "content_gN9bHc",
+        "content_tqkJnh",
+        "content_KaVXMG",
+        "heading_PH9Vhq",
+        "content_qeVqNx",
+        "content_MXkVW4",
+        "content_hHfVVT",
+        "image_E6rYaX"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "title": "FAQ"
+      }
+    },
     "blog_posts_WAzzmz": {
       "type": "blog-posts",
       "name": "Blog posts",
@@ -196,6 +276,7 @@
     "image-with-text-overlay-1",
     "feature_collection_content_wLEMKL",
     "18c28595-a71b-43e2-81a1-47dabf36e7de",
+    "faq_xewWRP",
     "blog_posts_WAzzmz",
     "newsletter-1",
     "16596785272b3d0c49"

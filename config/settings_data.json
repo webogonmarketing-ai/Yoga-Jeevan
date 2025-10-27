@@ -100,6 +100,7 @@
     "pinterest_link": "https://www.pinterest.com/Yogakargha",
     "youtube_link": "https://www.youtube.com/channel/UCVzajCsVwfe0PwmlB0SG71A",
     "favicon": "shopify://shop_images/Green_Cream_Minimal_Typographic_Logo_1_500x_d444be6e-50d3-41c7-9e38-593672e71ac7.png",
+    "disqus_enabled": false,
     "checkout_logo_image": "shopify://shop_images/Green_Cream_Minimal_Typographic_Logo_1_500x_d444be6e-50d3-41c7-9e38-593672e71ac7.png",
     "sections": {
       "header": {
