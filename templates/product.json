@@ -34,6 +34,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "share": {
@@ -47,7 +48,6 @@
         },
         "3f9cf4ea-03ab-4e36-9903-8f23fd4437e4": {
           "type": "tabs",
-          "disabled": true,
           "settings": {
             "show_product_description": true,
             "show_tabs_below_product_gallery": true,
