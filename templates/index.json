@@ -13,7 +13,7 @@
       "type": "image-with-text-overlay",
       "settings": {
         "wide_display": true,
-        "image": "shopify://shop_images/Homebanner.webp",
+        "image": "shopify://shop_images/Homebanner_with_gradient.webp",
         "pretext": "",
         "title": "EVERYDAY ESSENTIALS for yogic living",
         "subtitle": "",
@@ -25,12 +25,12 @@
         "button2_style": "global-button--banner-highlighted",
         "text_position": "left",
         "text_align": "left",
-        "caption_content_background": "darken_bg",
+        "caption_content_background": "original",
         "mobile_image_crop": "none",
         "mobile_text_below_image": true,
         "mobile_text_color": "rgba(0,0,0,0)",
         "css_class": "",
-        "custom_css": ""
+        "custom_css": ".position-left.caption.js-caption {\n  margin-left: 100px;\n}"
       }
     },
     "featured-text-1": {
