@@ -26,9 +26,10 @@
         "text_position": "left",
         "text_align": "left",
         "caption_content_background": "original",
+        "mobile_image": "shopify://shop_images/mobileherobanner.webp",
         "mobile_image_crop": "none",
         "mobile_text_below_image": true,
-        "mobile_text_color": "rgba(0,0,0,0)",
+        "mobile_text_color": "#000000",
         "css_class": "",
         "custom_css": ".position-left.caption.js-caption {\n  margin-left: 100px;\n}"
       }
@@ -185,25 +186,7 @@
         "products_per": 3,
         "products_limit": 9,
         "css_class": "",
-        "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px; \n}\n\n.title{\ntext-align : left\n}"
-      }
-    },
-    "featured_collection_gwVzGK": {
-      "type": "featured-collection",
-      "custom_css": [
-        "@media (max-width: 767px) {.thumbnail .was_price span.money, .thumbnail .compare-at-price span.money {color: #fa1717; }}",
-        ".one-whole a .title {text-align: center !important;}"
-      ],
-      "name": "Featured collection",
-      "settings": {
-        "title": "Featured collection",
-        "collection_description": true,
-        "collection": "yoga-mats",
-        "collection_style": "slider",
-        "products_per": 3,
-        "products_limit": 9,
-        "css_class": "",
-        "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px; \n}\n\n.title{\ntext-align : left\n}"
+        "custom_css": ""
       }
     },
     "faq_xewWRP": {
@@ -279,7 +262,7 @@
         "blog_date": true,
         "blog_comment_count": true,
         "read_more_link": true,
-        "excerpt_display": "truncated_excerpt",
+        "excerpt_display": "full_excerpt",
         "css_class": "",
         "custom_css": ""
       }
@@ -362,7 +345,6 @@
     "18c28595-a71b-43e2-81a1-47dabf36e7de",
     "slideshow_z4yLrJ",
     "featured_collection_RWLAa8",
-    "featured_collection_gwVzGK",
     "faq_xewWRP",
     "blog_posts_WAzzmz",
     "newsletter-1",
