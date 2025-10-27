@@ -95,8 +95,8 @@
         "title": "Sustainable, Organic, Natural & Handmade Yoga Mats for All Forms of Yoga",
         "collection_description": false,
         "collection": "yoga-mats",
-        "collection_style": "grid",
-        "products_per": 4,
+        "collection_style": "slider",
+        "products_per": 3,
         "products_limit": 49,
         "css_class": "",
         "custom_css": ""
