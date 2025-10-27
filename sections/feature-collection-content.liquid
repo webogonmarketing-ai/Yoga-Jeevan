@@ -121,9 +121,9 @@
       {% else %}
         <div class="collection-card">
           {% if block.settings.image_picker %}
-            <img src="{{ block.settings.image_picker | image_url: width: 800 }}" alt="Placeholder">
+            <img src="{{ block.settings.image_picker | image_url: width: 800 }}" alt="{{ collection.title }}">
           {% else %}
-            <img src="{{ 'placeholder-image.png' | asset_url }}" alt="Placeholder">
+            <img src="{{ collection.featured_image | asset_url }}" alt="{{ collection.title }}">
           {% endif %}
           <div class="collection-card__overlay">
             <h3>Choose a Collection</h3>
