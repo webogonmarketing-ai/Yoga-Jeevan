@@ -111,6 +111,65 @@
         "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px; \n}\n\n.title{\ntext-align : left\n}"
       }
     },
+    "slideshow_z4yLrJ": {
+      "type": "slideshow",
+      "blocks": {
+        "image_nhNLpJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_1400x_1.webp",
+            "pretext": "",
+            "title": "",
+            "subtitle": "",
+            "button1": "",
+            "button1_link": "",
+            "button1_style": "global-button--banner",
+            "button2": "",
+            "button2_link": "",
+            "button2_style": "global-button--banner",
+            "text_position": "center",
+            "text_align": "center",
+            "caption_content_background": "original",
+            "mobile_image_crop": "none"
+          }
+        },
+        "image_pgqqYX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2.jpg",
+            "pretext": "",
+            "title": "",
+            "subtitle": "",
+            "button1": "",
+            "button1_link": "",
+            "button1_style": "global-button--banner",
+            "button2": "",
+            "button2_link": "",
+            "button2_style": "global-button--banner",
+            "text_position": "center",
+            "text_align": "center",
+            "caption_content_background": "original",
+            "mobile_image_crop": "none"
+          }
+        }
+      },
+      "block_order": [
+        "image_nhNLpJ",
+        "image_pgqqYX"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "wide_display": true,
+        "slideshow_text_animation": "fadeInDown",
+        "slideshow_animation": "fade",
+        "slideshow_speed": 6,
+        "activate_adaptiveHeight": false,
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
     "faq_xewWRP": {
       "type": "faq",
       "blocks": {
@@ -285,6 +344,7 @@
     "image-with-text-overlay-1",
     "featured_promotions_WGYzH3",
     "18c28595-a71b-43e2-81a1-47dabf36e7de",
+    "slideshow_z4yLrJ",
     "faq_xewWRP",
     "blog_posts_WAzzmz",
     "newsletter-1",
