@@ -98,8 +98,8 @@
         "collection_style": "slider",
         "products_per": 3,
         "products_limit": 49,
-        "css_class": "",
-        "custom_css": ""
+        "css_class": "collection-margin",
+        "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px\n}"
       }
     },
     "newsletter-1": {
