@@ -18,6 +18,11 @@
     transition: opacity 0.4s ease;
   }
 
+  .collection-card-heading{
+    text-align : center;
+    color : white;
+  }
+
   .collection-card__overlay {
     position: absolute;
     top: 0;
@@ -112,7 +117,7 @@
         {% endif %}
 
         <div class="collection-card__overlay">
-          <h3>
+          <h3 class='collection-card-heading'>
             {{ block.settings.custom_title | default: collection.title }}
           </h3>
           {% if block.settings.description != blank %}
