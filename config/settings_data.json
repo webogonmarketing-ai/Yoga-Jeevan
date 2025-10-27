@@ -38,7 +38,7 @@
     "top_bar_bg_color": "#72866d",
     "top_bar_cart_bg_color": "#AE3333",
     "header_bg_color": "#72866d",
-    "header_background": false,
+    "header_background": true,
     "sub_footer_color": "#72866d",
     "logo__font": "century_gothic_n4",
     "logo_font_style": "uppercase",
