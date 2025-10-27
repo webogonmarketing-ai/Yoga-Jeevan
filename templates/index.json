@@ -176,61 +176,41 @@
         "heading_NqD9cw": {
           "type": "heading",
           "settings": {
-            "faq_title": "Section heading"
+            "faq_title": "Genral Questions Of  Yoga Mats"
           }
         },
         "content_gN9bHc": {
           "type": "content",
           "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.</p>"
+            "title": "What is the difference between normal, anti-skid, and rubber base yoga mats?",
+            "answer": "<p><strong>YogaKargha mats are mostly of three types</strong>– the<strong>normal mats</strong>wherein there is no antiskid coating or additional layer. These mats (they could be made of cotton, jute, hemp, wool, or grass fibers) perform well on any carpeted surface. They can be used on their own and are easy to fold, carry (travel friendly), and care for. They are excellent for any general fitness routine or meditation session. In addition, these mats can be used around in a variety of ways, such as runners, rugs, etc.</p><p><strong>For more advanced practice or a stable version, we include an antiskid layer below our mats:</strong></p><p>It can either be a natural rubber coating or an anti-skid felt-based layer. The natural rubber coating is derived from rubber plantations in India and gives a yellowish gluey texture to the backside of the mat. The rubber coating makes the mat anti-skid but doesn’t provide additional thickness. Also, the rubber coating fades away with time and frequent washing.It is a natural way for your cotton mat to stay eco-friendly yet anti-slip. The anti-skid felt layer has a multitude of rubber dots embedded over a cotton felt fabric. This makes the mat anti-slip and also provides an additional thickness to the mat.</p>"
           }
         },
         "content_tqkJnh": {
           "type": "content",
           "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.</p>"
+            "title": "How do I care for my mats?",
+            "answer": "<p>We recommend handwash for all handwoven articles. But we also know that it may not always be practical. So, a gentle wash in a machine with equally gentle soap can be done. Please avoid tumble drying, and prefer line drying in semi-shade.</p><p>Some mats with natural dyes such as Indigo, Turmeric, or Madder Dyes may bleed for the first few washes. Avoid mixing the mats with any other clothing. Light steam iron on your mat makes it look like new.</p><p>The best part about natural fabric-based yoga mats is they can be easily washed and cared for, are sweat-absorbent, and are extremely breathable. The rubber mats, PVC mats, and other polymer-based mats can not match the feel, texture, and breathability of the natural fiber mats</p>"
           }
         },
         "content_KaVXMG": {
           "type": "content",
           "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.</p>"
+            "title": "Will my cotton mat shrink?",
+            "answer": "<p><strong>Not always.</strong>The natural fiber is washed during the process of dyeing, most of the shrinkage already happens there and is taken care of. Cotton has a tendency to shrink as a natural fiber so expect a little shrinkage specially in all natural undyed mats. And do you know, for this very reason, we make our mats longest and widest in the market! So, that you do not have to worry at all.</p>"
           }
         },
         "heading_PH9Vhq": {
           "type": "heading",
           "settings": {
-            "faq_title": "Section heading"
-          }
-        },
-        "content_qeVqNx": {
-          "type": "content",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.</p>"
-          }
-        },
-        "content_MXkVW4": {
-          "type": "content",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.</p>"
+            "faq_title": "Our Packing"
           }
         },
         "content_hHfVVT": {
           "type": "content",
           "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.</p>"
-          }
-        },
-        "image_E6rYaX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/il_fullxfull.6866634619_l2xo_668d76bb-6f18-490d-aba8-29cedb0ffd2e.jpg"
+            "title": "What is your packaging like?",
+            "answer": "<p>Paper, Fabric, Cardboard, among others. Our carriers (FedEx and DHL) use premium recyclable packs.</p><p><strong>We are plastic free </strong>literally except in some exceptional cases where the carriers want us to pack/secure items either in a recyclable plastic wrap or bubble pack.</p><p><strong>All our mats come with a fabric yoga mat bag and a cardboard box that you can use for DIY around your place</strong>.</p><p> We sometimes surprise buyers with our small token of thanks (a simple tote bag/eye pillow/scrunchies, etc.) that are handmade by our team using the leftover fabric from other projects. </p><p><strong>Our Mantra is simple reuse and recycles everything that is available to us.</strong></p>"
           }
         }
       },
@@ -240,14 +220,11 @@
         "content_tqkJnh",
         "content_KaVXMG",
         "heading_PH9Vhq",
-        "content_qeVqNx",
-        "content_MXkVW4",
-        "content_hHfVVT",
-        "image_E6rYaX"
+        "content_hHfVVT"
       ],
       "name": "FAQ",
       "settings": {
-        "title": ""
+        "title": "Frequently Asked Question"
       }
     },
     "blog_posts_WAzzmz": {
