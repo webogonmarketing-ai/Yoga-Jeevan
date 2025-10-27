@@ -164,8 +164,8 @@
         "slideshow_animation": "fade",
         "slideshow_speed": 6,
         "activate_adaptiveHeight": false,
-        "mobile_text_below_image": true,
-        "mobile_text_color": "",
+        "mobile_text_below_image": false,
+        "mobile_text_color": "rgba(0,0,0,0)",
         "css_class": "",
         "custom_css": ""
       }
@@ -277,8 +277,8 @@
         "newsletter_title": "Subscribe",
         "newsletter_text": "<p>Sign up to get the latest on sales, new releases and more …</p>",
         "newsletter_section_text_align": "center",
-        "css_class": "",
-        "custom_css": ""
+        "css_class": "border-newsletter",
+        "custom_css": ".border-newsletter{\nborder-top : 2px solid black;\n}"
       }
     },
     "16596785272b3d0c49": {
