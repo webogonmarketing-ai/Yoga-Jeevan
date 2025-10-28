@@ -21,6 +21,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify://shop_images/Color_W.jpg",
             "title": "Yoga, Meditation & Wellness Made Simple, Sustainable &  Earth Friendly",
             "heading_size": "regular_text",
             "text": "<p>We are a small family business based out of India, the land of Yoga and call ourself a little design mill. We create products focused on yoga and wellness because as practitioners and students of Yoga it worked wonders for us. Our products are traditionally handcrafted and yet carry the modern design sensibilities. They are infused with magic of natural materials, fibers, and reflect the prettiness and beauty of textile, art and craft heritage of our land. Thank you for joining us in this journey.</p>",
