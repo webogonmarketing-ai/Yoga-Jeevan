@@ -117,6 +117,7 @@
           "show_locale_selector": true,
           "show_currency_selector": true,
           "logo_display_width": 195,
+          "logo": "shopify://shop_images/logoheader_f98aa094-a50c-4924-81e5-0650bc7d8652.png",
           "main_linklist": "main-menu",
           "main_linklist2": "important-link-header",
           "vertical_menu": true,
