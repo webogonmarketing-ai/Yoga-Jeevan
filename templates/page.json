@@ -51,8 +51,8 @@
         "7f4391d3-a627-4d37-967e-8a7fb915cd1d"
       ],
       "custom_css": [
-        ".image-element__wrap img{width : 200px; background-color: white; margin: auto;}",
-        ".image-element__wrap{background-color: white !important;}"
+        ".image-element__wrap img {width: 200px; background-color: white; margin: auto;}",
+        ".image-element__wrap {background: white !important;}"
       ],
       "settings": {
         "title": "Yoga Kargha By Abhinehkrafts",
