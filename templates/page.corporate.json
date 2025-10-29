@@ -58,7 +58,7 @@
         "text_size": "featured_text",
         "text_alignment": "center",
         "css_class": "main-heading",
-        "custom_css": ""
+        "custom_css": ".main-heading{\n     width: 50%;\nfont-weight : bold;\n}"
       }
     },
     "custom_liquid_aGCqY6": {
