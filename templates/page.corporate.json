@@ -48,7 +48,9 @@
     },
     "featured_text_R69YKN": {
       "type": "featured-text",
-      "custom_css": [],
+      "custom_css": [
+        "@media (max-width: 768px) {.main-heading1{width: 100% !important}}"
+      ],
       "name": "Rich text and image",
       "settings": {
         "title": "",
