@@ -48,9 +48,7 @@
     },
     "featured_text_R69YKN": {
       "type": "featured-text",
-      "custom_css": [
-        ".main-heading {font-weight: bold;}"
-      ],
+      "custom_css": [],
       "name": "Rich text and image",
       "settings": {
         "title": "",
@@ -59,8 +57,8 @@
         "button_link": "",
         "text_size": "featured_text",
         "text_alignment": "center",
-        "css_class": "",
-        "custom_css": ".main-heading{\n font-weight : bold\n}"
+        "css_class": "main-heading",
+        "custom_css": ""
       }
     },
     "custom_liquid_aGCqY6": {
