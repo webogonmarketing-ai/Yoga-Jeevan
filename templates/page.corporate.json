@@ -62,7 +62,7 @@
       "name": "Custom liquid",
       "settings": {
         "custom_liquid": "<div class=\"marquee-container\">\n  <h2 class=\"marquee-slide\">Wellness That Works — Mindful Programs for the Modern Workplace.</h2>\n</div>",
-        "css_class": "",
+        "css_class": "wellnessclass",
         "custom_css": ".marquee-container{\nbackground-color : #72866D\n}"
       }
     },
