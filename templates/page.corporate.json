@@ -61,14 +61,18 @@
         "custom_css": ".main-heading{\n     width: 50%;\nfont-weight : bold;\n}"
       }
     },
-    "custom_liquid_aGCqY6": {
-      "type": "custom-liquid",
-      "custom_css": [],
-      "name": "Custom liquid",
+    "featured_text_nMftQf": {
+      "type": "featured-text",
+      "name": "Rich text and image",
       "settings": {
-        "custom_liquid": "<div class=\"marquee-container\" style=\"background-color: #72866d !important;\">\n  <h2 class=\"marquee-slide\">Wellness That Works — Mindful Programs for the Modern Workplace.</h2>\n</div>\n\n<script>\n  const mainBackground = document.getElementById('shopify-section-template--18954079240390__custom_liquid_aGCqY6');\n  mainBackground.style.backgroundColor = \"#72866d\"\n</script>",
-        "css_class": "wellnessclass",
-        "custom_css": ".marquee-slide {\n  color: white;\n  text-align: center;\n  font-weight: bold;\n  font-size: 30px;\n}\n\n/* Responsive for mobile */\n@media (max-width: 768px) {\n  .marquee-slide {\n    font-size: 20px !important;\n  }\n}"
+        "title": "Wellness That Works — Mindful Programs for the Modern Workplace.",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "",
+        "custom_css": ""
       }
     },
     "feature_grid_qXAA6X": {
@@ -133,7 +137,7 @@
       "name": "Rich text and image",
       "settings": {
         "title": "",
-        "content": "<p>Work is changing — so should well-being. Yoga Jeevan is an experiential program that brings the science of yoga and mindfulness into your workspace through tailored corporate wellness programs designed to nurture balance, focus, and emotional resilience.</p><p>Whether your team works from an office, hybrid setup, or remotely, our programs combine ancient yogic wisdom with modern neuroscience to help employees manage stress, boost productivity, and rediscover joy at work.</p><p><strong>Yoga Jeevan</strong> is the flagship wellness initiative by <strong>YogaKargha</strong>, a brand of <strong>AbhinehKrafts</strong> — pioneers in authentic yoga experiences and handcrafted, artisan-made yoga props. Guided by the motto <em>“Practice with Purpose,”</em> our mission is to bring the soul of Indian yoga into everyday workspaces.</p><p>Our corporate programs blend the wisdom of traditional yoga with contemporary workplace needs — improving posture, focus, mental clarity, and emotional balance. Whether it’s a single session or a long-term wellness partnership, we design experiences that restore both individual and organizational well-being.</p>",
+        "content": "<p><strong>Work is changing — so should well-being. Yoga Jeevan is an experiential program that brings the science of yoga and mindfulness into your workspace through tailored corporate wellness programs designed to nurture balance, focus, and emotional resilience.</strong></p><p><strong>Whether your team works from an office, hybrid setup, or remotely, our programs combine ancient yogic wisdom with modern neuroscience to help employees manage stress, boost productivity, and rediscover joy at work.</strong></p><p><strong>Yoga Jeevan is the flagship wellness initiative by YogaKargha, a brand of AbhinehKrafts — pioneers in authentic yoga experiences and handcrafted, artisan-made yoga props. Guided by the motto </strong><em><strong>“Practice with Purpose,”</strong></em><strong> our mission is to bring the soul of Indian yoga into everyday workspaces.</strong></p><p><strong>Our corporate programs blend the wisdom of traditional yoga with contemporary workplace needs — improving posture, focus, mental clarity, and emotional balance. Whether it’s a single session or a long-term wellness partnership, we design experiences that restore both individual and organizational well-being.</strong></p>",
         "button_label": "",
         "button_link": "",
         "text_size": "featured_text",
@@ -147,7 +151,7 @@
     "main",
     "image_with_text_overlay_PPLLTR",
     "featured_text_R69YKN",
-    "custom_liquid_aGCqY6",
+    "featured_text_nMftQf",
     "feature_grid_qXAA6X",
     "featured_text_iNcGEq"
   ]
