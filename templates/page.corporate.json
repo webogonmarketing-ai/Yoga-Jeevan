@@ -61,9 +61,9 @@
       "custom_css": [],
       "name": "Custom liquid",
       "settings": {
-        "custom_liquid": "<div class=\"marquee-container\">\n  <!-- Apply the 'marquee-slide' class to the text element (h2/p) -->\n  <h2 class=\"marquee-slide\">Wellness That Works — Mindful Programs for the Modern Workplace.</h2>\n</div>",
+        "custom_liquid": "<div class=\"marquee-container\">\n  <h2 class=\"marquee-slide\">Wellness That Works — Mindful Programs for the Modern Workplace.</h2>\n</div>",
         "css_class": "",
-        "custom_css": ""
+        "custom_css": ".marquee-container{\nbackground-color : #72866D\n}"
       }
     },
     "feature_grid_qXAA6X": {
