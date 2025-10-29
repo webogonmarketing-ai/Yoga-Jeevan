@@ -98,7 +98,8 @@
       ],
       "name": "Icon Feature Grid (4 Columns)",
       "settings": {
-        "columns_desktop": "2"
+        "columns_desktop": "2",
+        "heading": "Our Core Offerings Include:"
       }
     }
   },

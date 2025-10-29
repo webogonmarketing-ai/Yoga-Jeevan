@@ -7,12 +7,27 @@
     margin: 40px auto; /* Add vertical spacing */
     padding: 0 20px;
   }
-  
+  .feature-grid-wrapper {
+    /* Adding top/bottom borders to the wrapper to frame the entire section horizontally */
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
   .feature-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 -10px; /* Counteract padding on items */
+  }
+
+  /* NEW: Style for the main section heading */
+  .section-heading {
+    text-align: center;
+    font-size: 2rem; /* Make it large and prominent */
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 40px auto 30px; /* Top margin to separate from content above, bottom margin before the grid */
+    padding: 0 20px;
+    max-width: 1200px;
   }
 
   .feature-item {
@@ -52,6 +67,9 @@
     {% endif %}
 
     /* Add vertical border between items on desktop, as seen in the image */
+    .feature-item:not(:last-child) {
+      border-right: 1px solid #e0e0e0;
+    }
   }
 
   /* Icon/Image styling */
@@ -84,7 +102,9 @@
   }
 </style>
 
-<div>{{ section.settings.heading }}</div>
+{% if section.settings.heading != blank %}
+  <h2 class="section-heading">{{ section.settings.heading }}</h2>
+{% endif %}
 <div class="feature-grid-container">
   <div class="feature-grid-wrapper">
     <div class="feature-grid">
@@ -146,7 +166,7 @@
         "type": "text",
         "id": "heading",
         "label": "Enter the heading",
-        "default" : "Heading"
+        "default" : "Our Core Features"
     }
   ],
   "blocks": [
