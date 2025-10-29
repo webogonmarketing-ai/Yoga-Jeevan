@@ -64,20 +64,20 @@
             "content": "<p>Tools for focus, calm, and emotional regulation.</p>"
           }
         },
-        "feature_pJYyJa": {
-          "type": "feature",
-          "settings": {
-            "icon_image": "shopify://shop_images/medititation.svg",
-            "heading": "Virtual Wellness Sessions",
-            "content": "<p>Weekly or monthly online classes for remote teams.</p>"
-          }
-        },
         "feature_pUit3r": {
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/communtiy.svg",
             "heading": "Stress & Energy Management Programs",
             "content": "<p>Interactive sessions on breathing, movement, and lifestyle habits.</p>"
+          }
+        },
+        "feature_pJYyJa": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/medititation.svg",
+            "heading": "Virtual Wellness Sessions",
+            "content": "<p>Weekly or monthly online classes for remote teams.</p>"
           }
         },
         "feature_nqxApD": {
@@ -92,8 +92,8 @@
       "block_order": [
         "feature_GkQUiM",
         "feature_WYRjAT",
-        "feature_pJYyJa",
         "feature_pUit3r",
+        "feature_pJYyJa",
         "feature_nqxApD"
       ],
       "name": "Icon Feature Grid (4 Columns)",
