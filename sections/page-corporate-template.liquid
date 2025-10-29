@@ -47,19 +47,6 @@
 </div>
 
 
-<div>
-  {% if section.settings.image != blank %}
-    <img
-      src="{{ section.settings.image | image_url: width: 1000 }}"
-      alt="{{ section.settings.title }}"
-      width="1000"
-      height="auto">
-  {% else %}
-    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-  {% endif %}
-</div>
-
-
 {% schema %}
   {
     "name": "Page Corporate Template",
@@ -69,14 +56,12 @@
         "id": "title",
         "label": "Title",
         "default": "Corporate Program"
-      },
-      {
+      }, {
         "type": "text",
         "id": "description",
         "label": "Description",
         "default": "Corporate Wellness Program “Yoga Jeevan” – An Experiential program led by YogaKargha Studio"
-      },
-      {
+      }, {
         "type": "range",
         "id": "margin_block",
         "label": "Margin block",
@@ -85,8 +70,7 @@
         "max": 200,
         "step": 10,
         "unit": "px"
-      },
-      {
+      }, {
         "type": "range",
         "id": "margin_block_mobile",
         "label": "Margin block mobile",
@@ -95,10 +79,6 @@
         "max": 200,
         "step": 10,
         "unit": "px"
-      }, {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
       }
     ]
   }
