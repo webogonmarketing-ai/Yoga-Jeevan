@@ -24,7 +24,7 @@
       "type": "image-with-text-overlay",
       "name": "Image with text overlay",
       "settings": {
-        "wide_display": false,
+        "wide_display": true,
         "image": "shopify://shop_images/corporatebanner.jpg",
         "pretext": "",
         "title": "",
