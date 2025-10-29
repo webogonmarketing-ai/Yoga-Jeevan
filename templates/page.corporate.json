@@ -44,10 +44,54 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "feature_grid_qXAA6X": {
+      "type": "feature-grid",
+      "blocks": {
+        "feature_GkQUiM": {
+          "type": "feature",
+          "settings": {
+            "heading": "Workshop Title",
+            "content": ""
+          }
+        },
+        "feature_WYRjAT": {
+          "type": "feature",
+          "settings": {
+            "heading": "Workshop Title",
+            "content": ""
+          }
+        },
+        "feature_pJYyJa": {
+          "type": "feature",
+          "settings": {
+            "heading": "Workshop Title",
+            "content": ""
+          }
+        },
+        "feature_pUit3r": {
+          "type": "feature",
+          "settings": {
+            "heading": "Workshop Title",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_GkQUiM",
+        "feature_WYRjAT",
+        "feature_pJYyJa",
+        "feature_pUit3r"
+      ],
+      "name": "Icon Feature Grid (4 Columns)",
+      "settings": {
+        "columns_desktop": "3"
+      }
     }
   },
   "order": [
     "main",
-    "image_with_text_overlay_PPLLTR"
+    "image_with_text_overlay_PPLLTR",
+    "feature_grid_qXAA6X"
   ]
 }
