@@ -42,7 +42,7 @@
         "mobile_text_below_image": true,
         "mobile_text_color": "",
         "css_class": "image-border",
-        "custom_css": ".image-border{\nborder-radius : 40px\n}"
+        "custom_css": ".image-element__wrap {\n    border-radius: 30px;\n}"
       }
     },
     "feature_grid_qXAA6X": {
