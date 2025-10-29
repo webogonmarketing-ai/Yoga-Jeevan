@@ -11,6 +11,7 @@
     text-align: center;
     text-decoration: none;
     text-shadow: none;
+    width: {{ section.settings.image_width }};
   }
   .main-heading-description {
     font-size: 16px;
@@ -56,12 +57,14 @@
         "id": "title",
         "label": "Title",
         "default": "Corporate Program"
-      }, {
+      },
+      {
         "type": "text",
         "id": "description",
         "label": "Description",
         "default": "Corporate Wellness Program “Yoga Jeevan” – An Experiential program led by YogaKargha Studio"
-      }, {
+      },
+      {
         "type": "range",
         "id": "margin_block",
         "label": "Margin block",
@@ -70,7 +73,8 @@
         "max": 200,
         "step": 10,
         "unit": "px"
-      }, {
+      },
+      {
         "type": "range",
         "id": "margin_block_mobile",
         "label": "Margin block mobile",
@@ -79,6 +83,12 @@
         "max": 200,
         "step": 10,
         "unit": "px"
+      }, {
+        "type": "text",
+        "id": "image_width",
+        "label": "Image width",
+        "default": "100%",
+        "info": "Enter the width of the image in pixels. Example: 1000px"
       }
     ]
   }
