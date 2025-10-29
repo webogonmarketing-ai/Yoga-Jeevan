@@ -134,10 +134,11 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "logo",
+          "text_Aeg8pH": {
+            "type": "text",
             "settings": {
-              "text_align": "left",
+              "title": "Yoga Kargha & Yoga Jeevan Studio",
+              "content": "<p>B-506, Jeevan Apartment, Vasundhara, Sec 6, Ghaziabad, Uttar Pardesh 201012</p><p>Email :- </p><p>Contact :- </p>",
               "social_icons_footer": false
             }
           },
@@ -173,7 +174,7 @@
           }
         },
         "block_order": [
-          "footer-0",
+          "text_Aeg8pH",
           "footer-1",
           "footer-2",
           "footer-3",
