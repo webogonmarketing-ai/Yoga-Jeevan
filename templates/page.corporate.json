@@ -57,8 +57,8 @@
         "button_link": "",
         "text_size": "featured_text",
         "text_alignment": "center",
-        "css_class": "main-heading",
-        "custom_css": ".main-heading{\n     width: 50%;\nfont-weight : bold;\n}"
+        "css_class": "main-heading1",
+        "custom_css": ".main-heading1{\n     width: 50%;\nfont-weight : bold;\nmargin-top : 20px\n}"
       }
     },
     "featured_text_nMftQf": {
@@ -76,6 +76,20 @@
         "text_alignment": "center",
         "css_class": "main-heading1",
         "custom_css": ".main-heading1{\nbackground : #72866D;\n\n}\n\n.main-heading1 .rich-text__heading{\ncolor : white\n}"
+      }
+    },
+    "featured_text_iNcGEq": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "",
+        "content": "<p><strong>Work is changing — so should well-being. Yoga Jeevan is an experiential program that brings the science of yoga and mindfulness into your workspace through tailored corporate wellness programs designed to nurture balance, focus, and emotional resilience.</strong></p><p><strong>Whether your team works from an office, hybrid setup, or remotely, our programs combine ancient yogic wisdom with modern neuroscience to help employees manage stress, boost productivity, and rediscover joy at work.</strong></p><p><strong>Yoga Jeevan is the flagship wellness initiative by YogaKargha, a brand of AbhinehKrafts — pioneers in authentic yoga experiences and handcrafted, artisan-made yoga props. Guided by the motto </strong><em><strong>“Practice with Purpose,”</strong></em><strong> our mission is to bring the soul of Indian yoga into everyday workspaces.</strong></p><p><strong>Our corporate programs blend the wisdom of traditional yoga with contemporary workplace needs — improving posture, focus, mental clarity, and emotional balance. Whether it’s a single session or a long-term wellness partnership, we design experiences that restore both individual and organizational well-being.</strong></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "",
+        "custom_css": ""
       }
     },
     "feature_grid_qXAA6X": {
@@ -135,18 +149,77 @@
         "heading": "Our Core Offerings Include:"
       }
     },
-    "featured_text_iNcGEq": {
-      "type": "featured-text",
-      "name": "Rich text and image",
+    "faq_KyFMXp": {
+      "type": "faq",
+      "blocks": {
+        "heading_fPr9QC": {
+          "type": "heading",
+          "settings": {
+            "faq_title": "Section heading"
+          }
+        },
+        "content_Ht8QqD": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.</p>"
+          }
+        },
+        "content_hhH6VX": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.</p>"
+          }
+        },
+        "content_mX6DPe": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.</p>"
+          }
+        },
+        "heading_9cmVit": {
+          "type": "heading",
+          "settings": {
+            "faq_title": "Section heading"
+          }
+        },
+        "content_QMhbdb": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.</p>"
+          }
+        },
+        "content_AaUUEc": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.</p>"
+          }
+        },
+        "content_DxLhFd": {
+          "type": "content",
+          "settings": {
+            "title": "Question",
+            "answer": "<p>Provide the answer to the question here.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fPr9QC",
+        "content_Ht8QqD",
+        "content_hhH6VX",
+        "content_mX6DPe",
+        "heading_9cmVit",
+        "content_QMhbdb",
+        "content_AaUUEc",
+        "content_DxLhFd"
+      ],
+      "name": "FAQ",
       "settings": {
-        "title": "",
-        "content": "<p><strong>Work is changing — so should well-being. Yoga Jeevan is an experiential program that brings the science of yoga and mindfulness into your workspace through tailored corporate wellness programs designed to nurture balance, focus, and emotional resilience.</strong></p><p><strong>Whether your team works from an office, hybrid setup, or remotely, our programs combine ancient yogic wisdom with modern neuroscience to help employees manage stress, boost productivity, and rediscover joy at work.</strong></p><p><strong>Yoga Jeevan is the flagship wellness initiative by YogaKargha, a brand of AbhinehKrafts — pioneers in authentic yoga experiences and handcrafted, artisan-made yoga props. Guided by the motto </strong><em><strong>“Practice with Purpose,”</strong></em><strong> our mission is to bring the soul of Indian yoga into everyday workspaces.</strong></p><p><strong>Our corporate programs blend the wisdom of traditional yoga with contemporary workplace needs — improving posture, focus, mental clarity, and emotional balance. Whether it’s a single session or a long-term wellness partnership, we design experiences that restore both individual and organizational well-being.</strong></p>",
-        "button_label": "",
-        "button_link": "",
-        "text_size": "featured_text",
-        "text_alignment": "center",
-        "css_class": "",
-        "custom_css": ""
+        "title": "FAQ"
       }
     }
   },
@@ -155,7 +228,8 @@
     "image_with_text_overlay_PPLLTR",
     "featured_text_R69YKN",
     "featured_text_nMftQf",
+    "featured_text_iNcGEq",
     "feature_grid_qXAA6X",
-    "featured_text_iNcGEq"
+    "faq_KyFMXp"
   ]
 }
