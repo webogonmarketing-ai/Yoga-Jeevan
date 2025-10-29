@@ -51,29 +51,41 @@
         "feature_GkQUiM": {
           "type": "feature",
           "settings": {
-            "heading": "Workshop Title",
-            "content": ""
+            "icon_image": "shopify://shop_images/medititation.svg",
+            "heading": "Yoga for Corporates",
+            "content": "<p>Guided sessions for posture correction, flexibility, and desk-related fatigue.</p>"
           }
         },
         "feature_WYRjAT": {
           "type": "feature",
           "settings": {
-            "heading": "Workshop Title",
-            "content": ""
+            "icon_image": "shopify://shop_images/mindful.svg",
+            "heading": "Mindfulness & Meditation Workshops",
+            "content": "<p>Tools for focus, calm, and emotional regulation.</p>"
           }
         },
         "feature_pJYyJa": {
           "type": "feature",
           "settings": {
-            "heading": "Workshop Title",
-            "content": ""
+            "icon_image": "shopify://shop_images/medititation.svg",
+            "heading": "Virtual Wellness Sessions",
+            "content": "<p>Weekly or monthly online classes for remote teams.</p>"
           }
         },
         "feature_pUit3r": {
           "type": "feature",
           "settings": {
-            "heading": "Workshop Title",
-            "content": ""
+            "icon_image": "shopify://shop_images/communtiy.svg",
+            "heading": "Stress & Energy Management Programs",
+            "content": "<p>Interactive sessions on breathing, movement, and lifestyle habits.</p>"
+          }
+        },
+        "feature_nqxApD": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/danceandmoment.svg",
+            "heading": "Wellness Retreats & Off-Sites",
+            "content": "<p>Curated experiences combining yoga, nature, and introspection.</p>"
           }
         }
       },
@@ -81,7 +93,8 @@
         "feature_GkQUiM",
         "feature_WYRjAT",
         "feature_pJYyJa",
-        "feature_pUit3r"
+        "feature_pUit3r",
+        "feature_nqxApD"
       ],
       "name": "Icon Feature Grid (4 Columns)",
       "settings": {
