@@ -11,7 +11,10 @@
   "sections": {
     "main": {
       "type": "page-corporate-template",
-      "settings": {}
+      "settings": {
+        "title": "Corporate Program",
+        "description": "Corporate Wellness Program “Yoga Jeevan” – An Experiential program led by YogaKargha Studio"
+      }
     }
   },
   "order": [
