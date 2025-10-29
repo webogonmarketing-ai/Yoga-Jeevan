@@ -1,0 +1,191 @@
+{% assign columns_desktop = section.settings.columns_desktop %}
+
+<style>
+  /* Base styles for the grid */
+  .feature-grid-container {
+    max-width: 1200px;
+    margin: 40px auto; /* Add vertical spacing */
+    padding: 0 20px;
+  }
+  .feature-grid-wrapper {
+    /* Adding top/bottom borders to the wrapper to frame the entire section horizontally */
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -10px; /* Counteract padding on items */
+  }
+
+  .feature-item {
+    text-align: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* Default: 1 item per row on mobile (full width) */
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  /* Tablet (sm breakpoint): 2 items per row */
+  @media (min-width: 640px) {
+    .feature-item {
+      width: calc(50% - 20px); /* 50% width minus margin for both sides */
+    }
+  }
+
+  /* Desktop (lg breakpoint): Layout based on user setting */
+  @media (min-width: 1024px) {
+    /* Reset item margin for border logic */
+    .feature-grid {
+        margin: 0;
+    }
+    .feature-item {
+        margin: 0;
+    }
+    
+    {% if columns_desktop == '4' %}
+      .feature-item { width: 25%; }
+    {% elsif columns_desktop == '3' %}
+      .feature-item { width: 33.333%; }
+    {% elsif columns_desktop == '2' %}
+      .feature-item { width: 50%; }
+    {% else %}
+      .feature-item { width: 100%; }
+    {% endif %}
+
+    /* Add vertical border between items on desktop, as seen in the image */
+    .feature-item:not(:last-child) {
+      border-right: 1px solid #e0e0e0;
+    }
+  }
+
+  /* Icon/Image styling */
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feature-icon img, .feature-icon svg {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  /* Text Styling (Matching the clean, bold look in the image) */
+  .feature-heading {
+    font-size: 1.125rem; /* ~18px */
+    font-weight: 700;
+    line-height: 1.4;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+  }
+  .feature-content {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+  }
+</style>
+
+<div class="feature-grid-container">
+  <div class="feature-grid-wrapper">
+    <div class="feature-grid">
+      {% for block in section.blocks %}
+        {% if block.settings.heading != blank or block.settings.icon_image != blank %}
+          <div class="feature-item" {{ block.shopify_attributes }}>
+            
+            <div class="feature-icon">
+              {% if block.settings.icon_image != blank %}
+                {{ block.settings.icon_image | image_url: width: 120 | image_tag: loading: 'lazy', sizes: '60px' }}
+              {% else %}
+                <!-- Simple placeholder SVG if no image is uploaded -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              {% endif %}
+            </div>
+            
+            <h3 class="feature-heading">
+              {{ block.settings.heading | default: 'Feature Title' }}
+            </h3>
+            
+            {% if block.settings.content != blank %}
+              <p class="feature-content">
+                {{ block.settings.content }}
+              </p>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Icon Feature Grid",
+  "tag": "section",
+  "class": "section-feature-grid",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "select",
+      "id": "columns_desktop",
+      "label": "Features per row (Desktop)",
+      "default": "4",
+      "options": [
+        { "value": "1", "label": "1 feature" },
+        { "value": "2", "label": "2 features" },
+        { "value": "3", "label": "3 features" },
+        { "value": "4", "label": "4 features" }
+      ],
+      "info": "This controls the layout on screens 1024px and wider. Tablet (640px+) will show 2 per row, and Mobile (below 640px) will show 1 per row."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Item",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon/Image (60x60px recommended)"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Workshop Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content/Description (Optional)",
+          "info": "Leave this blank if you only want the icon and heading, like the image example."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon Feature Grid (4 Columns)",
+      "category": "Custom Sections",
+      "blocks": [
+        { "type": "feature" },
+        { "type": "feature" },
+        { "type": "feature" },
+        { "type": "feature" }
+      ]
+    }
+  ]
+}
+{% endschema %}
