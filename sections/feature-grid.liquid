@@ -84,6 +84,7 @@
   }
 </style>
 
+<div>{{ section.settings.heading }}</div>
 <div class="feature-grid-container">
   <div class="feature-grid-wrapper">
     <div class="feature-grid">
@@ -140,6 +141,12 @@
         { "value": "4", "label": "4 features" }
       ],
       "info": "This controls the layout on screens 1024px and wider. Tablet (640px+) will show 2 per row, and Mobile (below 640px) will show 1 per row."
+    },
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "Enter the heading",
+        "default" : "Heading"
     }
   ],
   "blocks": [
