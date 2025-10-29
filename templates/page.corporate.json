@@ -58,14 +58,12 @@
     },
     "custom_liquid_aGCqY6": {
       "type": "custom-liquid",
-      "custom_css": [
-        "selector {background-color: #72866d !important;}"
-      ],
+      "custom_css": [],
       "name": "Custom liquid",
       "settings": {
         "custom_liquid": "<div class=\"marquee-container\" style=\"background-color: #72866d !important;\">\n  <h2 class=\"marquee-slide\">Wellness That Works — Mindful Programs for the Modern Workplace.</h2>\n</div>\n\n<script>\n  const mainBackground = document.getElementById('shopify-section-template--18954079240390__custom_liquid_aGCqY6');\n  mainBackground.style.backgroundColor = \"#72866d\"\n</script>",
         "css_class": "wellnessclass",
-        "custom_css": ".marquee-slide{\ncolor : white;\ntext-align : center;\nfont-weight : bold;\nfont-size : 30px\n}"
+        "custom_css": ".marquee-slide{\ncolor : white;\ntext-align : center;\nfont-weight : bold;\nfont-size : 30px\n}\n\n  @media (max-width: 768px) {\n  font-size : 15px\n  }"
       }
     },
     "feature_grid_qXAA6X": {
