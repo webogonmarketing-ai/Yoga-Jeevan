@@ -122,6 +122,20 @@
         "columns_desktop": "2",
         "heading": "Our Core Offerings Include:"
       }
+    },
+    "featured_text_iNcGEq": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "",
+        "content": "<p>Work is changing — so should well-being. Yoga Jeevan is an experiential program that brings the science of yoga and mindfulness into your workspace through tailored corporate wellness programs designed to nurture balance, focus, and emotional resilience.</p><p>Whether your team works from an office, hybrid setup, or remotely, our programs combine ancient yogic wisdom with modern neuroscience to help employees manage stress, boost productivity, and rediscover joy at work.</p><p><strong>Yoga Jeevan</strong> is the flagship wellness initiative by <strong>YogaKargha</strong>, a brand of <strong>AbhinehKrafts</strong> — pioneers in authentic yoga experiences and handcrafted, artisan-made yoga props. Guided by the motto <em>“Practice with Purpose,”</em> our mission is to bring the soul of Indian yoga into everyday workspaces.</p><p>Our corporate programs blend the wisdom of traditional yoga with contemporary workplace needs — improving posture, focus, mental clarity, and emotional balance. Whether it’s a single session or a long-term wellness partnership, we design experiences that restore both individual and organizational well-being.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -129,6 +143,7 @@
     "image_with_text_overlay_PPLLTR",
     "custom_liquid_HyhPti",
     "custom_liquid_aGCqY6",
-    "feature_grid_qXAA6X"
+    "feature_grid_qXAA6X",
+    "featured_text_iNcGEq"
   ]
 }
