@@ -56,6 +56,16 @@
         "custom_css": ".main-transform {\n  margin: 50px auto;\n  text-align: center;\n  /* Reduced font size for mobile screens */\n  font-size: 22px; \n  line-height: 140%; /* Slightly higher line-height for mobile readability */\n  font-weight: bold;\n  /* Add max-width to prevent text from stretching too wide on massive screens */\n  max-width: 900px;\n  padding: 0 20px; /* Add horizontal padding for safety on small screens */\n}\n\n/* Desktop optimization: Apply the requested 32px font size on screens 768px and wider */\n@media (min-width: 768px) {\n  .main-transform {\n    font-size: 32px;\n    line-height: 121.4%; /* Revert to the specific line-height for desktop */\n    padding: 0; /* Remove horizontal padding on desktop since max-width applies */\n  }\n}"
       }
     },
+    "custom_liquid_aGCqY6": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "name": "Custom liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"marquee-container\">\n  <!-- Apply the 'marquee-slide' class to the text element (h2/p) -->\n  <h2 class=\"marquee-slide\">Wellness That Works — Mindful Programs for the Modern Workplace.</h2>\n</div>",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
     "feature_grid_qXAA6X": {
       "type": "feature-grid",
       "blocks": {
@@ -118,6 +128,7 @@
     "main",
     "image_with_text_overlay_PPLLTR",
     "custom_liquid_HyhPti",
+    "custom_liquid_aGCqY6",
     "feature_grid_qXAA6X"
   ]
 }
