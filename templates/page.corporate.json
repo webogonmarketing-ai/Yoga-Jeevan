@@ -49,7 +49,7 @@
     "featured_text_R69YKN": {
       "type": "featured-text",
       "custom_css": [
-        "@media (max-width: 768px) {.main-heading1{width: 100% !important}}"
+        "@media (max-width: 768px) {.main-heading1 {width: 100% !important; }}"
       ],
       "name": "Rich text and image",
       "settings": {
@@ -151,77 +151,46 @@
         "heading": "Our Core Offerings Include:"
       }
     },
-    "faq_KyFMXp": {
-      "type": "faq",
-      "blocks": {
-        "heading_fPr9QC": {
-          "type": "heading",
-          "settings": {
-            "faq_title": "Section heading"
-          }
-        },
-        "content_Ht8QqD": {
-          "type": "content",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.</p>"
-          }
-        },
-        "content_hhH6VX": {
-          "type": "content",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.</p>"
-          }
-        },
-        "content_mX6DPe": {
-          "type": "content",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.</p>"
-          }
-        },
-        "heading_9cmVit": {
-          "type": "heading",
-          "settings": {
-            "faq_title": "Section heading"
-          }
-        },
-        "content_QMhbdb": {
-          "type": "content",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.</p>"
-          }
-        },
-        "content_AaUUEc": {
-          "type": "content",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.</p>"
-          }
-        },
-        "content_DxLhFd": {
-          "type": "content",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Provide the answer to the question here.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_fPr9QC",
-        "content_Ht8QqD",
-        "content_hhH6VX",
-        "content_mX6DPe",
-        "heading_9cmVit",
-        "content_QMhbdb",
-        "content_AaUUEc",
-        "content_DxLhFd"
-      ],
-      "name": "FAQ",
+    "featured_text_iXNKc9": {
+      "type": "featured-text",
+      "name": "Rich text and image",
       "settings": {
-        "title": "FAQ"
+        "title": "",
+        "content": "<p>Yoga Jeevan programs can also align beautifully with your <strong>CSR goals</strong>. Through partnerships with <strong>artisan collectives supported by YogaKargha</strong>, companies can combine wellness initiatives with social impact.</p><p>For instance, each wellness program can contribute towards:</p><ul><li>Funding artisan training and fair-wage weaving projects in rural India.</li><li>Sponsoring handcrafted mats or meditation aids made by local women weavers.</li><li>Supporting sustainable livelihoods as part of holistic employee-wellness efforts.</li></ul><p>In this way, wellness becomes circular — nurturing your teams while uplifting communities.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "align_left",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "featured_text_pigUJJ": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "",
+        "content": "<p>Why choose YogaKargha?</p><ul><li><strong>Authentic Expertise</strong> – Certified yoga professionals trained in both classical and contemporary methods.</li><li><strong>Customizable Plans</strong> – Flexible durations and formats suited to corporate culture and time zones.</li><li><strong>Evidence-Based Impact</strong> – Improved posture, focus, and employee morale in participating teams.</li></ul><p><strong>Made in India, Practiced Worldwide</strong> – Rooted in Indian tradition, relevant to today’s global workplace.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "align_left",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "featured_text_AGBQ4B": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "",
+        "content": "<p>Contact us <a href=\"mailto:support@abhinehkrafts.com\"><span style=\"text-decoration:underline\">support@abhinehkrafts.com</span></a> or <a href=\"mailto:care@yogakargha.com\"><span style=\"text-decoration:underline\">care@yogakargha.com</span></a> to co-create a mindful, purpose-driven program for your organization — where every breath supports both people and planet.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "",
+        "custom_css": ""
       }
     }
   },
@@ -232,6 +201,8 @@
     "featured_text_nMftQf",
     "featured_text_iNcGEq",
     "feature_grid_qXAA6X",
-    "faq_KyFMXp"
+    "featured_text_iXNKc9",
+    "featured_text_pigUJJ",
+    "featured_text_AGBQ4B"
   ]
 }
