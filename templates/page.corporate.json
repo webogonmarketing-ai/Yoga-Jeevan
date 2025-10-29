@@ -63,6 +63,9 @@
     },
     "featured_text_nMftQf": {
       "type": "featured-text",
+      "custom_css": [
+        ".feature-divider {border-bottom-width: 0px;}"
+      ],
       "name": "Rich text and image",
       "settings": {
         "title": "Wellness That Works — Mindful Programs for the Modern Workplace.",
@@ -71,8 +74,8 @@
         "button_link": "",
         "text_size": "featured_text",
         "text_alignment": "center",
-        "css_class": "",
-        "custom_css": ""
+        "css_class": "main-heading1",
+        "custom_css": ".main-heading1{\nbackground : #72866D;\n\n}\n\n.main-heading1 .rich-text__heading{\ncolor : white\n}"
       }
     },
     "feature_grid_qXAA6X": {
