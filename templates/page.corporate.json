@@ -98,7 +98,7 @@
       ],
       "name": "Icon Feature Grid (4 Columns)",
       "settings": {
-        "columns_desktop": "3"
+        "columns_desktop": "2"
       }
     }
   },
