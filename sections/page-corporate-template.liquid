@@ -1,6 +1,6 @@
 {% style %}
   .main-heading {
-    margin-block: 130px;
+    margin-block: {{ section.settings.margin_block }}px;
     text-align: center;
     font-weight: 700;
     font-size: 40px;
@@ -30,7 +30,7 @@
   @media (max-width: 768px) {
     .main-heading {
       font-size: 25px;
-      margin-block: 60px;
+      margin-block: {{ section.settings.margin_block_mobile }}px;
       font-weight: bold;
     }
     .main-heading-description {
@@ -64,6 +64,24 @@
         "id": "description",
         "label": "Description",
         "default": "Corporate Wellness Program “Yoga Jeevan” – An Experiential program led by YogaKargha Studio"
+      }, {
+        "type": "range",
+        "id": "margin_block",
+        "label": "Margin block",
+        "default": 130,
+        "min": 0,
+        "max": 200,
+        "step": 10,
+        "unit": "px"
+      }, {
+        "type": "range",
+        "id": "margin_block_mobile",
+        "label": "Margin block mobile",
+        "default": 60,
+        "min": 0,
+        "max": 200,
+        "step": 10,
+        "unit": "px"
       }
     ]
   }
