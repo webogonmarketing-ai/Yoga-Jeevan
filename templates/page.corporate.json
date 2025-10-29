@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "page-corporate-template",
+      "custom_css": [],
       "settings": {
         "title": "Corporate Program",
         "description": "Corporate Wellness Program “Yoga Jeevan” – An Experiential program led by YogaKargha Studio",
@@ -43,6 +44,16 @@
         "mobile_text_color": "",
         "css_class": "image-border",
         "custom_css": ".image-element__wrap {\n    border-radius: 30px;\n}"
+      }
+    },
+    "custom_liquid_HyhPti": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "name": "Custom liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"main-transform\">\nTransform workplace well-being with Yoga Jeevan, a corporate yoga, mindfulness, and CSR-integrated wellness program by YogaKargha – pioneers in authentic yoga and handcrafted props.\n</div>",
+        "css_class": "",
+        "custom_css": ".main-transform {\n  margin: 50px auto;\n  text-align: center;\n  /* Reduced font size for mobile screens */\n  font-size: 22px; \n  line-height: 140%; /* Slightly higher line-height for mobile readability */\n  font-weight: bold;\n  /* Add max-width to prevent text from stretching too wide on massive screens */\n  max-width: 900px;\n  padding: 0 20px; /* Add horizontal padding for safety on small screens */\n}\n\n/* Desktop optimization: Apply the requested 32px font size on screens 768px and wider */\n@media (min-width: 768px) {\n  .main-transform {\n    font-size: 32px;\n    line-height: 121.4%; /* Revert to the specific line-height for desktop */\n    padding: 0; /* Remove horizontal padding on desktop since max-width applies */\n  }\n}"
       }
     },
     "feature_grid_qXAA6X": {
@@ -106,6 +117,7 @@
   "order": [
     "main",
     "image_with_text_overlay_PPLLTR",
+    "custom_liquid_HyhPti",
     "feature_grid_qXAA6X"
   ]
 }
