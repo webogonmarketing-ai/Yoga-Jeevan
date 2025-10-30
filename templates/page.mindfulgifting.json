@@ -1,0 +1,8 @@
+{
+    "sections": {
+        "main" : {
+            "type": "page.mindfulgifting",
+        }
+    },
+    "order": ["main"]
+}
