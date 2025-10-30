@@ -13,8 +13,8 @@
       "type": "page-corporate-template",
       "custom_css": [],
       "settings": {
-        "title": "Events",
-        "description": "Discover upcoming Yoga Jeevan wellness events and retreats — thoughtfully curated spaces for yoga, mindfulness, and conscious living.",
+        "title": "Corporate Programs",
+        "description": "Corporate Wellness Program “Yoga Jeevan” – An Experiential program led by YogaKargha Studio",
         "margin_block": 70,
         "margin_block_mobile": 90,
         "image_width": "40%",
@@ -26,7 +26,7 @@
       "name": "Image with text overlay",
       "settings": {
         "wide_display": false,
-        "image": "shopify://shop_images/eventsyogakargha.webp",
+        "image": "shopify://shop_images/corporatebanner.jpg",
         "pretext": "",
         "title": "",
         "subtitle": "",
@@ -46,6 +46,20 @@
         "custom_css": ".image-element__wrap {\n    border-radius: 30px;\n}"
       }
     },
+    "featured_text_mrX8aA": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "",
+        "content": "<h2><strong>Transform workplace well-being with Yoga Jeevan, a corporate yoga, mindfulness, and CSR-integrated wellness program by YogaKargha – pioneers in authentic yoga and handcrafted props.</strong></h2>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "main-heading",
+        "custom_css": ""
+      }
+    },
     "featured_text_nMftQf": {
       "type": "featured-text",
       "custom_css": [
@@ -53,7 +67,7 @@
       ],
       "name": "Rich text and image",
       "settings": {
-        "title": "Curated spaces for stillness, movement, and mindful connection.",
+        "title": "Wellness That Works — Mindful Programs for the Modern Workplace.",
         "content": "",
         "button_label": "",
         "button_link": "",
@@ -68,13 +82,70 @@
       "name": "Rich text and image",
       "settings": {
         "title": "",
-        "content": "<p>This space is dedicated to <strong>curated events, retreats, and wellness experiences</strong> designed by <strong>Yoga Jeevan</strong>, a flagship wellness initiative by <strong>YogaKargha (brand of AbhinehKrafts)</strong> — pioneers in authentic yoga experiences and handcrafted props.</p><p>Stay tuned as we bring together yoga teachers, wellness practitioners, and conscious brands to create immersive experiences rooted in balance, sustainability, and soulful living.</p>",
+        "content": "<p>Work is changing — so should well-being. Yoga Jeevan is an experiential program that brings the science of yoga and mindfulness into your workspace through tailored corporate wellness programs designed to nurture balance, focus, and emotional resilience.</p><p>Whether your team works from an office, hybrid setup, or remotely, our programs combine ancient yogic wisdom with modern neuroscience to help employees manage stress, boost productivity, and rediscover joy at work.</p><p><strong>Yoga Jeevan</strong> is the flagship wellness initiative by <strong>YogaKargha</strong>, a brand of <strong>AbhinehKrafts</strong> — pioneers in authentic yoga experiences and handcrafted, artisan-made yoga props. Guided by the motto <em>“Practice with Purpose,”</em> our mission is to bring the soul of Indian yoga into everyday workspaces.</p><p>Our corporate programs blend the wisdom of traditional yoga with contemporary workplace needs — improving posture, focus, mental clarity, and emotional balance. Whether it’s a single session or a long-term wellness partnership, we design experiences that restore both individual and organizational well-being.</p>",
         "button_label": "",
         "button_link": "",
         "text_size": "featured_text",
         "text_alignment": "center",
         "css_class": "",
         "custom_css": ""
+      }
+    },
+    "feature_grid_6B3DNh": {
+      "type": "feature-grid",
+      "blocks": {
+        "feature_9aJJ6a": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/medititation.svg",
+            "heading": "Yoga for Corporates",
+            "content": "<p>Guided sessions for posture correction, flexibility, and desk-related fatigue.</p>"
+          }
+        },
+        "feature_gVVQDf": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/danceandmoment.svg",
+            "heading": "Mindfulness & Meditation Workshops",
+            "content": "<p>Tools for focus, calm, and emotional regulation.</p>"
+          }
+        },
+        "feature_EmBdHe": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/communtiy.svg",
+            "heading": "Virtual Wellness Sessions",
+            "content": "<p>Weekly or monthly online classes for remote teams.</p>"
+          }
+        },
+        "feature_pALfbN": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/mindful.svg",
+            "heading": "Stress & Energy Management Programs",
+            "content": "<p>Interactive sessions on breathing, movement, and lifestyle habits.</p>"
+          }
+        },
+        "feature_w3z7wz": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/communtiy.svg",
+            "heading": "Wellness Retreats & Off-Sites",
+            "content": "<p>Curated experiences combining yoga, nature, and introspection.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature_9aJJ6a",
+        "feature_gVVQDf",
+        "feature_EmBdHe",
+        "feature_pALfbN",
+        "feature_w3z7wz"
+      ],
+      "name": "Icon Feature Grid (4 Columns)",
+      "settings": {
+        "columns_desktop": "3",
+        "heading": "Our Core Offerings Include:"
       }
     },
     "featured_text_iXNKc9": {
@@ -109,8 +180,10 @@
   "order": [
     "main",
     "image_with_text_overlay_PPLLTR",
+    "featured_text_mrX8aA",
     "featured_text_nMftQf",
     "featured_text_iNcGEq",
+    "feature_grid_6B3DNh",
     "featured_text_iXNKc9",
     "featured_text_Ra8qeJ"
   ]
