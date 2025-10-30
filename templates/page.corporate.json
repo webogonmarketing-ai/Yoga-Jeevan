@@ -13,8 +13,8 @@
       "type": "page-corporate-template",
       "custom_css": [],
       "settings": {
-        "title": "Corporate Program",
-        "description": "Corporate Wellness Program “Yoga Jeevan” – An Experiential program led by YogaKargha Studio",
+        "title": "Mindful Gifting",
+        "description": "Celebrate sustainability with mindful gifting by YogaKargha – handcrafted wellness sets that combine conscious living with artisan empowerment.",
         "margin_block": 70,
         "margin_block_mobile": 90,
         "image_width": "40%",
@@ -54,7 +54,7 @@
       "name": "Rich text and image",
       "settings": {
         "title": "",
-        "content": "<h2><strong>Transform workplace well-being with Yoga Jeevan, a corporate yoga, mindfulness, and CSR-integrated wellness program by YogaKargha – pioneers in authentic yoga and handcrafted props.</strong></h2>",
+        "content": "<h2><strong>Yoga Jeevan, a flagship wellness initiative by YogaKargha (brand of AbhinehKrafts), extends its philosophy of </strong><em><strong>“Practice with Purpose”</strong></em><strong> into the art of giving.</strong></h2>",
         "button_label": "",
         "button_link": "",
         "text_size": "featured_text",
@@ -70,7 +70,7 @@
       ],
       "name": "Rich text and image",
       "settings": {
-        "title": "Wellness That Works — Mindful Programs for the Modern Workplace.",
+        "title": "Gifts That Ground — Thoughtful, Sustainable, and Made with Intention.",
         "content": "",
         "button_label": "",
         "button_link": "",
@@ -85,7 +85,7 @@
       "name": "Rich text and image",
       "settings": {
         "title": "",
-        "content": "<p><strong>Work is changing — so should well-being. Yoga Jeevan is an experiential program that brings the science of yoga and mindfulness into your workspace through tailored corporate wellness programs designed to nurture balance, focus, and emotional resilience.</strong></p><p><strong>Whether your team works from an office, hybrid setup, or remotely, our programs combine ancient yogic wisdom with modern neuroscience to help employees manage stress, boost productivity, and rediscover joy at work.</strong></p><p><strong>Yoga Jeevan is the flagship wellness initiative by YogaKargha, a brand of AbhinehKrafts — pioneers in authentic yoga experiences and handcrafted, artisan-made yoga props. Guided by the motto </strong><em><strong>“Practice with Purpose,”</strong></em><strong> our mission is to bring the soul of Indian yoga into everyday workspaces.</strong></p><p><strong>Our corporate programs blend the wisdom of traditional yoga with contemporary workplace needs — improving posture, focus, mental clarity, and emotional balance. Whether it’s a single session or a long-term wellness partnership, we design experiences that restore both individual and organizational well-being.</strong></p>",
+        "content": "<p><strong>Yoga Jeevan</strong>, a flagship wellness initiative by <strong>YogaKargha (brand of AbhinehKrafts)</strong>, extends its philosophy of <em>“Practice with Purpose”</em> into the art of giving.</p><p>Our <strong>Mindful Gifting Collection</strong> redefines corporate and personal gifting with handcrafted wellness items that tell stories — of artisans, sustainability, and conscious living. Each piece is made with care, using natural materials, biodegradable packaging, and ethical production methods.</p><p>When you gift through YogaKargha, you don’t just give an object — you share a value system.</p>",
         "button_label": "",
         "button_link": "",
         "text_size": "featured_text",
@@ -101,40 +101,32 @@
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/medititation.svg",
-            "heading": "Yoga for Corporates",
-            "content": "<p>Guided sessions for posture correction, flexibility, and desk-related fatigue.</p>"
+            "heading": "Yoga & Meditation Sets",
+            "content": "<p>Handwoven mats, bolsters, meditation candles, and affirmations.</p>"
           }
         },
         "feature_WYRjAT": {
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/mindful.svg",
-            "heading": "Mindfulness & Meditation Workshops",
-            "content": "<p>Tools for focus, calm, and emotional regulation.</p>"
+            "heading": "Wellness Hampers",
+            "content": "<p>Herbal teas, incense, healing stones, and eco-friendly self-care items.</p>"
           }
         },
         "feature_pUit3r": {
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/communtiy.svg",
-            "heading": "Stress & Energy Management Programs",
-            "content": "<p>Interactive sessions on breathing, movement, and lifestyle habits.</p>"
+            "heading": "Corporate Conscious Gifts",
+            "content": "<p>Custom-branded sets for employee well-being or client appreciation.</p>"
           }
         },
         "feature_pJYyJa": {
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/medititation.svg",
-            "heading": "Virtual Wellness Sessions",
-            "content": "<p>Weekly or monthly online classes for remote teams.</p>"
-          }
-        },
-        "feature_nqxApD": {
-          "type": "feature",
-          "settings": {
-            "icon_image": "shopify://shop_images/danceandmoment.svg",
-            "heading": "Wellness Retreats & Off-Sites",
-            "content": "<p>Curated experiences combining yoga, nature, and introspection.</p>"
+            "heading": "Festive & Seasonal Gifting",
+            "content": "<p>Artisan-made gifts for Diwali, New Year, and other celebrations.</p>"
           }
         }
       },
@@ -142,21 +134,20 @@
         "feature_GkQUiM",
         "feature_WYRjAT",
         "feature_pUit3r",
-        "feature_pJYyJa",
-        "feature_nqxApD"
+        "feature_pJYyJa"
       ],
       "name": "Icon Feature Grid (4 Columns)",
       "settings": {
         "columns_desktop": "2",
-        "heading": "Our Core Offerings Include:"
+        "heading": "Our Signature Collections"
       }
     },
     "featured_text_iXNKc9": {
       "type": "featured-text",
       "name": "Rich text and image",
       "settings": {
-        "title": "",
-        "content": "<p>Yoga Jeevan programs can also align beautifully with your <strong>CSR goals</strong>. Through partnerships with <strong>artisan collectives supported by YogaKargha</strong>, companies can combine wellness initiatives with social impact.</p><p>For instance, each wellness program can contribute towards:</p><ul><li>Funding artisan training and fair-wage weaving projects in rural India.</li><li>Sponsoring handcrafted mats or meditation aids made by local women weavers.</li><li>Supporting sustainable livelihoods as part of holistic employee-wellness efforts.</li></ul><p>In this way, wellness becomes circular — nurturing your teams while uplifting communities.</p>",
+        "title": "CSR & Impact Gifting",
+        "content": "<p>Corporate partners can integrate <strong>Mindful Gifting</strong> into their <strong>CSR or sustainability goals</strong>, supporting rural artisans through every purchase.</p><p>Each order contributes to:</p><ul><li>Fair-wage employment for Indian weavers and craftswomen.</li><li>Expansion of eco-friendly production units powered by traditional skills.</li><li>Reviving India’s handloom legacy through functional wellness products.</li></ul><p>Your gifts become a bridge between wellness, culture, and impact — a tangible expression of care that goes beyond business.</p>",
         "button_label": "",
         "button_link": "",
         "text_size": "featured_text",
@@ -169,8 +160,8 @@
       "type": "featured-text",
       "name": "Rich text and image",
       "settings": {
-        "title": "",
-        "content": "<p>Why choose YogaKargha?</p><ul><li><strong>Authentic Expertise</strong> – Certified yoga professionals trained in both classical and contemporary methods.</li><li><strong>Customizable Plans</strong> – Flexible durations and formats suited to corporate culture and time zones.</li><li><strong>Evidence-Based Impact</strong> – Improved posture, focus, and employee morale in participating teams.</li></ul><p><strong>Made in India, Practiced Worldwide</strong> – Rooted in Indian tradition, relevant to today’s global workplace.</p>",
+        "title": "Why Choose YogaKargha?",
+        "content": "<ul><li><strong>Purpose-Driven Craftsmanship</strong> – Every product is handmade, authentic, and planet-friendly.</li><li><strong>Custom Branding & Bulk Options</strong> – Personalize with your logo, message, or theme.</li><li><strong>Nationwide & Global Delivery</strong> – Eco-packaged, mindful, and ready to inspire.</li><li><strong>Empowering Communities</strong> – Supporting artisan livelihoods across India.</li></ul>",
         "button_label": "",
         "button_link": "",
         "text_size": "featured_text",
@@ -184,7 +175,7 @@
       "name": "Rich text and image",
       "settings": {
         "title": "",
-        "content": "<p>Contact us <a href=\"mailto:support@abhinehkrafts.com\"><span style=\"text-decoration:underline\">support@abhinehkrafts.com</span></a> or <a href=\"mailto:care@yogakargha.com\"><span style=\"text-decoration:underline\">care@yogakargha.com</span></a> to co-create a mindful, purpose-driven program for your organization — where every breath supports both people and planet.</p>",
+        "content": "<p>Contact us <a href=\"mailto:support@abhinehkrafts.com\"><span style=\"text-decoration:underline\">support@abhinehkrafts.com</span></a> or <a href=\"mailto:care@yogakargha.com\"><span style=\"text-decoration:underline\">care@yogakargha.com</span></a> <em>to co-create wellness hampers, festive boxes, or sustainable gifting partnerships that reflect your brand’s values.</em></p>",
         "button_label": "",
         "button_link": "",
         "text_size": "featured_text",
