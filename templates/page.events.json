@@ -11,10 +11,91 @@
   "sections": {
     "main": {
       "type": "page-events-template",
-      "settings": {}
+      "settings": {
+        "title": "Events",
+        "description": "Corporate Wellness Program “Yoga Jeevan” – An Experiential program led by YogaKargha Studio",
+        "margin_block": 70,
+        "margin_block_mobile": 90,
+        "image_width": "40%",
+        "heading-para": 16
+      }
+    },
+    "image_with_text_overlay_4WBwEY": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "wide_display": false,
+        "image": "shopify://shop_images/eventsyogakargha.webp",
+        "pretext": "",
+        "title": "",
+        "subtitle": "",
+        "button1": "",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "original",
+        "mobile_image_crop": "none",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "image-border",
+        "custom_css": ".image-element__wrap {\n    border-radius: 30px;\n}"
+      }
+    },
+    "featured_text_yXePBr": {
+      "type": "featured-text",
+      "custom_css": [
+        ".feature-divider {border-bottom-width: 0px;}"
+      ],
+      "name": "Rich text and image",
+      "settings": {
+        "title": "Curated spaces for stillness, movement, and mindful connection.",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "main-heading1",
+        "custom_css": ".main-heading1{\nbackground : #72866D;\n\n}\n\n.main-heading1 .rich-text__heading{\ncolor : white\n}"
+      }
+    },
+    "featured_text_LBzAkq": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "",
+        "content": "<p>This space is dedicated to <strong>curated events, retreats, and wellness experiences</strong> designed by <strong>Yoga Jeevan</strong>, a flagship wellness initiative by <strong>YogaKargha (brand of AbhinehKrafts)</strong> — pioneers in authentic yoga experiences and handcrafted props.</p><p>Stay tuned as we bring together yoga teachers, wellness practitioners, and conscious brands to create immersive experiences rooted in balance, sustainability, and soulful living.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "featured_text_AC7cdj": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "Events coming soon",
+        "content": "<p><em>Events coming soon — follow us on Instagram and subscribe to our newsletter to be the first to know.</em></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_with_text_overlay_4WBwEY",
+    "featured_text_yXePBr",
+    "featured_text_LBzAkq",
+    "featured_text_AC7cdj"
   ]
 }
