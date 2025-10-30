@@ -1,0 +1,374 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page-template",
+      "disabled": true,
+      "settings": {}
+    },
+    "16585781812b7c2cd9": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1658578181c31def25-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Color_W.jpg",
+            "title": "Yoga, Meditation & Wellness Made Simple, Sustainable &  Earth Friendly",
+            "heading_size": "regular_text",
+            "text": "<p>We are a small family business based out of India, the land of Yoga and call ourself a little design mill. We create products focused on yoga and wellness because as practitioners and students of Yoga it worked wonders for us. Our products are traditionally handcrafted and yet carry the modern design sensibilities. They are infused with magic of natural materials, fibers, and reflect the prettiness and beauty of textile, art and craft heritage of our land. Thank you for joining us in this journey.</p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "center",
+            "border_style": "none"
+          }
+        },
+        "7f4391d3-a627-4d37-967e-8a7fb915cd1d": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "title": "Add a title or tagline",
+            "heading_size": "regular_text",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none"
+          }
+        }
+      },
+      "block_order": [
+        "1658578181c31def25-0",
+        "7f4391d3-a627-4d37-967e-8a7fb915cd1d"
+      ],
+      "custom_css": [
+        ".image-element__wrap img {width: 200px; background-color: white; margin: auto;}",
+        ".image-element__wrap {background: white !important;}"
+      ],
+      "settings": {
+        "title": "Yoga Kargha By Abhinehkrafts",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "16589115452f2e95f9": {
+      "type": "divider",
+      "settings": {
+        "divider_spacing": 25,
+        "divider_border": false,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "6c714434-233d-483e-9d6d-570ef05daef7": {
+      "type": "featured-text",
+      "settings": {
+        "title": "Meet Our Founder",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "8b6036a2-9c5f-4d22-a79c-3fe85e77b5c0": {
+      "type": "video",
+      "settings": {
+        "wide_display": false,
+        "aspect_ratio": "16:9",
+        "autoplay": true,
+        "autoloop": false,
+        "mute_video": true,
+        "show_controls": true,
+        "video_dark_overlay": false,
+        "iframe_video": "https://youtu.be/D4T4miNZ0FQ",
+        "html5_video": "",
+        "display_text_over_video": false,
+        "preheading": "",
+        "heading": "",
+        "subheading": "",
+        "button1_label": "Play Video",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2_label": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "original",
+        "mobile_image_crop": "none",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "1658578325a1693dc6": {
+      "type": "image-text",
+      "blocks": {
+        "165857832556a886a0-0": {
+          "type": "image",
+          "settings": {
+            "image_crop": "none",
+            "title": "OUr Vision",
+            "text": "<p>At Yogakargha, each day we strive to live the philosophy of yogic life. Our products reflect our vision and mission. Our vision is to be the go-to brand for anyone looking to make their yogic practicenatural and earth friendly.</p>",
+            "button_label": "",
+            "link": "",
+            "bg_color": "#666666",
+            "text_color": "#ffffff"
+          }
+        },
+        "165857832556a886a0-1": {
+          "type": "image",
+          "settings": {
+            "image_crop": "none",
+            "title": "Made In India",
+            "text": "<p><strong>Truly Made in India  </strong>for the World to experience. Imagine experiencing a product that is not mass produced in a factory but made consciously by someone who knows the craft.<br/></p>",
+            "button_label": "",
+            "link": "",
+            "bg_color": "#666666",
+            "text_color": "#ffffff"
+          }
+        },
+        "8625a5bc-ad7f-4ee2-a400-9f780eeddf9f": {
+          "type": "image",
+          "settings": {
+            "image_crop": "none",
+            "title": "Our mission",
+            "text": "<p>Our <strong>MISSION</strong> is to make Yogic traditions and essence accessible for everyone through our <strong>handcrafted products. </strong>The magic of natural fibers is handwoven with love borrowed from textiles, art & craft and rich traditions of India. </p>",
+            "button_label": "View all",
+            "link": "",
+            "bg_color": "#666666",
+            "text_color": "#ffffff"
+          }
+        },
+        "33688d6a-118c-439c-9eec-c5cff045244f": {
+          "type": "image",
+          "settings": {
+            "image_crop": "none",
+            "title": "Our Philosophy",
+            "text": "<p><strong>\" वसुधैव कुटुम्बकम \" </strong>- Vasudhaiv Kutumbkam (A Shloka in Sanskrit that means 'The Whole World is a Family') AND <strong>\"सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः। सर्वे भद्राणि पश्यन्तु मा कश्चिद्दुःखभाग् भवेत्</strong> \" Sarve Bhavantu Sukhinah, Sarve Santu Niramaya, Sarve Bhadradi Pashyantu, Ma kaschchid dukh bhag bhavet - (A Shloka in <strong>Sanskrit that means </strong>'May all be happy; May all be free from infirmities; May all see good; May none partake suffering')</p>",
+            "button_label": "",
+            "link": "",
+            "bg_color": "#666666",
+            "text_color": "#ffffff"
+          }
+        },
+        "053df5b1-e3ab-4521-8d3f-c23ab2570893": {
+          "type": "image",
+          "settings": {
+            "image_crop": "left",
+            "title": "Meet Our Founder",
+            "text": "<p><strong>Our founder</strong>, <strong>Neha Sharma</strong>, an Engineer and Management professional by education and credentials started AbhinehKrafts, as a handmade brand focussed on creating employment opportunities for handloom weavers, especially for women from marginal communities. Neha launched YogaKargha as a sub brand of AbhinehKrafts to make Yoga,Meditation, and Wellness accessible for anyone who wants to experience this ancient wisdom in a more sustainable and earth friendly way. When Neha started her journey, she was appalled by the lack of authentic and natural tools for the practice. through her work she has been pivotal in spreading awareness and promotion of natural fibers as the go-to choice for this segment. Passionate about sustainability, she continues to drive the creative engine at YogaKargha and runs multiple projects with focus on younger children.</p>",
+            "button_label": "",
+            "link": "",
+            "bg_color": "#585858",
+            "text_color": "#ffffff"
+          }
+        },
+        "e2d78342-62be-48e4-a8d6-f7515bccd990": {
+          "type": "image",
+          "settings": {
+            "image_crop": "none",
+            "title": "Meet Our Team",
+            "text": "<p>About 150+ weavers, artisans, and partners that bring life to our designs. About 15+ team members that work from AbhinehKrafts studios here in Ghaziabad. That includes, Alama, Chacha and his team, Shafaqat (the master of all our wooden work), Ashok and his entire family that stitches magical cushions, prettiest bags and bring life to our mats, Amit and his daughter weave magic to every YogaKargha blanket, Prema, Mamta and Sandhya Didi that make sure all packages fly in time and Neha Didi works behind the scenes for an impeccable customer satisfaction. We also have a dedicated team (Kanu, Kuldeep, Gaurav, Ankit, Priya and Lipika) that works magic with digital and social media</p>",
+            "button_label": "",
+            "link": "",
+            "bg_color": "#666666",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "165857832556a886a0-0",
+        "165857832556a886a0-1",
+        "8625a5bc-ad7f-4ee2-a400-9f780eeddf9f",
+        "33688d6a-118c-439c-9eec-c5cff045244f",
+        "053df5b1-e3ab-4521-8d3f-c23ab2570893",
+        "e2d78342-62be-48e4-a8d6-f7515bccd990"
+      ],
+      "settings": {
+        "wide_display": false,
+        "featured_links_per_row": "1",
+        "frontpage_text_align": "left",
+        "frontpage_image_position": "row",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "165857849791c722c3": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1658578497369d679d-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Our Presence & Work",
+            "heading_size": "regular_text",
+            "text": "<p>YogaKargha<strong> </strong>products are made by more than 150+ artisans across 18+ different states of India. India is a diverse and vibrant democracy and with its rich cultural, art and spiritual heritage has so much to offer to the World. </p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none"
+          }
+        },
+        "1658578497369d679d-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Our Customer Locations & Counting",
+            "heading_size": "regular_text",
+            "text": "<p>Served more than 5000+ unique cities and small towns worldwide and still counting. Our customers range include individuals, teachers, yoga studios, small and large retail chains, health clinics, hotels and wellness resorts, and schools. Everyone who has been with us is part of our big family. </p>",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none"
+          }
+        }
+      },
+      "block_order": [
+        "1658578497369d679d-0",
+        "1658578497369d679d-1"
+      ],
+      "settings": {
+        "title": "Our Customers And Presence",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "16585785578adfffdf": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "165857855712c51536-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none"
+          }
+        },
+        "165857855712c51536-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "",
+            "heading_size": "regular_text",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "align_text": "left",
+            "border_style": "none"
+          }
+        }
+      },
+      "block_order": [
+        "165857855712c51536-0",
+        "165857855712c51536-1"
+      ],
+      "settings": {
+        "title": "Feel Yogakargha Feel Nature",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "1658912732390720e8": {
+      "type": "contact-form",
+      "blocks": {
+        "165891273219d8d4ee-0": {
+          "type": "richtext",
+          "settings": {
+            "label": "",
+            "placeholder": "Name",
+            "required": true,
+            "field_type": "text"
+          }
+        },
+        "165891273219d8d4ee-1": {
+          "type": "richtext",
+          "settings": {
+            "label": "",
+            "placeholder": "Email",
+            "required": true,
+            "field_type": "email"
+          }
+        },
+        "165891273219d8d4ee-2": {
+          "type": "richtext",
+          "settings": {
+            "label": "",
+            "placeholder": "Instagram Handle",
+            "required": true,
+            "field_type": "text"
+          }
+        }
+      },
+      "block_order": [
+        "165891273219d8d4ee-0",
+        "165891273219d8d4ee-1",
+        "165891273219d8d4ee-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "contact_heading": "APPLY TO BE AN AMBASSADOR TODAY.",
+        "contact_subheading": "",
+        "contact_content": "",
+        "contact_text_position": "left",
+        "contact_text_alignment": "left",
+        "contact_social_buttons": true,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "16589136483309f541": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "custom_html": "<p> HOW IT WORKS</p>",
+        "css_class": "p",
+        "custom_css": ".p {\n\nfont-family: Osnova Small Caps Std;\n text-align: center;\nletter-spacing: .2rem;\nfont-size: 25px; \ncolor: #617b30;\n\n}"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "wide_display": true,
+        "display_first_name": false,
+        "display_last_name": false,
+        "newsletter_title": "Subscribe",
+        "newsletter_text": "<p>Sign up to get the latest on sales, new releases and more …</p>",
+        "newsletter_section_text_align": "center",
+        "css_class": "",
+        "custom_css": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16585781812b7c2cd9",
+    "16589115452f2e95f9",
+    "6c714434-233d-483e-9d6d-570ef05daef7",
+    "8b6036a2-9c5f-4d22-a79c-3fe85e77b5c0",
+    "1658578325a1693dc6",
+    "165857849791c722c3",
+    "16585785578adfffdf",
+    "1658912732390720e8",
+    "16589136483309f541",
+    "newsletter"
+  ]
+}
