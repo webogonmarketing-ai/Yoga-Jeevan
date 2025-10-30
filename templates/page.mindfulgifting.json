@@ -123,6 +123,48 @@
         "columns_desktop": "2",
         "heading": "Our Signature Collections"
       }
+    },
+    "featured_text_c6dBqY": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "CSR & Impact Gifting",
+        "content": "<p>Corporate partners can integrate <strong>Mindful Gifting</strong> into their <strong>CSR or sustainability goals</strong>, supporting rural artisans through every purchase.</p><p></p><p>Each order contributes to:</p><ul><li>Fair-wage employment for Indian weavers and craftswomen.</li><li>Expansion of eco-friendly production units powered by traditional skills.</li><li>Reviving India’s handloom legacy through functional wellness products.</li></ul><p>Your gifts become a bridge between wellness, culture, and impact — a tangible expression of care that goes beyond business.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "align_left",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "featured_text_A3rejr": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "Why Choose YogaKargha?",
+        "content": "<ul><li><strong>Purpose-Driven Craftsmanship</strong> – Every product is handmade, authentic, and planet-friendly.</li><li><strong>Custom Branding & Bulk Options</strong> – Personalize with your logo, message, or theme.</li><li><strong>Nationwide & Global Delivery</strong> – Eco-packaged, mindful, and ready to inspire.</li><li><strong>Empowering Communities</strong> – Supporting artisan livelihoods across India.</li></ul>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "align_left",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "featured_text_WFKKmx": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "",
+        "content": "<p>Contact us <a href=\"mailto:support@abhinehkrafts.com\"><span style=\"text-decoration:underline\">support@abhinehkrafts.com</span></a> or <a href=\"mailto:care@yogakargha.com\"><span style=\"text-decoration:underline\">care@yogakargha.com</span></a> <em>to co-create wellness hampers, festive boxes, or sustainable gifting partnerships that reflect your brand’s values.</em></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
@@ -130,6 +172,9 @@
     "image_with_text_overlay_ELQKgD",
     "featured_text_6UDawD",
     "featured_text_kNYtbb",
-    "feature_grid_VrMmxn"
+    "feature_grid_VrMmxn",
+    "featured_text_c6dBqY",
+    "featured_text_A3rejr",
+    "featured_text_WFKKmx"
   ]
 }
