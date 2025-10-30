@@ -13,8 +13,8 @@
       "type": "page-corporate-template",
       "custom_css": [],
       "settings": {
-        "title": "Mindful Gifting",
-        "description": "Celebrate sustainability with mindful gifting by YogaKargha – handcrafted wellness sets that combine conscious living with artisan empowerment.",
+        "title": "Free Resources",
+        "description": "Free Yoga & Wellness Resources by Yoga Jeevan",
         "margin_block": 70,
         "margin_block_mobile": 90,
         "image_width": "40%",
@@ -54,7 +54,7 @@
       "name": "Rich text and image",
       "settings": {
         "title": "",
-        "content": "<h2><strong>Yoga Jeevan, a flagship wellness initiative by YogaKargha (brand of AbhinehKrafts), extends its philosophy of </strong><em><strong>“Practice with Purpose”</strong></em><strong> into the art of giving.</strong></h2>",
+        "content": "<h2><strong>Download free yoga, meditation, and mindfulness resources by Yoga Jeevan — printable guides, breathing charts, and artisan-wellness workbooks by YogaKargha.</strong></h2>",
         "button_label": "",
         "button_link": "",
         "text_size": "featured_text",
@@ -70,7 +70,7 @@
       ],
       "name": "Rich text and image",
       "settings": {
-        "title": "Gifts That Ground — Thoughtful, Sustainable, and Made with Intention.",
+        "title": "Because Wellness Should Be Shared Freely.",
         "content": "",
         "button_label": "",
         "button_link": "",
@@ -85,7 +85,7 @@
       "name": "Rich text and image",
       "settings": {
         "title": "",
-        "content": "<p><strong>Yoga Jeevan</strong>, a flagship wellness initiative by <strong>YogaKargha (brand of AbhinehKrafts)</strong>, extends its philosophy of <em>“Practice with Purpose”</em> into the art of giving.</p><p>Our <strong>Mindful Gifting Collection</strong> redefines corporate and personal gifting with handcrafted wellness items that tell stories — of artisans, sustainability, and conscious living. Each piece is made with care, using natural materials, biodegradable packaging, and ethical production methods.</p><p>When you gift through YogaKargha, you don’t just give an object — you share a value system.</p>",
+        "content": "<p>At <strong>Yoga Jeevan</strong>, we believe knowledge grows when shared. This space brings together a selection of <strong>free resources</strong> to help you begin or deepen your journey into yoga, mindfulness, and conscious living.</p><p>Created by the team behind <strong>YogaKargha (brand of AbhinehKrafts)</strong> — pioneers in handcrafted yoga props and authentic wellness experiences — these resources reflect our motto: <em>Practice with Purpose.</em></p>",
         "button_label": "",
         "button_link": "",
         "text_size": "featured_text",
@@ -101,32 +101,40 @@
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/medititation.svg",
-            "heading": "Yoga & Meditation Sets",
-            "content": "<p>Handwoven mats, bolsters, meditation candles, and affirmations.</p>"
+            "heading": "Pranayama & Breathwork Charts",
+            "content": "<p>Step-by-step visual breathing guides for daily calm.</p>"
           }
         },
         "feature_WYRjAT": {
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/mindful.svg",
-            "heading": "Wellness Hampers",
-            "content": "<p>Herbal teas, incense, healing stones, and eco-friendly self-care items.</p>"
+            "heading": "Yoga for Beginners PDFs",
+            "content": "<p>Foundation poses, sequences, and warm-up charts.</p>"
           }
         },
         "feature_pUit3r": {
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/communtiy.svg",
-            "heading": "Corporate Conscious Gifts",
-            "content": "<p>Custom-branded sets for employee well-being or client appreciation.</p>"
+            "heading": "Mindfulness Worksheets",
+            "content": "<p>Reflection pages, gratitude logs, and 5-minute grounding practices.</p>"
           }
         },
         "feature_pJYyJa": {
           "type": "feature",
           "settings": {
             "icon_image": "shopify://shop_images/medititation.svg",
-            "heading": "Festive & Seasonal Gifting",
-            "content": "<p>Artisan-made gifts for Diwali, New Year, and other celebrations.</p>"
+            "heading": "Meditation & Chant Guides",
+            "content": "<p>Sanskrit pronunciation sheets, mantras, and dhyana tips.</p>"
+          }
+        },
+        "feature_hEi9kX": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/medititation.svg",
+            "heading": "Sustainable Living Tips",
+            "content": "<p>Small, conscious lifestyle shifts for a calmer, cleaner world.</p>"
           }
         }
       },
@@ -134,52 +142,63 @@
         "feature_GkQUiM",
         "feature_WYRjAT",
         "feature_pUit3r",
-        "feature_pJYyJa"
+        "feature_pJYyJa",
+        "feature_hEi9kX"
       ],
       "name": "Icon Feature Grid (4 Columns)",
       "settings": {
         "columns_desktop": "2",
-        "heading": "Our Signature Collections"
+        "heading": "What You’ll Find"
       }
     },
     "featured_text_iXNKc9": {
       "type": "featured-text",
       "name": "Rich text and image",
       "settings": {
-        "title": "CSR & Impact Gifting",
-        "content": "<p>Corporate partners can integrate <strong>Mindful Gifting</strong> into their <strong>CSR or sustainability goals</strong>, supporting rural artisans through every purchase.</p><p>Each order contributes to:</p><ul><li>Fair-wage employment for Indian weavers and craftswomen.</li><li>Expansion of eco-friendly production units powered by traditional skills.</li><li>Reviving India’s handloom legacy through functional wellness products.</li></ul><p>Your gifts become a bridge between wellness, culture, and impact — a tangible expression of care that goes beyond business.</p>",
-        "button_label": "",
-        "button_link": "",
-        "text_size": "featured_text",
-        "text_alignment": "align_left",
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
-    "featured_text_pigUJJ": {
-      "type": "featured-text",
-      "name": "Rich text and image",
-      "settings": {
-        "title": "Why Choose YogaKargha?",
-        "content": "<ul><li><strong>Purpose-Driven Craftsmanship</strong> – Every product is handmade, authentic, and planet-friendly.</li><li><strong>Custom Branding & Bulk Options</strong> – Personalize with your logo, message, or theme.</li><li><strong>Nationwide & Global Delivery</strong> – Eco-packaged, mindful, and ready to inspire.</li><li><strong>Empowering Communities</strong> – Supporting artisan livelihoods across India.</li></ul>",
-        "button_label": "",
-        "button_link": "",
-        "text_size": "featured_text",
-        "text_alignment": "align_left",
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
-    "featured_text_AGBQ4B": {
-      "type": "featured-text",
-      "name": "Rich text and image",
-      "settings": {
         "title": "",
-        "content": "<p>Contact us <a href=\"mailto:support@abhinehkrafts.com\"><span style=\"text-decoration:underline\">support@abhinehkrafts.com</span></a> or <a href=\"mailto:care@yogakargha.com\"><span style=\"text-decoration:underline\">care@yogakargha.com</span></a> <em>to co-create wellness hampers, festive boxes, or sustainable gifting partnerships that reflect your brand’s values.</em></p>",
+        "content": "<p>All resources are downloadable and printable — perfect for personal use, yoga teachers, or wellness facilitators.</p><p>Each resource is created in partnership with <strong>artisan clusters supported by YogaKargha</strong>. Every download indirectly supports fair-wage weaving projects, training workshops, and sustainable community development under <strong>AbhinehKrafts’ social impact initiatives</strong>.</p><p>This means that your learning also empowers others — helping keep traditional crafts alive while spreading the essence of mindful living.</p>",
         "button_label": "",
         "button_link": "",
         "text_size": "featured_text",
-        "text_alignment": "center",
+        "text_alignment": "align_left",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "contact_form_y6GrJH": {
+      "type": "contact-form",
+      "blocks": {
+        "richtext_KBckCE": {
+          "type": "richtext",
+          "settings": {
+            "label": "",
+            "placeholder": "Name",
+            "required": true,
+            "field_type": "text"
+          }
+        },
+        "richtext_qAjMhE": {
+          "type": "richtext",
+          "settings": {
+            "label": "",
+            "placeholder": "Email",
+            "required": true,
+            "field_type": "email"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_KBckCE",
+        "richtext_qAjMhE"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "contact_heading": "Begin your journey today.",
+        "contact_subheading": "",
+        "contact_content": "<p><em>Download your free guides, subscribe to our newsletter, and explore Yoga Jeevan’s upcoming virtual workshops and printable resources.</em></p>",
+        "contact_text_position": "center",
+        "contact_text_alignment": "center",
+        "contact_social_buttons": false,
         "css_class": "",
         "custom_css": ""
       }
@@ -193,7 +212,6 @@
     "featured_text_iNcGEq",
     "feature_grid_qXAA6X",
     "featured_text_iXNKc9",
-    "featured_text_pigUJJ",
-    "featured_text_AGBQ4B"
+    "contact_form_y6GrJH"
   ]
 }
