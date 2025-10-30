@@ -11,10 +11,203 @@
   "sections": {
     "main": {
       "type": "page-yogaposedirectory-template",
-      "settings": {}
+      "settings": {
+        "title": "Yoga Pose Directory by Yoga Jeevan",
+        "description": "Explore authentic yoga asanas through Yoga Jeevan’s visual pose directory — with alignment tips, breath cues, and handcrafted prop guidance from YogaKargha.",
+        "margin_block": 70,
+        "margin_block_mobile": 90,
+        "image_width": "50%",
+        "heading-para": 16
+      }
+    },
+    "image_with_text_overlay_geAhKB": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "wide_display": false,
+        "image": "shopify://shop_images/corporatebanner.jpg",
+        "pretext": "",
+        "title": "",
+        "subtitle": "",
+        "button1": "",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "original",
+        "mobile_image_crop": "none",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "image-border",
+        "custom_css": ".image-element__wrap {\n    border-radius: 30px;\n}"
+      }
+    },
+    "featured_text_ewQkzr": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "",
+        "content": "<h2><strong>The Yoga Jeevan Pose Directory is your free, growing library of authentic yoga postures — created to make self-practice accessible, safe, and deeply aligned with the true spirit of yoga.</strong></h2>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "main-heading",
+        "custom_css": ""
+      }
+    },
+    "featured_text_mLbFBK": {
+      "type": "featured-text",
+      "custom_css": [
+        ".feature-divider {border-bottom-width: 0px;}"
+      ],
+      "name": "Rich text and image",
+      "settings": {
+        "title": "Explore the Essence of Every Asana — Guided by Tradition, Supported by Craft.",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "main-heading1",
+        "custom_css": ".main-heading1{\nbackground : #72866D;\n\n}\n\n.main-heading1 .rich-text__heading{\ncolor : white\n}"
+      }
+    },
+    "featured_text_ARrKCi": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "",
+        "content": "<p>Each pose combines <strong>ancient wisdom with modern guidance</strong>, offering clear visual references, alignment cues, breath coordination, and mindful use of props handcrafted by <strong>YogaKargha (brand of AbhinehKrafts)</strong> — pioneers in conscious yoga craftsmanship.</p><p>Our aim is simple: to help you <em>practice with purpose</em> — whether you are a beginner discovering the foundations or an experienced practitioner refining your form.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "feature_grid_CMHram": {
+      "type": "feature-grid",
+      "blocks": {
+        "feature_kWJ4zt": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/medititation.svg",
+            "heading": "Pose-by-Pose Visuals",
+            "content": "<p>High-quality photographs and guided diagrams for reference</p>"
+          }
+        },
+        "feature_9XxPEV": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/danceandmoment.svg",
+            "heading": "Alignment & Contraindications",
+            "content": "<p>Safe practice tips approved by certified yoga instructors</p>"
+          }
+        },
+        "feature_bLRRKk": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/communtiy.svg",
+            "heading": "Prop Integration",
+            "content": "<p>How to use blocks, straps, bolsters, and handmade mats effectively.</p>"
+          }
+        },
+        "feature_8rLkDw": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/mindful.svg",
+            "heading": "Breath & Awareness Cues",
+            "content": "<p>Subtle reminders to stay grounded and mindful</p>"
+          }
+        },
+        "feature_Addc7M": {
+          "type": "feature",
+          "settings": {
+            "icon_image": "shopify://shop_images/communtiy.svg",
+            "heading": "Variations for All Levels",
+            "content": "<p>Adaptations for beginners, intermediates, and advanced yogis</p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature_kWJ4zt",
+        "feature_9XxPEV",
+        "feature_bLRRKk",
+        "feature_8rLkDw",
+        "feature_Addc7M"
+      ],
+      "name": "Icon Feature Grid (4 Columns)",
+      "settings": {
+        "columns_desktop": "3",
+        "heading": "What You’ll Find"
+      }
+    },
+    "featured_text_zhKjHT": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "A Resource with a Purpose",
+        "content": "<p></p><ul><li>Every image and guide in this directory features props <strong>handcrafted by Indian artisans</strong>, connecting the physical discipline of yoga to the social fabric that sustains it. By exploring this resource, you are supporting the same communities that weave the mats and tools used in each demonstration.</li><li>This is not just a pose library — it’s a living bridge between yoga philosophy, mindful practice, and sustainable craft.</li></ul>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "align_left",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "contact_form_DxnCzW": {
+      "type": "contact-form",
+      "blocks": {
+        "richtext_rHRK6L": {
+          "type": "richtext",
+          "settings": {
+            "label": "",
+            "placeholder": "Name",
+            "required": true,
+            "field_type": "text"
+          }
+        },
+        "richtext_QdU94L": {
+          "type": "richtext",
+          "settings": {
+            "label": "",
+            "placeholder": "Email",
+            "required": true,
+            "field_type": "email"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_rHRK6L",
+        "richtext_QdU94L"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "contact_heading": "Start exploring today.",
+        "contact_subheading": "",
+        "contact_content": "<p><em>Browse poses, download guides, and learn how to integrate handmade props into your practice.</em><br/>Stay tuned — new poses and short videos are added every month as part of our evolving <strong>Yoga Jeevan Learning Series.</strong></p>",
+        "contact_text_position": "center",
+        "contact_text_alignment": "center",
+        "contact_social_buttons": false,
+        "css_class": "",
+        "custom_css": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_with_text_overlay_geAhKB",
+    "featured_text_ewQkzr",
+    "featured_text_mLbFBK",
+    "featured_text_ARrKCi",
+    "feature_grid_CMHram",
+    "featured_text_zhKjHT",
+    "contact_form_DxnCzW"
   ]
 }
