@@ -11,7 +11,14 @@
   "sections": {
     "main": {
       "type": "page-freeresources-template",
-      "settings": {}
+      "settings": {
+        "title": "Free Resources",
+        "description": "Free Yoga & Wellness Resources by Yoga Jeevan",
+        "margin_block": 70,
+        "margin_block_mobile": 90,
+        "image_width": "100%",
+        "heading-para": 16
+      }
     }
   },
   "order": [
