@@ -8,17 +8,20 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": { 
-    "main" : {
+  "sections": {
+    "main": {
       "type": "page-mindfulgifting-template",
       "settings": {
         "title": "Mindful Gifting",
-        "description": "Mindful Gifting",
+        "description": "Celebrate sustainability with mindful gifting by YogaKargha – handcrafted wellness sets that combine conscious living with artisan empowerment.",
         "margin_block": 70,
         "margin_block_mobile": 90,
         "image_width": "40%",
+        "heading-para": 0
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
