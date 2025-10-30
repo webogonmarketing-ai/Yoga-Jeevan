@@ -148,12 +148,12 @@
         "heading": "Our Core Offerings Include:"
       }
     },
-    "featured_text_iXNKc9": {
+    "featured_text_Ra8qeJ": {
       "type": "featured-text",
       "name": "Rich text and image",
       "settings": {
         "title": "",
-        "content": "<p>All resources are downloadable and printable — perfect for personal use, yoga teachers, or wellness facilitators.</p><p>Each resource is created in partnership with <strong>artisan clusters supported by YogaKargha</strong>. Every download indirectly supports fair-wage weaving projects, training workshops, and sustainable community development under <strong>AbhinehKrafts’ social impact initiatives</strong>.</p><p>This means that your learning also empowers others — helping keep traditional crafts alive while spreading the essence of mindful living.</p>",
+        "content": "<p>Yoga Jeevan programs can also align beautifully with your <strong>CSR goals</strong>. Through partnerships with <strong>artisan collectives supported by YogaKargha</strong>, companies can combine wellness initiatives with social impact.</p><p>For instance, each wellness program can contribute towards:</p><ul><li>Funding artisan training and fair-wage weaving projects in rural India.</li><li>Sponsoring handcrafted mats or meditation aids made by local women weavers.</li><li>Supporting sustainable livelihoods as part of holistic employee-wellness efforts.</li></ul><p>In this way, wellness becomes circular — nurturing your teams while uplifting communities.</p>",
         "button_label": "",
         "button_link": "",
         "text_size": "featured_text",
@@ -162,12 +162,26 @@
         "custom_css": ""
       }
     },
-    "featured_text_Ra8qeJ": {
+    "featured_text_iXNKc9": {
       "type": "featured-text",
       "name": "Rich text and image",
       "settings": {
-        "title": "Events coming soon",
-        "content": "<p><em>Events coming soon — follow us on Instagram and subscribe to our newsletter to be the first to know.</em></p>",
+        "title": "Why choose YogaKargha?",
+        "content": "<p></p><ul><li><strong>Authentic Expertise</strong> – Certified yoga professionals trained in both classical and contemporary methods.</li><li><strong>Customizable Plans</strong> – Flexible durations and formats suited to corporate culture and time zones.</li><li><strong>Evidence-Based Impact</strong> – Improved posture, focus, and employee morale in participating teams.</li><li><strong>Made in India, Practiced Worldwide</strong> – Rooted in Indian tradition, relevant to today’s global workplace.</li></ul>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "align_left",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "featured_text_VgwzbB": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "",
+        "content": "<p>Contact us <a href=\"mailto:support@abhinehkrafts.com\"><span style=\"text-decoration:underline\">support@abhinehkrafts.com</span></a> or <a href=\"mailto:care@yogakargha.com\"><span style=\"text-decoration:underline\">care@yogakargha.com</span></a> to co-create a mindful, purpose-driven program for your organization — where every breath supports both people and planet.</p>",
         "button_label": "",
         "button_link": "",
         "text_size": "featured_text",
@@ -184,7 +198,8 @@
     "featured_text_nMftQf",
     "featured_text_iNcGEq",
     "feature_grid_6B3DNh",
+    "featured_text_Ra8qeJ",
     "featured_text_iXNKc9",
-    "featured_text_Ra8qeJ"
+    "featured_text_VgwzbB"
   ]
 }
