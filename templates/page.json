@@ -120,72 +120,78 @@
         "165857832556a886a0-0": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/about1.png",
             "image_crop": "none",
             "title": "OUr Vision",
             "text": "<p>At Yogakargha, each day we strive to live the philosophy of yogic life. Our products reflect our vision and mission. Our vision is to be the go-to brand for anyone looking to make their yogic practicenatural and earth friendly.</p>",
             "button_label": "",
             "link": "",
-            "bg_color": "#666666",
+            "bg_color": "#60755a",
             "text_color": "#ffffff"
           }
         },
         "165857832556a886a0-1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/about2.png",
             "image_crop": "none",
             "title": "Made In India",
             "text": "<p><strong>Truly Made in India  </strong>for the World to experience. Imagine experiencing a product that is not mass produced in a factory but made consciously by someone who knows the craft.<br/></p>",
             "button_label": "",
             "link": "",
-            "bg_color": "#666666",
+            "bg_color": "#60755a",
             "text_color": "#ffffff"
           }
         },
         "8625a5bc-ad7f-4ee2-a400-9f780eeddf9f": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/about3.png",
             "image_crop": "none",
             "title": "Our mission",
             "text": "<p>Our <strong>MISSION</strong> is to make Yogic traditions and essence accessible for everyone through our <strong>handcrafted products. </strong>The magic of natural fibers is handwoven with love borrowed from textiles, art & craft and rich traditions of India. </p>",
             "button_label": "View all",
             "link": "",
-            "bg_color": "#666666",
+            "bg_color": "#60755a",
             "text_color": "#ffffff"
           }
         },
         "33688d6a-118c-439c-9eec-c5cff045244f": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/about4.jpg",
             "image_crop": "none",
             "title": "Our Philosophy",
             "text": "<p><strong>\" वसुधैव कुटुम्बकम \" </strong>- Vasudhaiv Kutumbkam (A Shloka in Sanskrit that means 'The Whole World is a Family') AND <strong>\"सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः। सर्वे भद्राणि पश्यन्तु मा कश्चिद्दुःखभाग् भवेत्</strong> \" Sarve Bhavantu Sukhinah, Sarve Santu Niramaya, Sarve Bhadradi Pashyantu, Ma kaschchid dukh bhag bhavet - (A Shloka in <strong>Sanskrit that means </strong>'May all be happy; May all be free from infirmities; May all see good; May none partake suffering')</p>",
             "button_label": "",
             "link": "",
-            "bg_color": "#666666",
+            "bg_color": "#60755a",
             "text_color": "#ffffff"
           }
         },
         "053df5b1-e3ab-4521-8d3f-c23ab2570893": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/about5.jpg",
             "image_crop": "left",
             "title": "Meet Our Founder",
             "text": "<p><strong>Our founder</strong>, <strong>Neha Sharma</strong>, an Engineer and Management professional by education and credentials started AbhinehKrafts, as a handmade brand focussed on creating employment opportunities for handloom weavers, especially for women from marginal communities. Neha launched YogaKargha as a sub brand of AbhinehKrafts to make Yoga,Meditation, and Wellness accessible for anyone who wants to experience this ancient wisdom in a more sustainable and earth friendly way. When Neha started her journey, she was appalled by the lack of authentic and natural tools for the practice. through her work she has been pivotal in spreading awareness and promotion of natural fibers as the go-to choice for this segment. Passionate about sustainability, she continues to drive the creative engine at YogaKargha and runs multiple projects with focus on younger children.</p>",
             "button_label": "",
             "link": "",
-            "bg_color": "#585858",
+            "bg_color": "#60755a",
             "text_color": "#ffffff"
           }
         },
         "e2d78342-62be-48e4-a8d6-f7515bccd990": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/about6.jpg",
             "image_crop": "none",
             "title": "Meet Our Team",
             "text": "<p>About 150+ weavers, artisans, and partners that bring life to our designs. About 15+ team members that work from AbhinehKrafts studios here in Ghaziabad. That includes, Alama, Chacha and his team, Shafaqat (the master of all our wooden work), Ashok and his entire family that stitches magical cushions, prettiest bags and bring life to our mats, Amit and his daughter weave magic to every YogaKargha blanket, Prema, Mamta and Sandhya Didi that make sure all packages fly in time and Neha Didi works behind the scenes for an impeccable customer satisfaction. We also have a dedicated team (Kanu, Kuldeep, Gaurav, Ankit, Priya and Lipika) that works magic with digital and social media</p>",
             "button_label": "",
             "link": "",
-            "bg_color": "#666666",
+            "bg_color": "#60755a",
             "text_color": "#ffffff"
           }
         }
@@ -214,6 +220,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify://shop_images/ourwork1.jpg",
             "title": "Our Presence & Work",
             "heading_size": "regular_text",
             "text": "<p>YogaKargha<strong> </strong>products are made by more than 150+ artisans across 18+ different states of India. India is a diverse and vibrant democracy and with its rich cultural, art and spiritual heritage has so much to offer to the World. </p>",
@@ -227,6 +234,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify://shop_images/ourwork2.jpg",
             "title": "Our Customer Locations & Counting",
             "heading_size": "regular_text",
             "text": "<p>Served more than 5000+ unique cities and small towns worldwide and still counting. Our customers range include individuals, teachers, yoga studios, small and large retail chains, health clinics, hotels and wellness resorts, and schools. Everyone who has been with us is part of our big family. </p>",
@@ -281,6 +289,7 @@
         "165857855712c51536-0",
         "165857855712c51536-1"
       ],
+      "disabled": true,
       "settings": {
         "title": "Feel Yogakargha Feel Nature",
         "css_class": "",
