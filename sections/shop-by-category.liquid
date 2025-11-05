@@ -97,6 +97,15 @@
 }
 
 @media (max-width: 768px) {
+  .shop-by-category {
+    padding: 30px 10px;
+  }
+
+  .shop-by-category .heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
   .category-image img {
     width: calc(var(--img-width) * 0.6);
     height: calc(var(--img-height) * 0.6);
@@ -120,6 +129,9 @@
   font-weight: 400;
   color: black;
   text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Swiper Pagination */
@@ -144,6 +156,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const swiper = new Swiper('.swiper-container', {
     slidesPerView: {{ section.settings.slides_per_view }},
     spaceBetween: 20,
+    loop: true, // loop back to start automatically
+    autoplay: {
+      delay: {{ section.settings.autoplay_delay | times: 1000 }}, // convert seconds to ms
+      disableOnInteraction: false, // keeps autoplay active after user swipes
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -226,6 +243,15 @@ document.addEventListener('DOMContentLoaded', function () {
       "max": 600,
       "step": 10,
       "default": 300
+    },
+    {
+      "type": "range",
+      "id": "autoplay_delay",
+      "label": "Autoplay Delay (seconds)",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "default": 3
     }
   ],
   "blocks": [
