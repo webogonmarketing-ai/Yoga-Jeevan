@@ -84,6 +84,7 @@
         "image_rJP3tH",
         "image_tCCgfC"
       ],
+      "disabled": true,
       "name": "Featured promotions",
       "settings": {
         "wide_display": true,
