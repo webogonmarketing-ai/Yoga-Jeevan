@@ -20,7 +20,7 @@
         "button1": "Explore the Collection",
         "button1_link": "shopify://collections",
         "button1_style": "global-button--banner-highlighted",
-        "button2": "Begin Your Practice",
+        "button2": "",
         "button2_link": "shopify://pages/about-us",
         "button2_style": "global-button--banner-highlighted",
         "text_position": "left",
