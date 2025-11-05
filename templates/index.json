@@ -106,9 +106,9 @@
         "title": "Yoga Mats for All Forms of Yoga",
         "collection_description": false,
         "collection": "yoga-mats-1",
-        "collection_style": "slider",
-        "products_per": 3,
-        "products_limit": 49,
+        "collection_style": "grid",
+        "products_per": 5,
+        "products_limit": 15,
         "css_class": "collection-margin",
         "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px; \n}\n\n.title{\ntext-align : left\n}"
       }
