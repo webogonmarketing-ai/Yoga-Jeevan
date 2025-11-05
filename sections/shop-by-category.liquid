@@ -14,9 +14,10 @@
               <a href="{{ block.settings.link }}" class="category-link">
                 <div class="category-image">
                   <img 
-                    src="{{ block.settings.image | img_url: '500x500' }}" 
+                    src="{{ block.settings.image | img_url: 'master' }}" 
                     alt="{{ block.settings.alt_text }}"
                     loading="lazy"
+                    style="width: {{ section.settings.image_width }}px; height: {{ section.settings.image_height }}px;"
                   >
                 </div>
                 <h3 class="category-title">{{ block.settings.title }}</h3>
@@ -34,7 +35,7 @@
 .shop-by-category {
   text-align: center;
   padding: 50px 20px;
-  max-width: 1180px;
+  max-width: 100%;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -45,21 +46,24 @@
   margin-bottom: 30px;
 }
 
-/* Heading alignment */
 .shop-by-category .heading.left { text-align: left; }
 .shop-by-category .heading.center { text-align: center; }
 .shop-by-category .heading.right { text-align: right; }
+
+.categories-swiper .swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
 
 .category-item {
   text-align: center;
 }
 
 .category-image img {
-  border-radius: 50%;
-  width: 500px;
-  height: 500px;
+  display: block;
   object-fit: cover;
-  margin: auto;
+  margin: 0 auto;
+  border-radius: 8px; /* Slightly rounded edges */
   transition: transform 0.3s ease;
 }
 
@@ -75,12 +79,7 @@
   text-transform: uppercase;
 }
 
-/* Swiper */
-.categories-swiper .swiper-container {
-  overflow: hidden;
-  width: 100%;
-}
-
+/* Swiper Pagination */
 .swiper-pagination {
   margin-top: 20px;
 }
@@ -96,10 +95,10 @@
   background-color: #8d7045;
 }
 
-/* Responsive adjustments */
+/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .shop-by-category {
-    padding: 30px 15px;
+    padding: 30px 10px;
   }
 
   .shop-by-category .heading {
@@ -108,8 +107,8 @@
   }
 
   .category-image img {
-    width: 300px;
-    height: 300px;
+    width: 150px !important;
+    height: 150px !important;
   }
 }
 </style>
@@ -125,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     breakpoints: {
       320: {
-        slidesPerView: 2,
+        slidesPerView: 2.3,
         spaceBetween: 10,
       },
       480: {
@@ -147,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 {% schema %}
 {
-  "name": "Shop by Category (Swiper)",
+  "name": "Shop by Category",
   "settings": [
     {
       "type": "text",
@@ -183,6 +182,24 @@ document.addEventListener('DOMContentLoaded', function () {
       "max": 20,
       "step": 1,
       "default": 10
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Image Width (px)",
+      "min": 100,
+      "max": 600,
+      "step": 10,
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "label": "Image Height (px)",
+      "min": 100,
+      "max": 600,
+      "step": 10,
+      "default": 300
     }
   ],
   "blocks": [
@@ -216,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
   ],
   "presets": [
     {
-      "name": "Shop by Category (Swiper)",
+      "name": "Shop by Category",
       "category": "Custom Sections"
     }
   ]
