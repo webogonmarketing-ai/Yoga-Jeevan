@@ -313,6 +313,65 @@
         "css_class": "",
         "custom_css": ""
       }
+    },
+    "shop_by_category_rmEMpR": {
+      "type": "shop-by-category",
+      "blocks": {
+        "category_pRpg4C": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/premium-handwoven-organic-cotton-blanket-use-as-bed-linen-or-yogamediation-blanket-design-ananda-abhinehkrafts-513012_5000x_1.jpg",
+            "title": "Yoga Mats",
+            "link": "",
+            "alt_text": "Category image"
+          }
+        },
+        "category_4CarDB": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/il_fullxfull.4054970416_6enj.jpg",
+            "title": "Meditation Aids",
+            "link": "",
+            "alt_text": "Category image"
+          }
+        },
+        "category_nCBnNf": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/il_fullxfull.2917504859_epj8_f952dfdb-c784-47d9-be8f-df7ffaf47881.jpg",
+            "title": "Iyenger Yoga Props",
+            "link": "",
+            "alt_text": "Category image"
+          }
+        },
+        "category_BjWGC9": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/il_fullxfull.3207979528_10zu.jpg",
+            "title": "Acupressure Props",
+            "link": "",
+            "alt_text": "Category image"
+          }
+        },
+        "category_bjV8qk": {
+          "type": "category",
+          "settings": {
+            "image": "shopify://shop_images/il_fullxfull.2351862355_kbqs_426d4eb2-c4ab-4107-85de-191f231e1018.jpg",
+            "title": "Sacred Essentials",
+            "link": "",
+            "alt_text": "Category image"
+          }
+        }
+      },
+      "block_order": [
+        "category_pRpg4C",
+        "category_4CarDB",
+        "category_nCBnNf",
+        "category_BjWGC9",
+        "category_bjV8qk"
+      ],
+      "name": "Shop by Category",
+      "settings": {}
     }
   },
   "order": [
@@ -325,6 +384,7 @@
     "blog_posts_WAzzmz",
     "17623472489ccbe922",
     "newsletter-1",
-    "16596785272b3d0c49"
+    "16596785272b3d0c49",
+    "shop_by_category_rmEMpR"
   ]
 }
