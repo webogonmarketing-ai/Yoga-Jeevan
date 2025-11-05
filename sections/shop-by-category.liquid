@@ -1,34 +1,23 @@
-{% comment %}
-  Desktop Grid and Mobile Swiper Categories Section
-{% endcomment %}
-
 <section class="shop-by-category">
   <div class="container">
-    <h2 class="heading">Shop by Category</h2>
+    {% if section.settings.heading_text != blank %}
+      <h2 class="heading {{ section.settings.heading_alignment }}">
+        {{ section.settings.heading_text }}
+      </h2>
+    {% endif %}
     
-    <!-- Desktop Grid -->
-    <div class="categories-grid desktop-only">
-      {% for block in section.blocks %}
-        <div class="category-item">
-          <a href="{{ block.settings.link }}" class="category-link">
-            <div class="category-image">
-              <img src="{{ block.settings.image | img_url: '400x400' }}" alt="{{ block.settings.alt_text }}">
-            </div>
-            <h3 class="category-title">{{ block.settings.title }}</h3>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
-    
-    <!-- Mobile Swiper -->
-    <div class="categories-swiper mobile-only">
+    <div class="categories-swiper">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          {% for block in section.blocks %}
+          {% for block in section.blocks limit: section.settings.items_limit %}
             <div class="category-item swiper-slide">
               <a href="{{ block.settings.link }}" class="category-link">
                 <div class="category-image">
-                  <img src="{{ block.settings.image | img_url: '400x400' }}" alt="{{ block.settings.alt_text }}">
+                  <img 
+                    src="{{ block.settings.image | img_url: '500x500' }}" 
+                    alt="{{ block.settings.alt_text }}"
+                    loading="lazy"
+                  >
                 </div>
                 <h3 class="category-title">{{ block.settings.title }}</h3>
               </a>
@@ -47,37 +36,28 @@
   padding: 50px 20px;
   max-width: 1180px;
   margin: auto;
-overflow: hidden;
-   position: relative;
+  overflow: hidden;
+  position: relative;
 }
-
-  .swiper-pagination {
-    z-index: 0;
-  }
 
 .shop-by-category .heading {
   font-size: 24px;
   margin-bottom: 30px;
 }
 
-/* Desktop Styles */
-.categories-grid {
-  display: flex;
-  justify-content : center;
-  flex-direction: row;
-  gap: 50px;
-  margin: 0 auto;
-}
+/* Heading alignment */
+.shop-by-category .heading.left { text-align: left; }
+.shop-by-category .heading.center { text-align: center; }
+.shop-by-category .heading.right { text-align: right; }
 
-/* Common Category Styles */
 .category-item {
   text-align: center;
 }
 
 .category-image img {
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
   margin: auto;
   transition: transform 0.3s ease;
@@ -95,9 +75,14 @@ overflow: hidden;
   text-transform: uppercase;
 }
 
-/* Mobile Swiper Styles */
-.categories-swiper {
-  display: none; /* Hidden by default */
+/* Swiper */
+.categories-swiper .swiper-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.swiper-pagination {
+  margin-top: 20px;
 }
 
 .swiper-pagination-bullet {
@@ -105,77 +90,101 @@ overflow: hidden;
   width: 10px;
   height: 10px;
   opacity: 1;
-  margin: 5 5px;
-  z-index : 0;
 }
 
 .swiper-pagination-bullet-active {
   background-color: #8d7045;
 }
 
-/* Responsive Display */
-@media screen and (min-width: 769px) {
-  .desktop-only {
-    display: flex;
-  }
-  .mobile-only {
-    display: none;
-  }
-}
-
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
-  .desktop-only {
-    display: none;
-  }
-  .mobile-only {
-    display: block;
-  }
-  
   .shop-by-category {
     padding: 30px 15px;
   }
-  
+
   .shop-by-category .heading {
     font-size: 20px;
     margin-bottom: 20px;
   }
-  
-  .categories-swiper .swiper-slide {
-    width: auto;
+
+  .category-image img {
+    width: 300px;
+    height: 300px;
   }
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  // Only initialize Swiper on mobile
-  if (window.innerWidth <= 768) {
-    const swiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
-      spaceBetween: 20,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: {{ section.settings.slides_per_view }},
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 10,
       },
-      breakpoints: {
-        320: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
-        480: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        }
-      }
-    });
-  }
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: {{ section.settings.slides_per_view }},
+        spaceBetween: 30,
+      },
+    },
+  });
 });
 </script>
 
 {% schema %}
 {
-  "name": "Shop by Category",
-  "settings": [],
+  "name": "Shop by Category (Swiper)",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Section Heading",
+      "default": "Shop by Category"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "slides_per_view",
+      "label": "Number of Slides Visible (Desktop)",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "items_limit",
+      "label": "Total Items to Display",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "default": 10
+    }
+  ],
   "blocks": [
     {
       "type": "category",
@@ -207,8 +216,8 @@ document.addEventListener('DOMContentLoaded', function () {
   ],
   "presets": [
     {
-      "name": "Shop by Category",
-      "category": "Custom"
+      "name": "Shop by Category (Swiper)",
+      "category": "Custom Sections"
     }
   ]
 }
