@@ -1,0 +1,215 @@
+{% comment %}
+  Desktop Grid and Mobile Swiper Categories Section
+{% endcomment %}
+
+<section class="shop-by-category">
+  <div class="container">
+    <h2 class="heading">Shop by Category</h2>
+    
+    <!-- Desktop Grid -->
+    <div class="categories-grid desktop-only">
+      {% for block in section.blocks %}
+        <div class="category-item">
+          <a href="{{ block.settings.link }}" class="category-link">
+            <div class="category-image">
+              <img src="{{ block.settings.image | img_url: '400x400' }}" alt="{{ block.settings.alt_text }}">
+            </div>
+            <h3 class="category-title">{{ block.settings.title }}</h3>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    
+    <!-- Mobile Swiper -->
+    <div class="categories-swiper mobile-only">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="category-item swiper-slide">
+              <a href="{{ block.settings.link }}" class="category-link">
+                <div class="category-image">
+                  <img src="{{ block.settings.image | img_url: '400x400' }}" alt="{{ block.settings.alt_text }}">
+                </div>
+                <h3 class="category-title">{{ block.settings.title }}</h3>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.shop-by-category {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 1180px;
+  margin: auto;
+overflow: hidden;
+   position: relative;
+}
+
+  .swiper-pagination {
+    z-index: 0;
+  }
+
+.shop-by-category .heading {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Desktop Styles */
+.categories-grid {
+  display: flex;
+  justify-content : center;
+  flex-direction: row;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+/* Common Category Styles */
+.category-item {
+  text-align: center;
+}
+
+.category-image img {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+
+.category-link:hover .category-image img {
+  transform: scale(1.05);
+}
+
+.category-title {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+}
+
+/* Mobile Swiper Styles */
+.categories-swiper {
+  display: none; /* Hidden by default */
+}
+
+.swiper-pagination-bullet {
+  background-color: #ddd;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  margin: 5 5px;
+  z-index : 0;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #8d7045;
+}
+
+/* Responsive Display */
+@media screen and (min-width: 769px) {
+  .desktop-only {
+    display: flex;
+  }
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  
+  .shop-by-category {
+    padding: 30px 15px;
+  }
+  
+  .shop-by-category .heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .categories-swiper .swiper-slide {
+    width: auto;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Only initialize Swiper on mobile
+  if (window.innerWidth <= 768) {
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        }
+      }
+    });
+  }
+});
+</script>
+
+{% schema %}
+{
+  "name": "Shop by Category",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text",
+          "default": "Category image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop by Category",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
