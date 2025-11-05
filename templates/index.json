@@ -93,7 +93,7 @@
       "name": "Shop by Category",
       "settings": {
         "heading_text": "Shop by Category",
-        "heading_alignment": "right",
+        "heading_alignment": "center",
         "slides_per_view": 4,
         "items_limit": 10,
         "image_width": 300,
