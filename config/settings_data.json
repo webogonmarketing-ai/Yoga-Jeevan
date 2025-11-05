@@ -119,7 +119,7 @@
           "logo_display_width": 180,
           "logo": "shopify://shop_images/logoheader_f98aa094-a50c-4924-81e5-0650bc7d8652.png",
           "logo_mobile": "shopify://shop_images/mobilelogo2.png",
-          "main_linklist": "important-link-header",
+          "main_linklist": "long-main-menu",
           "main_linklist2": "important-link-header",
           "vertical_menu": true,
           "dropdown_click": false,
