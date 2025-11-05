@@ -5,38 +5,35 @@
         {{ section.settings.heading_text }}
       </h2>
     {% endif %}
-    
-    <div class="categories-swiper">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          {% for block in section.blocks limit: section.settings.items_limit %}
-            <div class="category-item swiper-slide">
-              <a href="{{ block.settings.link }}" class="category-link">
-                <div class="category-image">
-                  <img 
-                    src="{{ block.settings.image | img_url: 'master' }}" 
-                    alt="{{ block.settings.alt_text }}"
-                    loading="lazy"
-                    style="width: {{ section.settings.image_width }}px; height: {{ section.settings.image_height }}px;"
-                  >
-                </div>
-                <h3 class="category-title">{{ block.settings.title }}</h3>
-              </a>
-            </div>
-          {% endfor %}
-        </div>
-        <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="categories-swiper">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks limit: section.settings.items_limit %}
+          <div class="category-item swiper-slide">
+            <a href="{{ block.settings.link }}" class="category-link">
+              <div class="category-image">
+                <img 
+                  src="{{ block.settings.image | img_url: 'master' }}" 
+                  alt="{{ block.settings.alt_text }}"
+                  loading="lazy"
+                  style="width: {{ section.settings.image_width }}px; height: {{ section.settings.image_height }}px;"
+                >
+              </div>
+              <h3 class="category-title">{{ block.settings.title }}</h3>
+            </a>
+          </div>
+        {% endfor %}
       </div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>
 
 <style>
 .shop-by-category {
-  text-align: center;
   padding: 50px 20px;
-  max-width: 100%;
-  margin: auto;
   overflow: hidden;
   position: relative;
 }
@@ -50,9 +47,19 @@
 .shop-by-category .heading.center { text-align: center; }
 .shop-by-category .heading.right { text-align: right; }
 
+.categories-swiper {
+  width: 100%;
+}
+
 .categories-swiper .swiper-container {
   width: 100%;
-  overflow: hidden;
+  padding-left: 0; /* ensure it starts from left edge */
+  margin-left: 0;
+}
+
+.swiper-wrapper {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 .category-item {
@@ -63,7 +70,7 @@
   display: block;
   object-fit: cover;
   margin: 0 auto;
-  border-radius: 8px; /* Slightly rounded edges */
+  border-radius: 6px;
   transition: transform 0.3s ease;
 }
 
