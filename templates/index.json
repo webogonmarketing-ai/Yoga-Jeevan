@@ -91,7 +91,14 @@
         "category_bjV8qk"
       ],
       "name": "Shop by Category",
-      "settings": {}
+      "settings": {
+        "heading_text": "Shop by Category",
+        "heading_alignment": "right",
+        "slides_per_view": 4,
+        "items_limit": 10,
+        "image_width": 300,
+        "image_height": 300
+      }
     },
     "featured_promotions_WGYzH3": {
       "type": "featured-promotions",
