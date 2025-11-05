@@ -282,7 +282,7 @@
       "name": "Blog posts",
       "settings": {
         "title": "Latest News",
-        "blog_widget_select": "",
+        "blog_widget_select": "news",
         "home_page_articles": 3,
         "blog_tags": false,
         "blog_author": false,
@@ -290,7 +290,7 @@
         "blog_date": true,
         "blog_comment_count": true,
         "read_more_link": true,
-        "excerpt_display": "full_excerpt",
+        "excerpt_display": "truncated_excerpt",
         "css_class": "",
         "custom_css": ""
       }
