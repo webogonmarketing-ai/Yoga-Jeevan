@@ -18,6 +18,7 @@
                   src="{{ block.settings.image | img_url: 'master' }}" 
                   alt="{{ block.settings.alt_text }}"
                   loading="lazy"
+                  style="--img-width: {{ section.settings.image_width }}px; --img-height: {{ section.settings.image_height }}px;"
                 >
               </div>
               <h3 class="category-title">{{ block.settings.title }}</h3>
@@ -65,20 +66,48 @@
 }
 
 .category-image {
-  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .category-image img {
-  width: clamp(120px, {{ section.settings.image_width }}px, 100%);
-  height: clamp(120px, {{ section.settings.image_height }}px, 100%);
-  max-width: {{ section.settings.image_width }}px;
-  max-height: {{ section.settings.image_height }}px;
+  width: var(--img-width);
+  height: var(--img-height);
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
   border-radius: 6px;
   transition: transform 0.3s ease;
-  display: block;
+}
+
+/* Responsive Scaling — auto shrink without overlap */
+@media (max-width: 1200px) {
+  .category-image img {
+    width: calc(var(--img-width) * 0.8);
+    height: calc(var(--img-height) * 0.8);
+  }
+}
+
+@media (max-width: 992px) {
+  .category-image img {
+    width: calc(var(--img-width) * 0.7);
+    height: calc(var(--img-height) * 0.7);
+  }
+}
+
+@media (max-width: 768px) {
+  .category-image img {
+    width: calc(var(--img-width) * 0.6);
+    height: calc(var(--img-height) * 0.6);
+  }
+}
+
+@media (max-width: 480px) {
+  .category-image img {
+    width: calc(var(--img-width) * 0.5);
+    height: calc(var(--img-height) * 0.5);
+  }
 }
 
 .category-link:hover .category-image img {
@@ -91,9 +120,6 @@
   font-weight: 400;
   color: black;
   text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* Swiper Pagination */
@@ -110,37 +136,6 @@
 
 .swiper-pagination-bullet-active {
   background-color: #8d7045;
-}
-
-/* Responsive Handling */
-@media screen and (max-width: 1024px) {
-  .category-image img {
-    width: clamp(100px, 40vw, 250px);
-    height: clamp(100px, 40vw, 250px);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .shop-by-category {
-    padding: 30px 10px;
-  }
-
-  .shop-by-category .heading {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-
-  .category-image img {
-    width: clamp(100px, 45vw, 180px);
-    height: clamp(100px, 45vw, 180px);
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .category-image img {
-    width: clamp(80px, 40vw, 150px);
-    height: clamp(80px, 40vw, 150px);
-  }
 }
 </style>
 
@@ -217,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       "type": "range",
       "id": "image_width",
-      "label": "Max Image Width (px)",
+      "label": "Base Image Width (px)",
       "min": 100,
       "max": 600,
       "step": 10,
@@ -226,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       "type": "range",
       "id": "image_height",
-      "label": "Max Image Height (px)",
+      "label": "Base Image Height (px)",
       "min": 100,
       "max": 600,
       "step": 10,
