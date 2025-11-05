@@ -201,6 +201,7 @@
         "heading_PH9Vhq",
         "content_hHfVVT"
       ],
+      "disabled": true,
       "custom_css": [
         ".one-whole.column.page .title:first-of-type {text-align: center !important; font-weight: bold; font-size: 30px;}"
       ],
