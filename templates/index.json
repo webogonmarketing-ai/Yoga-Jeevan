@@ -281,7 +281,7 @@
       "type": "blog-posts",
       "name": "Blog posts",
       "settings": {
-        "title": "Latest News",
+        "title": "Blogs",
         "blog_widget_select": "news",
         "home_page_articles": 3,
         "blog_tags": false,
