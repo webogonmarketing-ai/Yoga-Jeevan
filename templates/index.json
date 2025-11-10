@@ -277,6 +277,31 @@
         "title": "Frequently Asked Question"
       }
     },
+    "image_with_text_overlay_8iUWcD": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "wide_display": true,
+        "image": "shopify://shop_images/1_2000x_2978cf29-d8b0-49b3-88c1-049c2eec530e.webp",
+        "pretext": "",
+        "title": "",
+        "subtitle": "",
+        "button1": "",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "original",
+        "mobile_image_crop": "none",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
     "17623472489ccbe922": {
       "type": "apps",
       "blocks": {
@@ -306,6 +331,15 @@
         "blog_comment_count": true,
         "read_more_link": true,
         "excerpt_display": "truncated_excerpt",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "custom_liquid_Mf6yta": {
+      "type": "custom-liquid",
+      "name": "Custom liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.section {\n  max-width: 100%;\n}\n</style>",
         "css_class": "",
         "custom_css": ""
       }
@@ -380,31 +414,6 @@
         "css_class": "",
         "custom_css": ""
       }
-    },
-    "image_with_text_overlay_8iUWcD": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
-      "settings": {
-        "wide_display": true,
-        "image": "shopify://shop_images/1_2000x_2978cf29-d8b0-49b3-88c1-049c2eec530e.webp",
-        "pretext": "",
-        "title": "",
-        "subtitle": "",
-        "button1": "",
-        "button1_link": "",
-        "button1_style": "global-button--banner",
-        "button2": "",
-        "button2_link": "",
-        "button2_style": "global-button--banner",
-        "text_position": "center",
-        "text_align": "center",
-        "caption_content_background": "original",
-        "mobile_image_crop": "none",
-        "mobile_text_below_image": true,
-        "mobile_text_color": "",
-        "css_class": "",
-        "custom_css": ""
-      }
     }
   },
   "order": [
@@ -418,6 +427,7 @@
     "image_with_text_overlay_8iUWcD",
     "17623472489ccbe922",
     "blog_posts_WAzzmz",
+    "custom_liquid_Mf6yta",
     "newsletter-1",
     "16596785272b3d0c49"
   ]
