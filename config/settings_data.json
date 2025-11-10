@@ -344,6 +344,8 @@
     }
   },
   "platform_customizations": {
-    "custom_css": []
+    "custom_css": [
+      ".section {max-width: 100%;}"
+    ]
   }
 }
