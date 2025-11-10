@@ -246,9 +246,18 @@
        <ul class="top-bar__menu menu">
         {% if section.settings.phone_number != blank %}
           <li>
-            <a href="tel:{{ section.settings.phone_number | replace: ' ', '' | replace: '+', '' | replace: '-', '' }}">{{ section.settings.phone_number }}</a>
+            <a href="{{ section.settings.phone_number }}">{{ section.settings.phone_number }}</a>
           </li>
         {% endif %}
+
+        {% comment %}
+           <a href="tel:{{ section.settings.phone_number | replace: ' ', '' | replace: '+', '' | replace: '-', '' }}">{{ section.settings.phone_number }}</a>
+            <ul class="top-bar__menu menu">
+        {% if section.settings.phone_number != blank %}
+          <li>
+            <a href="tel:{{ section.settings.phone_number | replace: ' ', '' | replace: '+', '' | replace: '-', '' }}">{{ section.settings.phone_number }}</a>
+          </li>
+        {% endcomment %}
 
         {% if section.settings.top_bar_menu != blank %}
           {% for link in linklists[section.settings.top_bar_menu].links %}
@@ -692,8 +701,8 @@
     {
       "type": "text",
       "id": "phone_number",
-      "label": "Phone number",
-      "info": "1-800-555-5555"
+      "label": "Enter Offer",
+      "info": "Enter Offer"
     },
     {
       "type": "link_list",
