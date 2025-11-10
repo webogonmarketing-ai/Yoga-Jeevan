@@ -17,11 +17,11 @@
         "pretext": "",
         "title": "EVERYDAY ESSENTIALS for yogic living",
         "subtitle": "<p>Handcrafted in India. Loved by 6,000+ practitioners worldwide. </p>",
-        "button1": "Explore the Collection",
-        "button1_link": "shopify://collections",
+        "button1": "About us",
+        "button1_link": "shopify://pages/about-us",
         "button1_style": "global-button--banner-highlighted",
-        "button2": "",
-        "button2_link": "shopify://pages/about-us",
+        "button2": "Shop Now",
+        "button2_link": "shopify://collections/all",
         "button2_style": "global-button--banner-highlighted",
         "text_position": "left",
         "text_align": "left",
@@ -277,6 +277,21 @@
         "title": "Frequently Asked Question"
       }
     },
+    "17623472489ccbe922": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_GGD9tt": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1900
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_GGD9tt"
+      ],
+      "settings": {}
+    },
     "blog_posts_WAzzmz": {
       "type": "blog-posts",
       "name": "Blog posts",
@@ -294,21 +309,6 @@
         "css_class": "",
         "custom_css": ""
       }
-    },
-    "17623472489ccbe922": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_featured_carousel_GGD9tt": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_featured_carousel_GGD9tt"
-      ],
-      "settings": {}
     },
     "newsletter-1": {
       "type": "newsletter",
@@ -390,8 +390,8 @@
     "featured_collection_RWLAa8",
     "featured_collection_Bm9E4t",
     "faq_xewWRP",
-    "blog_posts_WAzzmz",
     "17623472489ccbe922",
+    "blog_posts_WAzzmz",
     "newsletter-1",
     "16596785272b3d0c49"
   ]
