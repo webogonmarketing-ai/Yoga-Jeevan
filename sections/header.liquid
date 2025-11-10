@@ -242,7 +242,8 @@
         {% render 'social-icons' %}
       {% endif %}
 
-      <ul class="top-bar__menu menu">
+     <div>
+       <ul class="top-bar__menu menu">
         {% if section.settings.phone_number != blank %}
           <li>
             <a href="tel:{{ section.settings.phone_number | replace: ' ', '' | replace: '+', '' | replace: '-', '' }}">{{ section.settings.phone_number }}</a>
@@ -257,6 +258,7 @@
           {% endfor %}
         {% endif %}
       </ul>
+     </div>
 
       <div class="top-bar--right-menu">
         <ul class="top-bar__menu">
