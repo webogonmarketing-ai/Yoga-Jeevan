@@ -183,7 +183,7 @@
           "45d0dd55-0a2c-4ac9-bab2-606db7abcc97"
         ],
         "custom_css": [
-          ".footer-logo{width : 200px; }"
+          ".footer-logo {width: 200px;}"
         ],
         "settings": {
           "copyright_text": "",
