@@ -1,6 +1,355 @@
-<section class="yoga-main-page">
-  <div class="container">
-    {{ page.content }}
-  </div>
-</section>
+<body>
 
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+
+  /* Container */
+  .yogajeewan-container {
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: 18px;
+  }
+
+  .yogajeewan-title {
+    text-align: center;
+    margin: 6px 0 20px;
+    font-size: 1.6rem;
+    color: #1f2937;
+  }
+
+  /* Responsive table wrapper */
+  .yogajeewan-table-wrap {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(17,24,39,0.08);
+    overflow: hidden;
+  }
+
+  table.yogajeewan-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 620px; /* allows horizontal scroll on small devices */
+  }
+
+  thead tr {
+    background: linear-gradient(90deg, #eef2ff, #fff);
+  }
+
+  th.yogajeewan-th {
+    text-align: left;
+    padding: 12px 14px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color:#374151;
+    border-bottom: 1px solid #e6e9ef;
+  }
+
+  td.yogajeewan-td {
+    padding: 12px 14px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f1f4f8;
+    font-size: 0.95rem;
+    color: #242f3e;
+  }
+
+  /* Image cell */
+  .yogajeewan-thumb {
+    width: 110px;
+    height: 70px;
+    display: inline-block;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #eee;
+    box-shadow: 0 2px 6px rgba(16,24,40,0.06) inset;
+  }
+  .yogajeewan-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:block;
+  }
+
+  /* Pose name and small meta */
+  .yogajeewan-pose-name {
+    font-weight: 600;
+    color: #0f1724;
+    margin-bottom: 4px;
+    display:block;
+  }
+  .yogajeewan-pose-meta {
+    font-size: 0.85rem;
+    color: #6b7280;
+  }
+
+  /* Show more button */
+  .yogajeewan-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.88rem;
+    border: none;
+    cursor: pointer;
+  }
+  .yogajeewan-btn:focus { outline: 3px solid rgba(37,99,235,0.18); }
+
+  /* Small screens: allow horizontal scroll and reduce paddings */
+  .yogajeewan-scroll {
+    overflow-x: auto;
+  }
+  @media (max-width: 720px) {
+    th.yogajeewan-th, td.yogajeewan-td { padding: 10px; }
+    .yogajeewan-thumb { width: 96px; height: 64px; }
+  }
+
+  /* Modal overlay */
+  .yogajeewan-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(2,6,23,0.5);
+    display: none; /* toggled by JS */
+    align-items: center;
+    justify-content: center;
+    z-index: 1200;
+    padding: 20px;
+  }
+
+  /* Modal content */
+  .yogajeewan-modal {
+    background: #ffffff;
+    width: min(880px, 98%);
+    max-height: 92vh;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(2,6,23,0.3);
+    overflow: auto;
+    display: flex;
+    gap: 18px;
+    padding: 18px;
+    animation: yogajeewan-slide 180ms ease;
+  }
+
+  @keyframes yogajeewan-slide {
+    from { transform: translateY(8px); opacity: 0; } to { transform: translateY(0); opacity: 1; }
+  }
+
+  .yogajeewan-modal-left {
+    flex: 0 0 320px;
+  }
+  .yogajeewan-modal-left img {
+    width: 100%;
+    height: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+    display:block;
+  }
+  .yogajeewan-modal-right {
+    flex: 1 1 auto;
+    padding-bottom: 8px;
+  }
+
+  .yogajeewan-modal-right h2 {
+    margin: 0 0 8px;
+    font-size: 1.3rem;
+    color: #0b1220;
+  }
+  .yogajeewan-modal-right .yogajeewan-sanskrit {
+    font-size: 0.98rem;
+    color:#475569;
+    margin-bottom: 10px;
+  }
+
+  .yogajeewan-modal-section { margin-bottom: 12px; }
+  .yogajeewan-modal-section strong { display:inline-block; width: 125px; color:#0f1724; font-weight:600; }
+  .yogajeewan-modal-section p { margin: 4px 0 0; color: #24303f; line-height:1.45; }
+
+  /* Close button */
+  .yogajeewan-close {
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .yogajeewan-modal-header {
+    position: relative;
+    padding-bottom: 8px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #eef2ff;
+  }
+
+  /* Empty state */
+  .yogajeewan-empty {
+    padding: 34px;
+    text-align:center;
+    color:#6b7280;
+  }
+</style>
+
+{% assign poses = 'yogajeewan-poses.json' | asset_url | parse_json %}
+
+
+<div class="yogajeewan-container">
+  <h1 class="yogajeewan-title">YogaKargha Pose Directory</h1>
+
+  <div class="yogajeewan-table-wrap">
+    <div class="yogajeewan-scroll">
+      <table class="yogajeewan-table" aria-label="Yoga poses table">
+        <thead>
+          <tr>
+            <th class="yogajeewan-th">Pose</th>
+            <th class="yogajeewan-th">Level</th>
+            <th class="yogajeewan-th">Image</th>
+            <th class="yogajeewan-th">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+    {% for pose in poses %}
+      <tr>
+        <td>{{ pose.pose_name }}</td>
+        <td>{{ pose.level }}</td>
+        <td><img src="{{ pose.image }}" alt="{{ pose.pose_name }}"></td>
+        <td>
+          <button 
+            class="yogajeewan-btn"
+            data-pose="{{ pose.pose_name }}"
+            data-sanskrit="{{ pose.sanskrit }}"
+            data-category="{{ pose.category }}"
+            data-level="{{ pose.level }}"
+            data-description="{{ pose.description }}"
+            data-benefits="{{ pose.benefits }}"
+            data-contra="{{ pose.contra }}"
+            data-insight="{{ pose.insight }}"
+            data-image="{{ pose.image }}"
+          >Show More</button>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+      </table>
+    </div>
+
+    <!-- Optional empty message if no rows -->
+    <div id="yogajeewan-empty" class="yogajeewan-empty" style="display:none;">
+      No poses available.
+    </div>
+  </div>
+</div>
+
+<!-- Modal structure -->
+<div id="yogajeewan-modal-overlay" class="yogajeewan-modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="yogajeewan-modal" role="document">
+    <div class="yogajeewan-modal-left">
+      <img id="yogajeewan-modal-image" src="" alt="">
+    </div>
+
+    <div class="yogajeewan-modal-right">
+      <div class="yogajeewan-modal-header">
+        <button id="yogajeewan-modal-close" class="yogajeewan-close" aria-label="Close modal">×</button>
+        <h2 id="yogajeewan-modal-title">Pose Title</h2>
+        <div id="yogajeewan-modal-sanskrit" class="yogajeewan-sanskrit">Sanskrit</div>
+      </div>
+
+      <div class="yogajeewan-modal-body">
+        <div class="yogajeewan-modal-section">
+<strong>Category:</strong><p id="yogajeewan-modal-category"></p>
+</div>
+        <div class="yogajeewan-modal-section">
+<strong>Level:</strong><p id="yogajeewan-modal-level"></p>
+</div>
+        <div class="yogajeewan-modal-section">
+<strong>Description:</strong><p id="yogajeewan-modal-description"></p>
+</div>
+        <div class="yogajeewan-modal-section">
+<strong>Benefits:</strong><p id="yogajeewan-modal-benefits"></p>
+</div>
+        <div class="yogajeewan-modal-section">
+<strong>Contraindications:</strong><p id="yogajeewan-modal-contra"></p>
+</div>
+        <div class="yogajeewan-modal-section">
+<strong>YogaKargha Insight:</strong><p id="yogajeewan-modal-insight"></p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const modalOverlay = document.getElementById('yogajeewan-modal-overlay');
+    const modalImage = document.getElementById('yogajeewan-modal-image');
+    const modalTitle = document.getElementById('yogajeewan-modal-title');
+    const modalSanskrit = document.getElementById('yogajeewan-modal-sanskrit');
+    const modalCategory = document.getElementById('yogajeewan-modal-category');
+    const modalLevel = document.getElementById('yogajeewan-modal-level');
+    const modalDescription = document.getElementById('yogajeewan-modal-description');
+    const modalBenefits = document.getElementById('yogajeewan-modal-benefits');
+    const modalContra = document.getElementById('yogajeewan-modal-contra');
+    const modalInsight = document.getElementById('yogajeewan-modal-insight');
+    const closeBtn = document.getElementById('yogajeewan-modal-close');
+
+    // Open modal and populate with data from button's data-* attributes
+    document.querySelectorAll('.yogajeewan-btn').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        const ds = btn.dataset;
+        modalTitle.textContent = ds.pose || '—';
+        modalSanskrit.textContent = ds.sanskrit ? ('Sanskrit: ' + ds.sanskrit) : '';
+        modalCategory.textContent = ds.category || '—';
+        modalLevel.textContent = ds.level || '—';
+        modalDescription.textContent = ds.description || '—';
+        modalBenefits.textContent = ds.benefits || '—';
+        modalContra.textContent = ds.contra || '—';
+        modalInsight.textContent = ds.insight || '—';
+
+        // Use provided image or fallback
+        if (ds.image) {
+          modalImage.src = ds.image;
+          modalImage.alt = ds.pose || 'Pose image';
+        } else {
+          modalImage.removeAttribute('src');
+          modalImage.alt = '';
+        }
+
+        // Show modal
+        modalOverlay.style.display = 'flex';
+        modalOverlay.setAttribute('aria-hidden', 'false');
+
+        // trap focus on close button for accessibility
+        closeBtn.focus();
+      });
+    });
+
+    // Close handlers
+    closeBtn.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', function (e) {
+      if (e.target === modalOverlay) closeModal();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    function closeModal() {
+      modalOverlay.style.display = 'none';
+      modalOverlay.setAttribute('aria-hidden', 'true');
+      // clear image to stop downloads when closed (small optimization)
+      modalImage.src = '';
+    }
+
+    // If table empty — show message
+    const tbody = document.getElementById('yogajeewan-tbody');
+    if (!tbody || !tbody.querySelector('tr')) {
+      document.getElementById('yogajeewan-empty').style.display = 'block';
+    }
+  })();
+</script>
+
+
+
+</body>
