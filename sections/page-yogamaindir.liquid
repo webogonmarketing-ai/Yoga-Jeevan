@@ -1,10 +1,9 @@
 <body>
 
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
 
+<style>
   /* Container */
   .yogajeewan-container {
     max-width: 1100px;
@@ -42,12 +41,27 @@
     padding: 12px 14px;
     font-weight: 600;
     font-size: 0.92rem;
-    color:#374151;
+    color: #374151;
     border-bottom: 1px solid #e6e9ef;
   }
 
+  /* === Added table body styling === */
+  tbody tr {
+    transition: background-color 0.25s ease, transform 0.15s ease;
+  }
+  tbody tr:nth-child(odd) {
+    background: #fafafa;
+  }
+  tbody tr:nth-child(even) {
+    background: #ffffff;
+  }
+  tbody tr:hover {
+    background: #f1f5ff;
+    transform: scale(1.01);
+  }
+
   td.yogajeewan-td {
-    padding: 12px 14px;
+    padding: 14px 16px;
     vertical-align: middle;
     border-bottom: 1px solid #f1f4f8;
     font-size: 0.95rem;
@@ -64,11 +78,16 @@
     background: #eee;
     box-shadow: 0 2px 6px rgba(16,24,40,0.06) inset;
   }
+
   .yogajeewan-thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display:block;
+    display: block;
+    transition: transform 0.25s ease;
+  }
+  .yogajeewan-thumb img:hover {
+    transform: scale(1.05);
   }
 
   /* Pose name and small meta */
@@ -76,7 +95,7 @@
     font-weight: 600;
     color: #0f1724;
     margin-bottom: 4px;
-    display:block;
+    display: block;
   }
   .yogajeewan-pose-meta {
     font-size: 0.85rem;
@@ -94,23 +113,37 @@
     font-size: 0.88rem;
     border: none;
     cursor: pointer;
+    transition: background 0.25s ease, transform 0.15s ease;
   }
-  .yogajeewan-btn:focus { outline: 3px solid rgba(37,99,235,0.18); }
+  .yogajeewan-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+  }
+  .yogajeewan-btn:focus {
+    outline: 3px solid rgba(37,99,235,0.18);
+  }
 
   /* Small screens: allow horizontal scroll and reduce paddings */
   .yogajeewan-scroll {
     overflow-x: auto;
   }
+
   @media (max-width: 720px) {
-    th.yogajeewan-th, td.yogajeewan-td { padding: 10px; }
-    .yogajeewan-thumb { width: 96px; height: 64px; }
+    th.yogajeewan-th,
+    td.yogajeewan-td {
+      padding: 10px;
+    }
+    .yogajeewan-thumb {
+      width: 96px;
+      height: 64px;
+    }
   }
 
   /* Modal overlay */
   .yogajeewan-modal-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(2,6,23,0.5);
+    background: rgba(2, 6, 23, 0.5);
     display: none; /* toggled by JS */
     align-items: center;
     justify-content: center;
@@ -124,7 +157,7 @@
     width: min(880px, 98%);
     max-height: 92vh;
     border-radius: 12px;
-    box-shadow: 0 20px 50px rgba(2,6,23,0.3);
+    box-shadow: 0 20px 50px rgba(2, 6, 23, 0.3);
     overflow: auto;
     display: flex;
     gap: 18px;
@@ -133,7 +166,14 @@
   }
 
   @keyframes yogajeewan-slide {
-    from { transform: translateY(8px); opacity: 0; } to { transform: translateY(0); opacity: 1; }
+    from {
+      transform: translateY(8px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   .yogajeewan-modal-left {
@@ -145,8 +185,9 @@
     max-height: 420px;
     object-fit: cover;
     border-radius: 10px;
-    display:block;
+    display: block;
   }
+
   .yogajeewan-modal-right {
     flex: 1 1 auto;
     padding-bottom: 8px;
@@ -157,15 +198,29 @@
     font-size: 1.3rem;
     color: #0b1220;
   }
+
   .yogajeewan-modal-right .yogajeewan-sanskrit {
     font-size: 0.98rem;
-    color:#475569;
+    color: #475569;
     margin-bottom: 10px;
   }
 
-  .yogajeewan-modal-section { margin-bottom: 12px; }
-  .yogajeewan-modal-section strong { display:inline-block; width: 125px; color:#0f1724; font-weight:600; }
-  .yogajeewan-modal-section p { margin: 4px 0 0; color: #24303f; line-height:1.45; }
+  .yogajeewan-modal-section {
+    margin-bottom: 12px;
+  }
+
+  .yogajeewan-modal-section strong {
+    display: inline-block;
+    width: 125px;
+    color: #0f1724;
+    font-weight: 600;
+  }
+
+  .yogajeewan-modal-section p {
+    margin: 4px 0 0;
+    color: #24303f;
+    line-height: 1.45;
+  }
 
   /* Close button */
   .yogajeewan-close {
@@ -178,6 +233,7 @@
     font-size: 22px;
     cursor: pointer;
   }
+
   .yogajeewan-modal-header {
     position: relative;
     padding-bottom: 8px;
@@ -188,14 +244,12 @@
   /* Empty state */
   .yogajeewan-empty {
     padding: 34px;
-    text-align:center;
-    color:#6b7280;
+    text-align: center;
+    color: #6b7280;
   }
 </style>
 
 {% assign poses = page.metafields.custom.yogajeewan_poses.value | parse_json %}
-
-
 
 <div class="yogajeewan-container">
   <h1 class="yogajeewan-title">YogaKargha Pose Directory</h1>
@@ -211,40 +265,42 @@
             <th class="yogajeewan-th">Action</th>
           </tr>
         </thead>
-        <tbody>
-    {% for pose in poses %}
-      <tr>
-        <td>{{ pose.pose_name }}</td>
-        <td>{{ pose.level }}</td>
-        <td><img src="{{ pose.image }}" alt="{{ pose.pose_name }}"></td>
-        <td>
-          <button 
-            class="yogajeewan-btn"
-            data-pose="{{ pose.pose_name }}"
-            data-sanskrit="{{ pose.sanskrit }}"
-            data-category="{{ pose.category }}"
-            data-level="{{ pose.level }}"
-            data-description="{{ pose.description }}"
-            data-benefits="{{ pose.benefits }}"
-            data-contra="{{ pose.contra }}"
-            data-insight="{{ pose.insight }}"
-            data-image="{{ pose.image }}"
-          >Show More</button>
-        </td>
-      </tr>
-    {% endfor %}
-  </tbody>
+        <tbody id="yogajeewan-tbody">
+          {% for pose in poses %}
+          <tr>
+            <td class="yogajeewan-td">{{ pose.pose_name }}</td>
+            <td class="yogajeewan-td">{{ pose.level }}</td>
+            <td class="yogajeewan-td">
+              <div class="yogajeewan-thumb">
+                <img src="{{ pose.image }}" alt="{{ pose.pose_name }}">
+              </div>
+            </td>
+            <td class="yogajeewan-td">
+              <button class="yogajeewan-btn"
+                data-pose="{{ pose.pose_name }}"
+                data-sanskrit="{{ pose.sanskrit }}"
+                data-category="{{ pose.category }}"
+                data-level="{{ pose.level }}"
+                data-description="{{ pose.description }}"
+                data-benefits="{{ pose.benefits }}"
+                data-contra="{{ pose.contra }}"
+                data-insight="{{ pose.insight }}"
+                data-image="{{ pose.image }}"
+              >Show More</button>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
       </table>
     </div>
 
-    <!-- Optional empty message if no rows -->
     <div id="yogajeewan-empty" class="yogajeewan-empty" style="display:none;">
       No poses available.
     </div>
   </div>
 </div>
 
-<!-- Modal structure -->
+<!-- Modal -->
 <div id="yogajeewan-modal-overlay" class="yogajeewan-modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
   <div class="yogajeewan-modal" role="document">
     <div class="yogajeewan-modal-left">
@@ -259,24 +315,12 @@
       </div>
 
       <div class="yogajeewan-modal-body">
-        <div class="yogajeewan-modal-section">
-<strong>Category:</strong><p id="yogajeewan-modal-category"></p>
-</div>
-        <div class="yogajeewan-modal-section">
-<strong>Level:</strong><p id="yogajeewan-modal-level"></p>
-</div>
-        <div class="yogajeewan-modal-section">
-<strong>Description:</strong><p id="yogajeewan-modal-description"></p>
-</div>
-        <div class="yogajeewan-modal-section">
-<strong>Benefits:</strong><p id="yogajeewan-modal-benefits"></p>
-</div>
-        <div class="yogajeewan-modal-section">
-<strong>Contraindications:</strong><p id="yogajeewan-modal-contra"></p>
-</div>
-        <div class="yogajeewan-modal-section">
-<strong>YogaKargha Insight:</strong><p id="yogajeewan-modal-insight"></p>
-</div>
+        <div class="yogajeewan-modal-section"><strong>Category:</strong><p id="yogajeewan-modal-category"></p></div>
+        <div class="yogajeewan-modal-section"><strong>Level:</strong><p id="yogajeewan-modal-level"></p></div>
+        <div class="yogajeewan-modal-section"><strong>Description:</strong><p id="yogajeewan-modal-description"></p></div>
+        <div class="yogajeewan-modal-section"><strong>Benefits:</strong><p id="yogajeewan-modal-benefits"></p></div>
+        <div class="yogajeewan-modal-section"><strong>Contraindications:</strong><p id="yogajeewan-modal-contra"></p></div>
+        <div class="yogajeewan-modal-section"><strong>YogaKargha Insight:</strong><p id="yogajeewan-modal-insight"></p></div>
       </div>
     </div>
   </div>
@@ -296,61 +340,40 @@
     const modalInsight = document.getElementById('yogajeewan-modal-insight');
     const closeBtn = document.getElementById('yogajeewan-modal-close');
 
-    // Open modal and populate with data from button's data-* attributes
     document.querySelectorAll('.yogajeewan-btn').forEach(btn => {
-      btn.addEventListener('click', function (e) {
+      btn.addEventListener('click', function () {
         const ds = btn.dataset;
         modalTitle.textContent = ds.pose || '—';
-        modalSanskrit.textContent = ds.sanskrit ? ('Sanskrit: ' + ds.sanskrit) : '';
+        modalSanskrit.textContent = ds.sanskrit ? 'Sanskrit: ' + ds.sanskrit : '';
         modalCategory.textContent = ds.category || '—';
         modalLevel.textContent = ds.level || '—';
         modalDescription.textContent = ds.description || '—';
         modalBenefits.textContent = ds.benefits || '—';
         modalContra.textContent = ds.contra || '—';
         modalInsight.textContent = ds.insight || '—';
-
-        // Use provided image or fallback
-        if (ds.image) {
-          modalImage.src = ds.image;
-          modalImage.alt = ds.pose || 'Pose image';
-        } else {
-          modalImage.removeAttribute('src');
-          modalImage.alt = '';
-        }
-
-        // Show modal
+        modalImage.src = ds.image || '';
+        modalImage.alt = ds.pose || 'Pose image';
         modalOverlay.style.display = 'flex';
         modalOverlay.setAttribute('aria-hidden', 'false');
-
-        // trap focus on close button for accessibility
         closeBtn.focus();
       });
     });
 
-    // Close handlers
     closeBtn.addEventListener('click', closeModal);
-    modalOverlay.addEventListener('click', function (e) {
-      if (e.target === modalOverlay) closeModal();
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') closeModal();
-    });
+    modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
     function closeModal() {
       modalOverlay.style.display = 'none';
       modalOverlay.setAttribute('aria-hidden', 'true');
-      // clear image to stop downloads when closed (small optimization)
       modalImage.src = '';
     }
 
-    // If table empty — show message
     const tbody = document.getElementById('yogajeewan-tbody');
     if (!tbody || !tbody.querySelector('tr')) {
       document.getElementById('yogajeewan-empty').style.display = 'block';
     }
   })();
 </script>
-
-
 
 </body>
