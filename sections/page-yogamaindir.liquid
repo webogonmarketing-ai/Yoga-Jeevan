@@ -193,7 +193,7 @@
   }
 </style>
 
-{% assign poses = 'yogajeewan-poses.json' | asset_url | json %}
+{% assign poses = shop.metafields.custom.yogajeewan_poses.value | json %}
 <script>
   console.log(poses)
 </script>
