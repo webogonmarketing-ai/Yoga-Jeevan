@@ -206,9 +206,9 @@
       ],
       "name": "Featured collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "For Little Yogis",
         "collection_description": true,
-        "collection": "yoga-mats-1",
+        "collection": "little-yogis-collection",
         "collection_style": "slider",
         "products_per": 3,
         "products_limit": 9,
