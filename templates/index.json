@@ -172,10 +172,10 @@
       "settings": {
         "title": "Yoga Mats for All Forms of Yoga",
         "collection_description": false,
-        "collection": "yoga-mats-1",
+        "collection": "meditation-mat",
         "collection_style": "grid",
         "products_per": 5,
-        "products_limit": 15,
+        "products_limit": 10,
         "css_class": "collection-margin",
         "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px; \n}\n\n.title{\ntext-align : left\n}"
       }
@@ -188,12 +188,12 @@
       ],
       "name": "Featured collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "Yoga Props",
         "collection_description": true,
-        "collection": "yoga-mats-1",
-        "collection_style": "slider",
+        "collection": "iyenger-yoga-prop",
+        "collection_style": "grid",
         "products_per": 3,
-        "products_limit": 9,
+        "products_limit": 6,
         "css_class": "",
         "custom_css": ""
       }
