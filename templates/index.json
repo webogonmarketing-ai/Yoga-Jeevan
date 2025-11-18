@@ -209,9 +209,9 @@
         "title": "For Little Yogis",
         "collection_description": true,
         "collection": "little-yogis-collection",
-        "collection_style": "slider",
+        "collection_style": "grid",
         "products_per": 3,
-        "products_limit": 9,
+        "products_limit": 6,
         "css_class": "",
         "custom_css": ""
       }
