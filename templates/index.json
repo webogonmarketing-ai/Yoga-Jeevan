@@ -34,6 +34,23 @@
         "custom_css": ".position-left.caption.js-caption {\n  margin-left: 100px;\n}"
       }
     },
+    "18c28595-a71b-43e2-81a1-47dabf36e7de": {
+      "type": "featured-collection",
+      "custom_css": [
+        "@media (max-width: 767px) {.thumbnail .was_price span.money, .thumbnail .compare-at-price span.money {color: #fa1717; }}",
+        ".one-whole a .title {text-align: center !important;}"
+      ],
+      "settings": {
+        "title": "Yoga Mats for All Forms of Yoga",
+        "collection_description": false,
+        "collection": "yoga-mats",
+        "collection_style": "grid",
+        "products_per": 4,
+        "products_limit": 8,
+        "css_class": "collection-margin",
+        "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px; \n}\n\n.title{\ntext-align : left\n}"
+      }
+    },
     "shop_by_category_rmEMpR": {
       "type": "shop-by-category",
       "blocks": {
@@ -161,23 +178,6 @@
         "feature_style": "square",
         "css_class": "",
         "custom_css": ""
-      }
-    },
-    "18c28595-a71b-43e2-81a1-47dabf36e7de": {
-      "type": "featured-collection",
-      "custom_css": [
-        "@media (max-width: 767px) {.thumbnail .was_price span.money, .thumbnail .compare-at-price span.money {color: #fa1717; }}",
-        ".one-whole a .title {text-align: center !important;}"
-      ],
-      "settings": {
-        "title": "Yoga Mats for All Forms of Yoga",
-        "collection_description": false,
-        "collection": "yoga-mats",
-        "collection_style": "grid",
-        "products_per": 4,
-        "products_limit": 8,
-        "css_class": "collection-margin",
-        "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px; \n}\n\n.title{\ntext-align : left\n}"
       }
     },
     "featured_collection_RWLAa8": {
@@ -418,9 +418,9 @@
   },
   "order": [
     "image-with-text-overlay-1",
+    "18c28595-a71b-43e2-81a1-47dabf36e7de",
     "shop_by_category_rmEMpR",
     "featured_promotions_WGYzH3",
-    "18c28595-a71b-43e2-81a1-47dabf36e7de",
     "featured_collection_RWLAa8",
     "featured_collection_Bm9E4t",
     "faq_xewWRP",
