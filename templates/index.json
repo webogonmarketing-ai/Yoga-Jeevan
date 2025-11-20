@@ -145,6 +145,7 @@
         "category_BjWGC9",
         "category_bjV8qk"
       ],
+      "disabled": true,
       "name": "Shop by Category",
       "settings": {
         "heading_text": "Season Collection",
@@ -214,6 +215,74 @@
         "featured_promos_per_row": 2,
         "featured_links_animation": "fadeInDown",
         "feature_style": "square",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "image_text_w9dgCV": {
+      "type": "image-text",
+      "blocks": {
+        "image_TdCcG4": {
+          "type": "image",
+          "settings": {
+            "image_crop": "none",
+            "title": "Amrit Yoga Mats - Truly Divine",
+            "text": "<p>Elevate Your Practice with Eco-Friendly Comfort!</p><p>Say hello to our bestsellers <strong>Organic Cotton Yoga Mats</strong>—designed for yogis who care about their practice <em>and</em> the planet. Perfect for your flow, meditation, or relaxation. Make every breath count—ethically and sustainably.</p>",
+            "button_label": "Make it Yours",
+            "link": "",
+            "bg_color": "",
+            "text_color": ""
+          }
+        },
+        "image_G47HBL": {
+          "type": "image",
+          "settings": {
+            "image_crop": "none",
+            "title": "Wooden Meditation Chair and/or Altar Table, Laptop Table",
+            "text": "<p>Handcrafted, versatile and multi-functional piece that can be used for meditation, reading, relaxing, gaming and other seated activities. Say hello to comfort and premium craftsmanship!</p>",
+            "button_label": "Make it Yours",
+            "link": "",
+            "bg_color": "",
+            "text_color": ""
+          }
+        },
+        "image_HFDLYn": {
+          "type": "image",
+          "settings": {
+            "image_crop": "none",
+            "title": "Restorative Multifunctional Organic Cotton Yoga Mat for Knee & Joint Pain, Padded Yoga Mat, Yoga Mat with Cushioning",
+            "text": "<p>An excellent supported and padded yoga mat designed for comfort of joints and knees. Must have for pre and post natal workout. Designed to serve you with or without extra padding. Limited edition. Click to explore more.  </p>",
+            "button_label": "Make it Yours",
+            "link": "",
+            "bg_color": "",
+            "text_color": ""
+          }
+        },
+        "image_dpUmBB": {
+          "type": "image",
+          "settings": {
+            "image_crop": "none",
+            "title": "Multifunctional Meditation and Prayer Altar Tables - Handcrafteda",
+            "text": "<p>our newest batch of teak altar tables is here. Versatile and multifunctional pieces; each piece is hand-chiseled, handcrafted here in India. Design your Meditation and Prayer corners, just the way you want it.   </p>",
+            "button_label": "Make it Yours",
+            "link": "",
+            "bg_color": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_TdCcG4",
+        "image_G47HBL",
+        "image_HFDLYn",
+        "image_dpUmBB"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "wide_display": false,
+        "featured_links_per_row": "1",
+        "frontpage_text_align": "left",
+        "frontpage_image_position": "row",
         "css_class": "",
         "custom_css": ""
       }
@@ -436,6 +505,7 @@
     "18c28595-a71b-43e2-81a1-47dabf36e7de",
     "shop_by_category_rmEMpR",
     "featured_promotions_WGYzH3",
+    "image_text_w9dgCV",
     "featured_collection_RWLAa8",
     "featured_collection_Bm9E4t",
     "faq_xewWRP",
