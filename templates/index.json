@@ -34,6 +34,31 @@
         "custom_css": ".position-left.caption.js-caption {\n  margin-left: 100px;\n}"
       }
     },
+    "image_with_text_overlay_8iUWcD": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "wide_display": true,
+        "image": "shopify://shop_images/1_2000x_2978cf29-d8b0-49b3-88c1-049c2eec530e.webp",
+        "pretext": "",
+        "title": "",
+        "subtitle": "",
+        "button1": "",
+        "button1_link": "",
+        "button1_style": "global-button--banner",
+        "button2": "",
+        "button2_link": "",
+        "button2_style": "global-button--banner",
+        "text_position": "center",
+        "text_align": "center",
+        "caption_content_background": "original",
+        "mobile_image_crop": "none",
+        "mobile_text_below_image": true,
+        "mobile_text_color": "",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
     "18c28595-a71b-43e2-81a1-47dabf36e7de": {
       "type": "featured-collection",
       "custom_css": [
@@ -45,8 +70,8 @@
         "collection_description": false,
         "collection": "yoga-mats",
         "collection_style": "grid",
-        "products_per": 4,
-        "products_limit": 8,
+        "products_per": 3,
+        "products_limit": 9,
         "css_class": "collection-margin",
         "custom_css": ".collection-margin{\nmargin-top : 20px;\nmargin-bottom : 20px; \n}\n\n.title{\ntext-align : left\n}"
       }
@@ -277,31 +302,6 @@
         "title": "Frequently Asked Question"
       }
     },
-    "image_with_text_overlay_8iUWcD": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
-      "settings": {
-        "wide_display": true,
-        "image": "shopify://shop_images/1_2000x_2978cf29-d8b0-49b3-88c1-049c2eec530e.webp",
-        "pretext": "",
-        "title": "",
-        "subtitle": "",
-        "button1": "",
-        "button1_link": "",
-        "button1_style": "global-button--banner",
-        "button2": "",
-        "button2_link": "",
-        "button2_style": "global-button--banner",
-        "text_position": "center",
-        "text_align": "center",
-        "caption_content_background": "original",
-        "mobile_image_crop": "none",
-        "mobile_text_below_image": true,
-        "mobile_text_color": "",
-        "css_class": "",
-        "custom_css": ""
-      }
-    },
     "17623472489ccbe922": {
       "type": "apps",
       "blocks": {
@@ -418,13 +418,13 @@
   },
   "order": [
     "image-with-text-overlay-1",
+    "image_with_text_overlay_8iUWcD",
     "18c28595-a71b-43e2-81a1-47dabf36e7de",
     "shop_by_category_rmEMpR",
     "featured_promotions_WGYzH3",
     "featured_collection_RWLAa8",
     "featured_collection_Bm9E4t",
     "faq_xewWRP",
-    "image_with_text_overlay_8iUWcD",
     "17623472489ccbe922",
     "blog_posts_WAzzmz",
     "custom_liquid_Mf6yta",
