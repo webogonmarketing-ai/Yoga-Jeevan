@@ -34,6 +34,20 @@
         "custom_css": ".position-left.caption.js-caption {\n  margin-left: 100px;\n}"
       }
     },
+    "featured_text_erpzt7": {
+      "type": "featured-text",
+      "name": "Rich text and image",
+      "settings": {
+        "title": "Simple, Sustainable and Earth-friendly",
+        "content": "<h1>Handcrafted products that reflect the above motto, embrace the simplicity of yogic living & make Yoga and Meditation accessible for everyone irrespective of their age, location, or background.</h1>",
+        "button_label": "",
+        "button_link": "",
+        "text_size": "featured_text",
+        "text_alignment": "center",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
     "image_with_text_overlay_8iUWcD": {
       "type": "image-with-text-overlay",
       "name": "Image with text overlay",
@@ -66,7 +80,7 @@
         ".one-whole a .title {text-align: center !important;}"
       ],
       "settings": {
-        "title": "Yoga Mats for All Forms of Yoga",
+        "title": "Sustainable, Organic, Natural & Handmade Yoga Mats for All Forms of Yoga",
         "collection_description": false,
         "collection": "yoga-mats",
         "collection_style": "grid",
@@ -418,6 +432,7 @@
   },
   "order": [
     "image-with-text-overlay-1",
+    "featured_text_erpzt7",
     "image_with_text_overlay_8iUWcD",
     "18c28595-a71b-43e2-81a1-47dabf36e7de",
     "shop_by_category_rmEMpR",
