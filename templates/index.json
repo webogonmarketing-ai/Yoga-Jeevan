@@ -311,6 +311,7 @@
     },
     "featured_collection_Bm9E4t": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 767px) {.thumbnail .was_price span.money, .thumbnail .compare-at-price span.money {color: #fa1717; }}",
         ".one-whole a .title {text-align: center !important;}"
