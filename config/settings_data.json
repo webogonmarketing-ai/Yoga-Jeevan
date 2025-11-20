@@ -65,7 +65,7 @@
     "show_dynamic_checkout_button": false,
     "display_product_quantity": true,
     "limit_quantity": false,
-    "display_inventory_left": true,
+    "display_inventory_left": false,
     "notify_me_form": true,
     "display_vendor": false,
     "collection_swatches": false,
