@@ -348,6 +348,8 @@
     }
   },
   "platform_customizations": {
-    "custom_css": []
+    "custom_css": [
+      ".jdgm-carousel-item__review-body p {font-size: 20px !important;}"
+    ]
   }
 }
