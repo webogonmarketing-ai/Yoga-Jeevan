@@ -45,6 +45,9 @@
         "96000266-8304-482b-bdd8-002bf187b6e1",
         "334c98a7-bbf6-4689-a2a3-24f6ecce7ddf"
       ],
+      "custom_css": [
+        ".image__container img {width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;}"
+      ],
       "settings": {
         "featured_collection_image": false,
         "wide_display": true,
