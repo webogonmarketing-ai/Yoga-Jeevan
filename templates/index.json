@@ -225,6 +225,7 @@
         "image_TdCcG4": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-01-09_104606.png",
             "image_crop": "none",
             "title": "Amrit Yoga Mats - Truly Divine",
             "text": "<p>Elevate Your Practice with Eco-Friendly Comfort!</p><p>Say hello to our bestsellers <strong>Organic Cotton Yoga Mats</strong>—designed for yogis who care about their practice <em>and</em> the planet. Perfect for your flow, meditation, or relaxation. Make every breath count—ethically and sustainably.</p>",
@@ -237,6 +238,7 @@
         "image_G47HBL": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/il_794xN.5034511226_ql97_5f9d8e74-6d7a-4c68-807b-fd81fde37374.jpg",
             "image_crop": "none",
             "title": "Wooden Meditation Chair and/or Altar Table, Laptop Table",
             "text": "<p>Handcrafted, versatile and multi-functional piece that can be used for meditation, reading, relaxing, gaming and other seated activities. Say hello to comfort and premium craftsmanship!</p>",
@@ -249,6 +251,7 @@
         "image_HFDLYn": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/il_794xN.jpg",
             "image_crop": "none",
             "title": "Restorative Multifunctional Organic Cotton Yoga Mat for Knee & Joint Pain, Padded Yoga Mat, Yoga Mat with Cushioning",
             "text": "<p>An excellent supported and padded yoga mat designed for comfort of joints and knees. Must have for pre and post natal workout. Designed to serve you with or without extra padding. Limited edition. Click to explore more.  </p>",
@@ -261,6 +264,7 @@
         "image_dpUmBB": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Photoroom-20240511_181549_949800fe-2ceb-40b5-aeb1-baccddc445a4.png",
             "image_crop": "none",
             "title": "Multifunctional Meditation and Prayer Altar Tables - Handcrafteda",
             "text": "<p>our newest batch of teak altar tables is here. Versatile and multifunctional pieces; each piece is hand-chiseled, handcrafted here in India. Design your Meditation and Prayer corners, just the way you want it.   </p>",
