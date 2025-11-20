@@ -46,7 +46,7 @@
         "334c98a7-bbf6-4689-a2a3-24f6ecce7ddf"
       ],
       "settings": {
-        "featured_collection_image": true,
+        "featured_collection_image": false,
         "wide_display": true,
         "mobile_image_crop": "none",
         "caption_content_background": "original",
