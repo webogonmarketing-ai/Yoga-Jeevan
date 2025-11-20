@@ -349,7 +349,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".jdgm-carousel-item__review-body p {font-size: 20px !important;}"
+      ".jdgm-carousel-item__review-body p {font-size: 20px !important;}",
+      ".image__container img {width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;}"
     ]
   }
 }
