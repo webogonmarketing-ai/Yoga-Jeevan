@@ -50,7 +50,16 @@
       <label>{{ product.options[0] }}</label>
     {% endif %}
 
-   
+    <select
+      id="product-select-{{ product.id }}{{ product-form }}{{ section.id }}{{ block.id }}"
+      name="id"
+      class="{% if product.options.size > 1 %}multi_select{% endif %}"
+      data-variants
+    >
+      {% for v in product.variants %}
+        <option {% if v == variant %}selected="selected"{% endif %} value="{{ v.id }}" data-featured-image="{{ v.featured_media }}" data-image="{{ v.featured_media | product_img_url: '600x' }}" data-sku="{{ v.sku }}">{{ v.title }}</option>
+      {% endfor %}
+    </select>
   </div>
 
   {% if settings.product_form_style == "radio" and product.variants.size > 1 or settings.product_form_style == "radio" and product.options[0] != "Title" %}
