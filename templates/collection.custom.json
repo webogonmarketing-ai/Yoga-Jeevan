@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "collection-template",
+      "blocks": {
+        "4a64c520-cffb-455b-aa12-7fa2a95f3c67": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "filter_name": "Area Rug",
+            "filter_tags": "Area Rug, Hand Block, Large Yoga Mat,",
+            "enable_filter_swatches": false
+          }
+        },
+        "96000266-8304-482b-bdd8-002bf187b6e1": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "filter_name": "Color",
+            "filter_tags": "White, Red, Black, Blue, Grey",
+            "enable_filter_swatches": true
+          }
+        },
+        "334c98a7-bbf6-4689-a2a3-24f6ecce7ddf": {
+          "type": "filter",
+          "disabled": true,
+          "settings": {
+            "filter_name": "Price",
+            "filter_tags": "Under $80 - $90, $100 - $110, $120 - $140",
+            "enable_filter_swatches": true
+          }
+        }
+      },
+      "block_order": [
+        "4a64c520-cffb-455b-aa12-7fa2a95f3c67",
+        "96000266-8304-482b-bdd8-002bf187b6e1",
+        "334c98a7-bbf6-4689-a2a3-24f6ecce7ddf"
+      ],
+      "custom_css": [
+        ".image__container img {width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover;}"
+      ],
+      "settings": {
+        "featured_collection_image": false,
+        "wide_display": true,
+        "mobile_image_crop": "none",
+        "caption_content_background": "original",
+        "display_collection_title": true,
+        "collection_breadcrumb": true,
+        "collection_tags": false,
+        "collection_sort": true,
+        "products_per_row": 3,
+        "pagination_limit": 48,
+        "toggle": false
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "wide_display": true,
+        "display_first_name": false,
+        "display_last_name": false,
+        "newsletter_title": "Subscribe",
+        "newsletter_text": "<p>Sign up to get the latest on sales, new releases and more …</p>",
+        "newsletter_section_text_align": "center",
+        "css_class": "",
+        "custom_css": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "newsletter"
+  ]
+}
